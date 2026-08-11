@@ -1,5 +1,15 @@
 # Context-Aware NL2SPARQL with Interactive Linking
 
+> **🎓 Academic Project Archive**
+> This repository is a mirror of a collaborative university project developed for the **Knowledge Graph Lab** at RWTH Aachen University. 
+>
+> **Authors & Team Members:**
+> * Helik Thacker
+> * Wensheng Zhang
+> * Julius Kaltwasser
+> * Mauricio Kaupp Garcia
+> * Jeffry Cacho Aboukhalil
+
 ## Repository layout
 
 - `backend/`: FastAPI services for NL2SPARQL pipeline components.
