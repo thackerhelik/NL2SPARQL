@@ -1,0 +1,1081 @@
+DBLP RDF Schema Namespaces Cheat Sheet
+xsd (http://www.w3.org/2001/XMLSchema#)
+Description:  XML Schema Definition datatypes used to type literal values in RDF.
+Key datatypes: xsd:string  (string literals), xsd:integer  (integer numbers), xsd:date  and
+xsd:gYear  (dates/years), xsd:dateTime  (timestamps), xsd:anyURI  (URI strings), etc. These
+provide standard data types for values like titles (strings), publication years (gYear), timestamps,
+identifiers (URIs), etc.
+rdf (http://www.w3.org/1999/02/22-rdf-syntax-ns#)
+Description:  Core RDF syntax namespace defining the basic structure of RDF data.
+Key terms: rdf:type  (indicates an instance’s class, used extensively to declare e.g. a resource is a
+dblp:Publication  or foaf:Person ), rdf:Property  (class of properties/predicates),
+rdf:List , rdf:first /rdf:rest  and rdf:nil  (for RDF lists – though DBLP avoided rdf:List
+for creator ordering in favor of a Signature approach ). Also includes rdf:XMLLiteral ,
+rdf:langString  for typed literal support.
+rdfs (http://www.w3.org/2000/01/rdf-schema#)
+Description:  RDF Schema vocabulary for basic ontological relationships and metadata.
+Key classes: rdfs:Class  (class of all classes), rdfs:Resource  (everything in RDF graph),
+rdfs:Literal  (class of literal values).
+Key properties: rdfs:label  (human-readable name of a resource), rdfs:comment
+(documentation comment), rdfs:subClassOf  and rdfs:subPropertyOf  (taxonomy relations),
+rdfs:domain  and rdfs:range  (typing of properties). DBLP uses RDFS for schema definitions
+(e.g., setting domains/ranges for dblp properties and providing labels in the ontology doc).
+owl (http://www.w3.org/2002/07/owl#)
+Description:  Web Ontology Language namespace, providing advanced ontology constructs beyond
+RDFS.
+Key terms: owl:Class , owl:ObjectProperty , owl:DatatypeProperty  (types of classes/
+properties in OWL). DBLP uses OWL primarily for mappings:
+owl:equivalentClass  / owl:equivalentProperty  to state that a dblp class or property is
+semantically equivalent to an external one (e.g., dblp:Article  owl:equivalentClass
+dbo:AcademicArticle  and schema:Article , or dblp:authoredBy  equivalentProperty
+schema:author  etc.).
+owl:sameAs  (identity link between individual resources) – not heavily used in DBLP (they prefer
+dedicated properties like dblp:wikidata  for linking to Wikidata).
+owl:Ontology  (used in the schema definition header).•
+•
+•
+•
+1
+•
+•
+•
+•
+•
+•
+2
+•
+•
+1
+
+bf (http://id.loc.gov/ontologies/bibframe/)
+Description:  BIBFRAME (Bibliographic Framework) ontology by the Library of Congress, used for
+bibliographic description (especially library catalog data) . Core classes are Work , Instance , Item
+(reflecting FRBR-like model: Work = conceptual content, Instance = physical embodiment, Item =
+exemplar copy).
+Key classes: bf:Work  (abstract creative work – DBLP’s Publication  is aligned here ),
+bf:Instance  (a particular edition/instance of a Work, less directly used in DBLP context),
+bf:Item  (a single physical or electronic copy of an Instance). Also bf:Agent  (entity such as a
+person or organization; DBLP Creator  aligns with Agent , and DBLP specifically subclasses that
+into Person, Group, etc).
+Key properties:  BIBFRAME properties describe relationships and attributes of resources (e.g.,
+bf:contribution  linking an Agent to a Work as an author/editor , bf:identifiedBy  for
+identifiers). In the DBLP RDF, BIBFRAME is mainly present to provide class alignments (e.g., Person as
+a kind of bf:Agent, Publication as bf:Work) rather than to reuse BIBFRAME properties directly in data.
+bibo (http://purl.org/ontology/bibo/)
+Description:  Bibliographic Ontology (BIBO) for describing academic publications, documents, and
+citations in RDF . It serves as a general vocabulary for scholarly publishing data and can act as a
+citation ontology or document classification ontology .
+Key classes: bibo:Document  (generic document or publication),
+bibo:BibliographicResource  (abstract bibliographic entity – DBLP Publication  is aligned
+as a subclass of this ), and more specific types like bibo:Article  / bibo:AcademicArticle
+(scholarly journal article – aligns with dblp:Article ), bibo:Book  (dblp:Book  aligns here
+), bibo:Thesis  (for theses, which in DBLP may be included under Book),
+bibo:ReferenceSource  (encyclopedia or reference entry – aligns with dblp:Reference ),
+etc.
+Key properties:  BIBO defines many properties for identification and citation:
+Identifier properties like bibo:doi , bibo:isbn , bibo:issn . (DBLP uses its own dblp:doi ,
+dblp:isbn , etc., but marks them equivalent to these BIBO/other identifier properties .)
+Bibliographic detail properties: bibo:pages  (page numbers, used in DBLP as dblp:pagination
+equivalent ), bibo:issue , bibo:volume  (for journal issue/volume, though DBLP currently
+encodes venue info as strings).
+Citation relations: bibo:cites  and bibo:citedBy  (one document cites another). Note:  In the
+DBLP dataset, citation links are represented using CiTO’s cito:cites  rather than BIBO’s
+properties, but the concept is similar .
+Usage in DBLP:  Primarily to align common concepts (Document, Article, etc.) and identifier usage.
+For example, DBLP equates its Article class to BIBO’s AcademicArticle  and uses BIBO’s notion of
+Document as a super-class of publications .
+bibtex (http://purl.org/net/nknouf/ns/bibtex#)
+Description:  The BibTeX ontology recasts the classic BibTeX reference format into OWL/RDF . It
+provides classes and properties mirroring BibTeX entry types and fields, facilitating integration of
+BibTeX data on the Semantic Web.•
+3
+• 4
+5
+•
+•
+6
+6
+•
+7
+2
+8
+9
+•
+•
+1011
+•
+12
+•
+•
+2
+7
+• 13
+2
+
+Key classes:  The ontology’s base class is bibtex:Entry  (a bibliographic entry). Under it are
+classes corresponding to BibTeX entry types (nearly all classes come directly from the BibTeX format
+):
+bibtex:Article  (an article in a journal or magazine),
+bibtex:InProceedings  (a conference paper in proceedings),
+bibtex:Book , bibtex:InCollection  (book chapters), bibtex:Proceedings ,
+bibtex:PhDThesis , bibtex:Mastersthesis , etc., matching the standard BibTeX types.
+Key properties:  Similarly, properties correspond to BibTeX fields:
+e.g., bibtex:hasAuthor , bibtex:hasEditor  (authors/editors list), bibtex:hasTitle ,
+bibtex:hasYear , bibtex:hasJournal  (journal name for articles), bibtex:hasPublisher ,
+bibtex:hasPages , etc.
+These properties often expect literal values (strings, numbers) as in a .bib file.
+Usage in DBLP:  DBLP’s own ontology defines its publication types and properties, but it includes the
+BibTeX ontology mainly for interoperability. Each dblp:Publication  has a dblp:bibtexType
+property whose value is a BibTeX class indicating the traditional type (e.g., an inproceedings paper
+will have dblp:bibtexType bibtex:InProceedings ). This helps in generating BibTeX or
+aligning with systems that use BibTeX classes. The actual metadata fields in DBLP (title, authors,
+year) are given by DBLP properties (e.g., dblp:title , dblp:yearOfPublication ) rather than
+using bibtex:hasTitle  directly.
+cito (http://purl.org/spar/cito/)
+Description:  CiTO, the Citation Typing Ontology, is an ontology for modeling citation links and their
+nature in scholarly data . It enables characterization of the type of citation (supporting, disputing,
+etc.), but also provides a simple way to represent that one work cites another .
+Key classes:  CiTO’s focus is on relationships, not new document classes. (It does define a class like
+cito:CitationAct for a citation event, but in basic usage one doesn’t usually instantiate this for each
+citation unless modeling citation contexts.)
+Key properties:  The core object properties are:
+cito:cites  – indicating that one bibliographic entity cites another . In the DBLP RDF data,
+each known reference from one publication to another is represented with this property (e.g.,
+<PaperA> cito:cites <PaperB>  means PaperA’s reference list includes PaperB). This is
+especially used now that DBLP has integrated citation data from OpenCitations.
+cito:isCitedBy  – the inverse property (not always explicitly stored, but inferred as the inverse of
+cito:cites).
+CiTO includes many sub-properties of cito:cites to categorize the nature of a citation (e.g.,
+cito:extends, cito:usesMethodIn, etc.), but these specific types are not explicitly used in DBLP; DBLP
+uses cito in a basic way to denote citation links.
+Usage in DBLP:  Provides a standard way to represent citation relationships between publications in
+the graph (each citation is a triple using cito:cites ). This makes it easier to query for papers that
+cite or are cited by others.
+datacite (http://purl.org/spar/datacite/)
+Description:  The DataCite Ontology (by the SPAR group) is designed for representing dataset
+publication metadata and, importantly, identifier information (e.g., DOI identifiers) . It defines•
+13
+•
+•
+•
+•
+•
+•
+•
+14
+•
+15
+•
+•
+• 16
+•
+•
+•
+•
+1718
+3
+
+classes and properties that complement the DataCite metadata schema (which is used for datasets
+and research outputs).
+Key classes:
+datacite:Identifier  – a class for identifiable things (used when assigning external identifiers
+to entities).
+datacite:IdentifierScheme  – an enumeration class for types of identifier schemes . Specific
+instances of this class (named individuals) represent schemes like DOI, ISBN, ORCID, etc.
+(It also defines classes for parts of metadata, like datacite:Resource, datacite:Agent, but in DBLP
+context the focus is on identifiers.)
+Key named individuals (Identifier Schemes):  DataCite ontology provides built-in individuals for
+many identifier types . For example, datacite:doi  (the DOI scheme), datacite:issn ,
+datacite:isbn , datacite:orcid , datacite:ark , etc., are defined as instances of
+datacite:IdentifierScheme. DBLP leverages these: e.g., the property dblp:doi  is declared
+equivalent to the DOI identifier in both the LoC and DataCite vocabularies . Similarly,
+dblp:orcid  (for author ORCIDs) is aligned with datacite:orcid .
+Key properties:
+datacite:hasIdentifier  – relates an entity to a datacite:Identifier (which might carry a literal or
+further info).
+datacite:usesIdentifierScheme  – links an Identifier to a datacite:IdentifierScheme (e.g., a
+specific DOI string is used with the DOI scheme).
+In practice, DBLP doesn’t model each identifier as a full node with datacite classes; instead it
+provides identifier values as literals (or as URIs for ORCID/DOI) and simply uses the known scheme
+individuals for equivalences. So you won’t commonly see datacite:hasIdentifier  in the triples;
+instead you’ll see, for example, <paper> dblp:doi "10.xxxx/..."^^xsd:anyURI , and know
+via schema that dblp:doi is an identifier of type DOI .
+Usage in DBLP:  Primarily to formally denote identifier types. The DBLP ontology marks dblp:doi
+as equivalent to datacite:doi , dblp:isbn  equivalent to datacite:isbn , etc., using
+DataCite’s identifier scheme individuals. This helps in interoperability (so external tools know, for
+example, that dblp:doi  is a DOI). It’s also used for the concept of Open Metadata ID
+(dblp:omid ) which likely aligns with an identifier in DataCite’s list (OMID appears as a DataCite
+individual in their list of schemes ).
+dbo (http://dbpedia.org/ontology/)
+Description:  DBpedia Ontology – a broad, cross-domain ontology derived from Wikipedia infoboxes.
+It defines classes and properties for common concepts (people, places, creative works, etc.) used in
+the DBpedia knowledge base.
+Key classes:
+dbo:Person  (the class of people – DBLP’s dblp:Person  is aligned with this),
+dbo:Agent  (general class of agents; similar to FOAF Agent or schema Person/Org, also used as a
+super-class for creators ),
+dbo:WrittenWork  or dbo:Work  (class for written creative works – DBLP Publication  is
+linked to dbo:WrittenWork ),
+dbo:AcademicArticle  / dbo:Article  (DBpedia has classes for specific types of works; e.g.,
+dbo:AcademicArticle  could correspond to scholarly articles, and dblp:Article  is mapped to
+dbo:Article ).
+Key properties:•
+•
+• 18
+•
+•
+19
+20
+21
+•
+•
+•
+•
+10
+•
+20 11
+22
+•
+•
+•
+•
+5
+•
+23
+•
+2
+•
+4
+
+Properties in DBpedia ontology often mirror natural-language infobox properties. Relevant ones
+include dbo:author  (links a Work to a Person author), dbo:editor  (links a Work to an editor),
+dbo:publisher , dbo:publicationDate  (for publication date).
+In DBLP’s schema alignment, for instance, dblp:authoredBy  (publication to creator) is stated as
+equivalent to dbo:author , and dblp:editedBy  equivalent to dbo:editor . Also,
+dblp:yearOfPublication  (year) is equated to dbo:publicationDate  (though DBpedia’s
+property expects a full date) .
+Usage in DBLP:  The DBpedia ontology is used to align DBLP classes/properties with a well-known
+general ontology. This means external semantic web users can infer , e.g., a dblp:Publication  is
+a kind of dbo:WrittenWork , and use generic properties. For example, queries could use
+dbo:author  or schema:author  interchangeably with dblp:authoredBy  thanks to the
+equivalences.
+dc (http://purl.org/dc/elements/1.1/)
+Description:  Dublin Core Metadata Element Set, Version 1.1 – a set of 15 basic metadata properties
+for broad use in resource description (created by DCMI). It includes generic terms like Title, Creator ,
+Date, etc., meant to be simple and cross-domain .
+Key properties (elements):  Classic Dublin Core elements include:
+dc:title  (the title of the resource),
+dc:creator  (the creator/author of the resource),
+dc:subject  (topic keywords),
+dc:date  (a date associated with the resource, often publication date),
+dc:type , dc:format , dc:identifier , etc.
+Usage in DBLP:  The DBLP RDF schema maps some of its properties to Dublin Core for
+interoperability. For example, dblp:title  is a publication title and is aligned with dc:title
+. Similarly, an author in DBLP could be aligned with dc:creator  (or more precisely
+dcterms:creator; see below). The DBLP dataset itself primarily uses its own properties, but
+acknowledging the DC equivalents makes it easier for generic metadata processing. Dublin Core
+elements are broad and sometimes superseded by the more precise DC Terms (dct). In summary, DC
+offers a baseline: e.g., one can treat dblp:title  as a kind of dc:title  in a pinch, since it
+represents the title of a bibliographic resource.
+dct (http://purl.org/dc/terms/)
+Description:  Dublin Core Metadata Terms  – an updated and expanded set of metadata terms that
+refines the original DC elements. It includes qualifiers and additional classes, and is designed to be
+used in modern RDF contexts (range domains, etc.).
+Key classes:
+dct:Agent  (a class for agents, i.e., people or organizations involved in the lifecycle of a resource –
+DBLP creators align with this as one of their super-classes ),
+dct:BibliographicResource  (class for a document or publication – DBLP Publication  aligns
+with this concept ).
+Key properties:
+dct:creator  (equivalent to the dc:creator element but in the refined schema; domain includes
+dct:Agent, range a resource – DBLP maps dblp:createdBy/authorOf  to this ),•
+•
+24 25
+26
+•
+•
+27
+•
+•
+•
+•
+•
+•
+•
+28
+29
+•
+•
+•
+5
+•
+7
+•
+•
+30
+5
+
+dct:issued  (date of issuance/publication – DBLP’s dblp:yearOfPublication  aligns with
+dcterms:issued , noting DBLP gives year as gYear),
+dct:subject , dct:publisher  (e.g., dblp:publishedBy  – publisher name – is aligned to
+dct:publisher ),
+dct:identifier  (a general identifier; DBLP instead uses specific sub-properties like DOI, ISBN
+but all under its dblp:identifier  super-property).
+Usage in DBLP:  The DC Terms vocabulary is used to formally ground some of DBLP’s terms. For
+instance, when DBLP indicates a publication year , it cites dct:issued as an equivalent property .
+When indicating a creator , dct:creator is one of the equivalents . The presence of DC Terms in the
+namespace list shows that the DBLP ontology tries to stay compatible with standard metadata
+practice.
+foaf (http://xmlns.com/foaf/0.1/)
+Description:  FOAF (Friend of a Friend) is a well-known ontology for describing people, their
+relationships, and related things (like organizations, documents) in RDF . It’s often used for
+linking person identities and basic personal info.
+Key classes:
+foaf:Person  (class of people – DBLP Person is mapped to foaf:Person),
+foaf:Organization  (for institutions, though DBLP doesn’t yet model affiliations as separate org
+entities in the RDF, this could be relevant in future),
+foaf:Agent  (superclass of Person and Organization – DBLP Creator  counts as a foaf:Agent
+),
+foaf:Document  (class of documents or web pages – used in DBLP for things like an external
+webpage link’s range , e.g., dblp:webpage has range foaf:Document).
+Key properties:
+foaf:name  (a person's name – DBLP uses its own dblp:creatorName  but marks foaf:name as a
+super-property/equivalent , meaning the full name of a creator can be seen as a foaf:name ),
+foaf:homepage  (URL of a personal homepage – dblp:homepage  for a creator is equivalent to
+foaf:homepage ),
+foaf:page  (a generic page about something – DBLP’s dblp:webpage  (for any entity’s related
+page) is aligned with foaf:page ),
+foaf:knows  (represents a person knowing another – DBLP uses this concept indirectly:
+dblp:coAuthorWith  and other co-creator relationships are sub-properties of a generalized co-
+creator relation which is aligned to foaf:knows . Essentially, if two authors have co-authored,
+DBLP signals that as a kind of “knows” relationship in FOAF terms).
+foaf:maker  (links a foaf:Document to the foaf:Agent that made it) – DBLP aligns
+dblp:createdBy  (publication to creator) with foaf:maker , meaning a publication’s creator can
+be viewed via the foaf:maker predicate.
+Usage in DBLP:  FOAF is used to ensure person entities and their properties are recognized by a
+common schema. For example, an external application could see a DBLP author node and because
+it’s typed as foaf:Person and has a foaf:name, it knows how to treat it. Also, links like homepage or
+Wikipedia pages for authors are easily understood via FOAF terms.•
+26
+•
+31
+•
+•
+26
+30
+•
+32
+•
+•
+•
+•
+5
+•
+33
+•
+•
+34 35
+•
+36
+•
+37
+•
+38
+•
+39
+•
+6
+
+litre (http://purl.org/spar/literal/)
+Description:  The SPAR Literal Reification  ontology (prefix litre) provides a pattern for treating
+literals (strings, numbers) as first-class entities when needed . Normally in RDF, literal values
+cannot be subjects of triples; this ontology creates a way to “reify” a literal into a resource, so you can
+attach additional information to it.
+Key class: litre:Literal  (sometimes referred to as a reified literal or literal entity ). An
+instance of this class represents a specific literal value as an individual node.
+Key properties:
+litre:hasLiteralValue  – a data property  linking a litre:Literal  individual to the actual
+literal (string or other datatype) it represents . Each litre:Literal  must have exactly one
+such value (the actual content of the literal) .
+litre:hasLiteral  – an object property  that links a resource to a litre:Literal  (i.e. to a
+reified literal node) . Inverse is litre:isLiteralOf .
+litre:hasSameLiteralValueAs  – an object property to relate two literal-reified individuals that
+carry the same string/value (useful for equality comparison) .
+Usage in DBLP:  This ontology is included for potential cases where DBLP might need to model a
+literal with extra metadata. For example, if an author’s name (a literal string) needed to be an object
+of triples (to annotate it or link it to another concept), one could create a litre:Literal  node for
+the name. As of the current schema, DBLP doesn’t heavily use literal reification (most data are either
+simple literals or full resources), but having the namespace signals that it’s available. It might be
+used behind the scenes or for future extensions (e.g., managing alternate names or titles as
+resources). In summary, litre provides a technical solution for edge cases involving literals as
+subjects.
+locid (http://id.loc.gov/vocabulary/identifiers/)
+Description:  Library of Congress Identifiers vocabulary – a controlled list of identifier types
+maintained by LoC. Each term in this vocabulary represents a well-known identifier scheme (similar
+purpose to DataCite’s list of schemes).
+Key terms:  These are typically modeled as individual entries (not classes or properties, but instances
+in the LoC identifiers scheme). Relevant ones in DBLP context include:
+locid:doi  (the DOI identifier scheme, i.e., an entry representing “Digital Object Identifier”),
+locid:isbn  (International Standard Book Number scheme),
+locid:issn  (International Standard Serial Number),
+locid:orcid  (Open Researcher and Contributor ID for author IDs),
+locid:ark , locid:handle , etc., and many others (the LoC list is extensive).
+Usage in DBLP:  Similar to DataCite, DBLP uses these as reference points for its identifier properties.
+For example, dblp:doi  is stated to be equivalent to locid:doi , dblp:isbn  to locid:isbn ,
+dblp:issn  to locid:issn , and dblp:orcid  to locid:orcid . This means when you see a DOI
+in the DBLP RDF, it’s not only a string or URI, but the property carrying it is linked to the formal
+concept of a DOI as defined by the Library of Congress. Essentially, DBLP declares “our DOI property
+is the same as the concept of DOI in the LoC identifiers vocabulary.” This helps in linking with library
+data or any system that also uses the LoC’s vocabulary for identifiers. (There are no unique classes or
+properties introduced from locid into the DBLP data; it’s purely for equivalence mapping of identifier
+semantics.)•
+4041
+• 41
+•
+•
+42
+41
+•
+43
+•
+44
+•
+•
+•
+•
+•
+•
+•
+•
+•
+20 11
+45 21
+7
+
+locrel (http://id.loc.gov/vocabulary/relators/)
+Description:  Library of Congress Relators – a vocabulary of roles that a person or organization can
+play with respect to a bibliographic item. These are the standard MARC Relator codes (typically 3-
+letter codes) with URIs. Each code has a meaning (e.g., aut = author , edt = editor , ill = illustrator , etc.).
+Key terms:  Each relator code is represented as an RDF resource (many are skos:Concepts in LoC’s
+data, but they can be used to tag relationships). Notable codes in the DBLP context:
+locrel:aut  – Author  role ,
+locrel:edt  – Editor  role ,
+locrel:cre  – Creator  (a generic creator role, often encompassing author or editor) .
+(Dozens of others exist, like trl for translator , but DBLP currently concerns mainly authors/editors
+of works.)
+Usage in DBLP:  The DBLP ontology maps its creator relationships to these relator terms for clarity.
+For example, dblp:authoredBy  (linking a publication to a creator in the author role) is said to be
+equivalent to locrel:aut , and dblp:editedBy  equivalent to locrel:edt .
+dblp:createdBy  (a super-property for “has creator”) is aligned with a general creator code
+locrel:cre . This means DBLP is leveraging library standards to denote the role of the person
+in relation to the publication. In SPARQL, one could use these relator URIs similarly to the dblp
+properties (but typically one uses the dblp properties directly; the mapping just makes the semantics
+clear). Essentially, the LoC relator namespace provides a shared understanding that, say, an “author”
+relationship in DBLP is the same as an “author [aut]” in library terms.
+schema (https://schema.org/)
+Description:  Schema.org vocabulary – a broad collection of schema definitions for entities and
+relationships used in web markup (created by major search engines). It includes types for creative
+works and scholarly articles, making it relevant for bibliographic data.
+Key classes:
+schema:CreativeWork  (a generic creative work, parent class for many things – DBLP’s
+publications correspond to CreativeWork , and DBLP Stream (venue) is aligned as a
+CreativeWorkSeries ),
+schema:Article  (an article, typically in a magazine or journal – dblp:Article  is linked to
+schema:Article ; schema also has ScholarlyArticle  subclass but DBLP used the more
+general Article class),
+schema:Book  (dblp:Book  aligns with schema:Book ),
+schema:Dataset  (dblp:Data  is aligned with schema:Dataset , reflecting datasets as first-
+class entities in DBLP),
+schema:Person  (dblp:Person  maps to schema:Person  via foaf and others, since
+schema:Person is akin to foaf:Person),
+schema:Organization  (not directly used yet, but likely relevant when institutions are added as
+entities in DBLP).
+schema:CreativeWorkSeries  (a series of publications – dblp:Stream  which represents a
+conference series or journal is mapped to this ).
+Key properties:•
+•
+• 24
+• 25
+• 30
+•
+•
+24 25
+30
+•
+•
+•
+7
+46
+•
+47
+• 8
+• 48
+• 47
+•
+•
+46
+•
+8
+
+schema:name  (the name of an item – DBLP’s title and creatorName  are linked to
+schema:name as a super-property , meaning the title of a paper or the full name of a person
+is a kind of schema:name),
+schema:author  (link from CreativeWork to Person – DBLP authoredBy  is equivalent to
+schema:author ),
+schema:editor  (CreativeWork to Person in editor role – dblp:editedBy  maps to schema:editor
+),
+schema:url  (URL of the item – DBLP uses dblp:webpage  for an external page, which is aligned
+with schema:url as a super-property ),
+schema:publisher  (who published the work – dblp:publishedBy  is aligned to
+schema:publisher , although in DBLP currently publishedBy is a literal string for publisher name),
+schema:citation  (schema.org has a citation property, but DBLP uses cito instead for actual links;
+however , schema:citation could be used for text references).
+Usage in DBLP:  Schema.org mapping makes DBLP data more consumable by web applications and
+other knowledge graphs. By declaring equivalences, e.g., dblp:Publication  is a
+schema:CreativeWork , a consumer can guess that dblp:title  corresponds to something
+they recognize (schema:name) or that they can query for authors using schema:author if they prefer .
+The alignments cover persons, publications, venues, and common properties (name, author , etc.),
+ensuring DBLP is not an island but linked to the wider schema.org ecosystem for scholarly data.
+wd (http://www.wikidata.org/entity/)
+Description:  Wikidata entity namespace. Wikidata is a crowd-sourced knowledge base; each entity
+(item) has a unique ID (Q-number). The wd: prefix is used for those item URIs.
+Usage in DBLP:  DBLP uses Wikidata links to connect its entities to corresponding Wikidata entries.
+For example, many authors in DBLP are linked via a property dblp:wikidata  to a wd:Q...
+identifier . Likewise, some venue series or conferences might be linked to Wikidata items.
+The DBLP ontology defines dblp:wikidata  as a property for this and marks it as an
+identifier  sub-property . This is essentially a same-as link without using owl:sameAs
+explicitly.
+Additionally, in the ontology reference, DBLP classes have equivalences to Wikidata classes (items).
+For instance, dblp:Person  is equivalent to Wikidata item Q5 (which is the item for “human”) .
+dblp:Conference  series is equated to a Wikidata item for conference series (e.g., Q47258130)
+, dblp:Journal  to Q5633421 perhaps, etc. These alignments tie DBLP’s notion of entities to
+Wikidata’s ontology via specific Q-IDs.
+Key points:  Since wd: items are just identifiers (not classes or properties themselves in the schema
+sense), “key classes” would refer to notable Q-items used for mapping:
+Q5 (human) for Person,
+Q571 (book) for Book ,
+Q13442814 (scholarly article) for Article ,
+Q17051824 (dataset) for Data ,
+etc. These show up in the ontology as equivalents to dblp classes. For querying, one might use them
+if doing federated queries with Wikidata or to fetch additional info about an entity from Wikidata.
+Practical SPARQL tip:  If you have a DBLP resource with a known Wikidata link, you could include the
+wd: namespace to bring Wikidata data (via federated query or if imported). For example, find an
+author’s country by using the DBLP–Wikidata link to join to Wikidata’s data. The presence of wd: in
+the prefix list tells us such linking is available.•
+2934
+•
+24
+•
+25
+•
+49
+•
+31
+•
+•
+•
+•
+50
+•
+51
+•
+52
+53
+•
+•
+• 8
+• 2
+• 48
+•
+•
+9
+
+wdt (http://www.wikidata.org/prop/direct/)
+Description:  Wikidata direct property  namespace. In Wikidata, properties are identified as P-
+numbers (e.g., P50 for “author” of a work, P577 for “publication date”). The wdt: prefix allows
+direct use of these properties to get values (bypassing qualifiers/rank, etc.).
+Key properties:  Relevant ones to scholarly data include:
+wdt:P50  – “author” in Wikidata (links a work item to a person item). DBLP maps
+dblp:authoredBy  to wdt:P50 in its ontology equivalences .
+wdt:P98  – “editor” (Wikidata property for editor of a written work). Mapped from
+dblp:editedBy .
+wdt:P31  – the ubiquitous “instance of” property. (Not directly mapped in DBLP, but DBLP classes
+themselves correspond to certain Q-items as instance-of relationships in Wikidata.)
+wdt:P1476  – “title” of a creative work (DBLP title is aligned with this ).
+wdt:P356  – DOI of a publication (DBLP doi might align conceptually with this, though DBLP uses
+its own property for DOI).
+wdt:P577  – publication date (mapped to dblp:yearOfPublication  in equivalence ).
+wdt:P17  (country, for affiliation country if needed) and others, which might be used indirectly if
+one connects authors to their country via Wikidata.
+Usage in DBLP context:  DBLP itself doesn’t include wdt:P… predicates in its data; however , by
+listing this prefix, it signals that queries could utilize Wikidata properties when federating or when
+referring to mapped properties:
+For example, since dblp:yearOfPublication  ≡ wdt:P577 , one could use wdt:P577  in a
+query if combining DBLP data with Wikidata to fetch the publication date (year).
+Or one might use wdt:P50  to get all authors of a work via Wikidata, but in the DBLP graph it’s
+easier to just use dblp:authoredBy . The mapping just confirms they mean the same relation of
+“authorship”.
+Federation scenario:  If you had both DBLP and Wikidata accessible in a SPARQL environment, you
+could do something like: select a DBLP paper , find its Wikidata ID via dblp:wikidata , then join to
+Wikidata’s endpoint to get extra info (like ?paper wdt:P50 ?author_wd  to get the author item
+from Wikidata, which might have more data such as birth year , etc.). The inclusion of wdt: makes
+such cross-queries feasible.
+dblp (https://dblp.org/rdf/schema#)
+Description: DBLP’s own RDF ontology.  This is the primary namespace defining classes and
+properties for the DBLP Computer Science Bibliography dataset. It models researchers (creators) and
+publications, plus additional entities like venues (streams) and links between them. The schema is
+designed as a “person–publication” graph with enhancements for venues and other metadata (as of
+2024) .
+Key classes:  (All in the dblp: namespace)
+dblp:Publication  – the root class for bibliographic records (papers, books, datasets, etc.) . All
+publication instances (articles, conference papers, etc.) are of this type or its subclasses. Subclasses
+include:
+dblp:Article  (a journal article) ,
+dblp:Inproceedings  (conference paper) ,
+dblp:Book  (book or thesis) ,•
+•
+•
+24
+•
+25
+•
+• 29
+•
+• 26
+•
+•
+• 26
+•
+•
+•
+5455
+•
+• 56
+◦ 57
+◦ 58
+◦ 59
+10
+
+dblp:Editorship  (an edited volume, e.g., conference proceedings or edited book) ,
+dblp:Reference  (an encyclopedia entry or reference work item) ,
+dblp:Informal  (informally published work, e.g., preprints) – covers what used to be
+labeled as “informal” in dblp,
+dblp:Data  (a dataset or artifact publication) ,
+dblp:Thesis  (if present as a subclass, theses might be encompassed under Book; as of
+schema, Book covers theses, but a specific subclass might not exist yet except via Book
+class),
+dblp:Withdrawn  (a publication that has been withdrawn) .
+These specific types correspond to the record type in the classic dblp (article, inproceedings, etc.),
+and they are often aligned with external classes like schema:Article, BIBO, Wikidata items, etc., as
+seen above.
+dblp:Creator  – superclass for any entity that creates publications . Subclasses:
+dblp:Person  (an individual human researcher) ,
+dblp:Group  (a group or consortium of people acting as an author – used rarely, e.g.,
+“Working Group X” as an author) ,
+dblp:AmbiguousCreator  (special class for an author identity that is known to be
+ambiguous, i.e., multiple people mixed under one name until disambiguated  – used
+to group publications that have the same name but unresolved identity).
+dblp:Signature  – a reification class representing the authorship/editorship link between a
+publication and a creator . Each Signature is like an authorship instance:
+Subclasses: dblp:AuthorSignature  (an authorship record) and
+dblp:EditorSignature  (an editorship record) .
+Each dblp:Signature links exactly one publication and one creator , and carries metadata like
+author order and possibly an ORCID for that specific authorship .
+dblp:Stream  – represents a “publication stream”, i.e., a venue or series (added in the 2024 extension)
+. This is a third core entity type besides publications and persons.
+Subclasses: dblp:Conference  (conference series), dblp:Journal  (journal as a whole),
+dblp:Series  (book series or numbered conference proceedings series),
+dblp:Repository  (for data repositories/collections like Zenodo, etc.) .
+Streams are the entities to which publications are linked to indicate where they appeared. For
+example, a paper in ICML 2023 would have a stream of dblp:Conference “ICML” and possibly
+also a dblp:Series if that conference’s proceedings belong to a series.
+dblp:Entity  – a general super-class for all “named” entities in the DBLP KG (covers Creator ,
+Publication, Stream) . Used as a domain for generic properties like homepage, identifiers, etc.
+dblp:VersionRelation  – a class representing a relationship between two versions of a publication
+(e.g., a preprint vs. its journal version) . It links a general publication concept and a specific
+version.
+Key properties:  (all dblp: prefix)
+Relationships between publications and creators:
+dblp:authoredBy  – links a Publication to a Creator who is an author  (inverse
+dblp:authorOf  from Creator to Publication).
+dblp:editedBy  – links a Publication (like proceedings or edited volume) to a Creator who
+is an editor  (inverse dblp:editorOf ).
+Note:  Direct use of authoredBy/editedBy  indicates a person contributed; however , the
+newer schema encourages using Signature. Now a Publication has multiple
+dblp:hasSignature  relations, each Signature then has dblp:signaturePublication◦ 60
+◦ 61
+◦
+◦ 62
+◦
+◦ 63
+◦
+• 64
+◦ 52
+◦
+6566
+◦
+6768
+•
+69
+◦
+7071
+◦
+69
+•
+7255
+◦
+55
+◦
+•
+73
+•
+74
+•
+•
+◦ 75
+◦
+76
+◦
+11
+
+(back link) and dblp:signatureCreator  to the Person, plus details . But for simple
+querying, authoredBy  is still available (it’s likely inferred or provided for convenience).
+dblp:hasSignature  – links a Publication to a Signature node . (Inverse
+dblp:signaturePublication  on the Signature.)
+Signature properties: dblp:signatureCreator  (the Person/Group in that authorship),
+dblp:signatureOrdinal  (the author position as an integer),
+dblp:signatureDblpName  (the name string used in that record),
+dblp:signatureOrcid  (ORCID URI for that specific author entry if given) – these allow
+detailed query of authorship metadata.
+Publication metadata:
+dblp:title  – the title of the publication .
+dblp:yearOfPublication  – the year the work was published (as a literal year , xsd:gYear)
+.
+dblp:yearOfEvent  – for conferences/workshops, the year the event took place (if different
+from publication year , e.g., conference in Dec 2022 published in 2023) .
+dblp:doi  – Digital Object Identifier for the publication (if available) . Stored as a URI or
+string; also see dblp:identifier  below.
+dblp:ee  – (in XML dumps, “electronic edition”) now represented as dblp:documentPage
+or dblp:primaryDocumentPage  – the URL to the publication’s page/PDF . In the
+current schema:
+dblp:documentPage  is an external link to the publication’s online page (general),
+dblp:primaryDocumentPage  specifically the main one if multiple exist .
+There’s also dblp:archivedWebpage  for archived URLs, and all these are sub-properties of
+a general dblp:webpage  property .
+dblp:publishedInStream  – links a Publication to a Stream (venue) where it was published
+. A publication can have multiple of these (e.g., a paper in a conference that is part of a
+series/journal) .
+More granular venue links introduced: dblp:publishedInJournal ,
+dblp:publishedInConference  etc., but the current schema uses the Stream mechanism.
+The ontology lists properties like publishedInJournalIssue ,
+publishedInSeriesVolume , etc., which likely break down the venue hierarchy if modeled
+(these might come from the data model with volumes/issues).
+dblp:publishedAsPartOf  – relates a Publication that is part of another publication (e.g.,
+an incollection to a book, or an article in a special issue) . It’s mapped to schema:isPartOf
+or Wikidata P1433 .
+dblp:pagination  – the page numbers of the publication (e.g., “123-130”) .
+dblp:volume , dblp:number  – (Not explicitly in the snippet we have, but likely available
+for journal volume/issue if needed; they might not appear as top-level properties in the
+ontology extract, possibly encapsulated in the context of Journal issues if at all).
+dblp:omid  – an Open Metadata Identifier (a unique ID for a reference in OpenCitations, if
+the publication is augmented with one).
+dblp:listedOnTocPage  – indicates a publication is listed on a TOC (table of contents)
+page of a dblp stream (likely linking to a venue’s index).
+dblp:hasVersion  / dblp:isVersionOf  – links between a general publication and a
+specific version (for instance, linking a conference paper and an extended journal version as
+two nodes) , with dblp:VersionRelation  acting as intermediary in some cases.77
+◦ 78
+◦
+•
+◦ 79
+◦
+8026
+◦
+81
+◦ 82
+◦
+83
+◦
+◦ 84
+◦
+37
+◦
+85
+86
+◦
+◦
+87
+87
+◦ 88
+◦
+◦
+◦
+◦
+8990
+12
+
+dblp:hasVersion  goes from the broader (concept) publication to a VersionRelation node,
+and dblp:versionInstance  / dblp:versionConcept  in that node link to the actual
+publications . For simple use, one might just see dblp:isVersionOf  directly
+between two publications as a shortcut (the ontology shows dblp:isVersionOf  as
+connecting two Publications, mapped to Wikidata’s P747 “has edition or translation” ).
+dblp:bibtexType  – indicates the BibTeX entry type of the publication (value is a
+bibtex:Entry  subclass, see above) .
+dblp:numberOfCreators  – how many authors/editors a publication has (an integer).
+dblp:affiliation  – an affiliation string for a creator (DBLP currently stores affiliation as a
+literal, if provided in the metadata). There is also dblp:primaryAffiliation  vs
+dblp:otherAffiliation  (they mentioned removing “otherAffiliation” in favor of just
+repeating affiliation property).
+dblp:publicationNote  – any additional note on the publication (e.g., “invited paper”
+note) .
+dblp:relatedStream  and its sub-properties ( dblp:subStream , dblp:superStream ,
+dblp:predecessorStream , dblp:successorStream ) – these relate Streams (venues) to
+each other (e.g., workshop to main conference, predecessor/successor for renamed or
+merged venues) .
+Creator properties:
+dblp:creatorName  – full name of the person (stored as a string) . This was renamed
+from “fullCreatorName” to just creatorName for simplicity . Each Person has one
+primaryCreatorName  (their preferred name spelling) and possibly other name variants.
+The property primaryCreatorName  is a sub-property indicating the one chosen as
+canonical .
+dblp:orcid  – ORCID identifier for a creator (if known). Stored as a URI (e.g., https://
+orcid.org/XXXX-XXXX-XXXX-XXXX ) or string; it’s under the dblp:identifier  umbrella
+and equivalent to datacite/loc id ORCID . Each dblp:Person can have at most one primary
+ORCID ( primaryHomepage  property family covers ORCID too? Actually, they treat ORCID
+separately).
+dblp:homepage  – URL of the person’s academic homepage  (personal page). There’s
+also dblp:primaryHomepage  to mark the main one if multiple are known . homepage
+is a sub-property of webpage  and equivalent to foaf:homepage .
+dblp:awardWebpage  – URL of a page about an award the person received (if listed; e.g.,
+some authors have awards mentioned).
+dblp:homonymousCreator  – relates two Creator entities that have (or had) the same name
+string (homonyms) . Used to link potentially ambiguous person entries.
+dblp:possibleActualCreator  & dblp:proxyAmbiguousCreator  – used in the
+context of AmbiguousCreator disambiguation: possibleActualCreator  links an
+AmbiguousCreator to a real Person that might correspond to it , and
+proxyAmbiguousCreator  links a Person to an AmbiguousCreator that stands in for them
+in some pubs . These help track which real identities might be hidden within an
+ambiguous name cluster .
+dblp:coAuthorWith  / dblp:coEditorWith  / dblp:coCreatorWith  – symmetric
+properties indicating two creators have worked together as co-authors, co-editors, etc. For
+example, if Person A and B co-wrote a paper , they get a coAuthorWith  link .
+coAuthorWith  is a sub-property of coCreatorWith  (generic collaboration) which is◦
+9192
+93
+◦
+14
+◦
+◦
+◦
+94
+◦
+95
+•
+◦ 96
+97
+98
+◦
+21
+◦ 36
+99
+100
+◦
+◦
+101
+◦
+102
+103
+104
+◦
+105
+13
+
+aligned with foaf:knows . These are convenient for graph queries about collaboration
+networks.
+dblp:primaryAffiliation  – a creator’s primary affiliation (as a string, since institutions
+aren’t entities yet) .
+dblp:creatorNote  – miscellaneous note about the creator (e.g., “also known as X” or
+some remark). Affiliation is actually modeled as a sub-property of creatorNote in the ontology
+(which is a bit of a trick to group it) .
+dblp:primaryHomepage  – main homepage URL if multiple .
+dblp:primaryCreatorName  – the canonical full name spelling (if multiple names) .
+dblp:listedOnTocPage  – for creators, indicates they appear on a TOC page? Actually,
+listedOnTocPage is domain Publication in ontology, maybe ignore for creators.
+Venue (Stream) properties:
+dblp:streamTitle  – the name/title of the stream (e.g., the full name of conference series
+or journal) .
+dblp:primaryStreamTitle  – the current primary title of the stream (if it had former
+names) .
+dblp:formerStreamTitle  – previous title(s) of the stream (if it was renamed) .
+dblp:issn  – ISSN for a journal (as literal or URI) .
+dblp:isbn  – ISBN for a series (e.g., book series) if applicable or for proceedings volumes;
+DBLP assigns ISBN at publication level too (like a proceedings volume ISBN).
+dblp:iso4  – the ISO 4 abbreviation of a journal’s title .
+dblp:indexPage  – URL of the stream’s index page on dblp website (for a conference series
+or journal, the dblp page that lists all volumes) .
+Relationships between streams:
+dblp:relatedStream  – a general relationship between two streams (if they are related in
+some unspecified way) .
+dblp:subStream  / dblp:superStream  – hierarchical “part of” relationships (e.g., a
+workshop series is a subStream of a main conference series) .
+dblp:predecessorStream  / dblp:successorStream  – for when one series continues
+or merges into another .
+These stream relations allow traversal of the venue graph (e.g., find all workshops under a
+conference, or find what a conference was renamed to).
+Cross-reference and identifiers:
+dblp:identifier  – a super-property for any identifier (DOI, ISBN, ISSN, ORCID, Wikidata,
+etc.) . Under it are sub-properties: dblp:doi , dblp:isbn , dblp:issn ,
+dblp:orcid , dblp:wikidata , dblp:omid . This grouping is more for ontology
+neatness; in querying you use the specific ones.
+dblp:wikidata  – links any DBLP entity (publication, person, or venue, since domain is
+Entity) to a Wikidata item URI . As discussed above in wd, this is effectively the same as
+owl:sameAs but specific to Wikidata.
+dblp:wikipedia  – URL of the English Wikipedia page about the entity (if one exists) .
+E.g., many famous researchers have Wikipedia pages; DBLP links Person to Wikipedia URL via
+this property. Domain is Entity (so could apply to a venue as well if it has a page) .
+dblp:homepage  (for creators, already covered) and dblp:awardWebpage  (for creators,
+link to award info page).
+dblp:listedOnTocPage  – likely links a publication or volume to the dblp HTML TOC page
+it’s listed on (internal usage).38
+◦
+106
+◦
+107
+◦ 99
+◦ 98
+◦
+•
+◦
+55
+◦
+55
+◦ 108
+◦ 109
+◦
+◦ 110
+◦
+111
+◦
+◦
+112
+◦
+113
+◦
+114
+◦
+•
+◦
+115
+◦
+50
+◦ 116
+117
+◦
+◦
+14
+
+Miscellaneous:
+dblp:publishedBy  – publisher of a publication (e.g., publisher of a journal or conference
+proceedings). Currently a literal (publisher name) until organizations are entities .
+dblp:publishersAddress  – address of the publisher (if in metadata, also a literal string).
+dblp:thesisAcceptedBySchool  – for a thesis, the school that awarded it (also currently a
+literal string for the institution) .
+dblp:edition  – not explicitly seen, but possibly encoded in the data for books.
+dblp:monthOfPublication  – numeric or textual month when published (if available).
+dblp:omid  – Open Metadata Identifier , as mentioned.
+dblp:versionLabel  / dblp:versionOrdinal  / dblp:versionUri  – metadata on
+VersionRelation (like naming version “arXiv v2” etc.) .
+dblp:coCreatorWith  – general relation for any collaboration (both coAuthorWith and
+coEditorWith are its sub-properties) .
+dblp:possibleActualCreator  / dblp:proxyAmbiguousCreator  – as covered, for
+disambiguation linking.
+dblp:awardNote  or similar – not in list, but awardWebpage covers linking to awards.
+Summary usage:  The DBLP namespace is the core of any SPARQL on the DBLP data. Typical queries
+will:
+Select things by rdf:type  (e.g., ?pub rdf:type dblp:Publication  to get publications, or a
+specific subclass like dblp:Article).
+Traverse relations like dblp:authoredBy  to get authors, or use the Signature pattern ( ?pub
+dblp:hasSignature ?sig . ?sig dblp:signatureCreator ?person . ?sig
+dblp:signatureOrdinal ?order  to get ordered authors).
+Filter by attributes like title or year ( ?pub dblp:title ?t; dblp:yearOfPublication ?y ).
+Use dblp:publishedInStream  to find venue information, then maybe get ?pub
+dblp:publishedInStream ?venue . ?venue rdf:type dblp:Journal  etc.
+Use the equivalences if needed – e.g., you could query for ?pub schema:author ?pers  instead
+of dblp:authoredBy ?pers  because of the equivalence, but using the dblp terms directly is
+straightforward.
+Leverage the identifier links: find a publication by DOI ( ?pub dblp:doi
+"10.1145/1234..."^^xsd:anyURI ) or find a person by ORCID ( ?person dblp:orcid
+<https://orcid.org/....> ).
+Explore coauthor networks via dblp:coAuthorWith  (this is a symmetric relation on Person: ?
+person dblp:coAuthorWith ?colleague  finds co-authors).
+Connect to external data: go from a DBLP entity to Wikidata
+(?person dblp:wikidata wd:QXXXX ) to fetch more info from Wikidata if needed.
+Each of the above namespaces contributes to the rich semantics of the DBLP data. Together , they make the
+DBLP RDF a well-integrated part of the Linked Open Data cloud, enabling advanced queries and data
+integration across bibliographic databases .•
+◦
+118
+◦
+◦
+119
+◦
+◦
+◦
+◦
+84120
+◦
+38
+◦
+◦
+•
+•
+•
+•
+•
+•
+•
+•
+•
+121 4
+15
+
+Updates to the dblp RDF schema – blog.dblp.org
+https://blog.dblp.org/2022/09/09/updates-to-the-dblp-rdf-schema/
+dblp RDF
+schema
+https://dblp.org/rdf/docu/
+Bibliographic Framework Ontology (BIBFRAME) — OntoLearner 0.1.0 documentation
+https://ontolearner .readthedocs.io/benchmarking/education/bibframe.html
+Ontospy > http://purl.org/ontology/bibo/
+https://dcmi.github.io/bibo/
+Microsoft Word - bibtex
+https://www.csd.uoc.gr/~hy566/bibtex/bibtex.pdf
+CiTO, the Citation Typing Ontology
+https://sparontologies.github.io/cito/current/cito.html
+The DataCite Ontology
+https://sparontologies.github.io/datacite/current/datacite.html
+DCMI: Dublin Core™ Metadata Element Set, Version 1.1: Reference ...
+https://www.dublincore.org/specifications/dublin-core/dces/
+FOAF - Wikipedia
+https://en.wikipedia.org/wiki/FOAF
+Literal Reification pattern
+https://sparontologies.github.io/literal/current/literal.html
+The dblp Knowledge Graph: major extension and an update to the RDF
+schema – blog.dblp.org
+https://blog.dblp.org/2024/06/14/the-dblp-knowledge-graph-major-extension-and-an-update-to-the-rdf-schema/
+The dblp Knowledge Graph and SPARQL Endpoint
+https://drops.dagstuhl.de/storage/08tgdk/tgdk-vol002/tgdk-vol002-issue002/TGDK.2.2.3/TGDK.2.2.3.pdf169 77 83 97
+2 4 5 7 8 910 11 12 14 20 21 23 24 25 26 28 29 30 31 33 34 35 36 37 38 39 45 46 47
+48 49 50 51 52 53 56 57 58 59 60 61 62 63 64 70 71 73 74 75 76 78 79 80 81 82 84 87 88 89
+90 91 92 93 94 96 98 99100 101 102 103 105 106 107 108 109 110 111 115 116 117 118 119 120 121
+3
+6
+13
+15 16
+17 18 19 22
+27
+32
+40 41 42 43 44
+54 55 72 85 86 95112 113 114
+65 66 67 68104
+16

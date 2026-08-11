@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Who are the highly cited coauthors of Hannah Bast?",
+    "entities": [
+      { "type": "person", "label": "Hannah Bast", "uri": "https://dblp.org/pid/b/HannahBast" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> PREFIX cito: <http://purl.org/spar/cito/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?name ?affiliation (COUNT(DISTINCT ?cite) as ?cites) (?coauthor as ?dblp) (SAMPLE(?orcids) as ?orcid) WHERE { VALUES ?author { <https://dblp.org/pid/b/HannahBast> } . ?copubl dblp:authoredBy ?author . ?copubl dblp:authoredBy ?coauthor . FILTER ( ?author != ?coauthor ) . ?coauthor rdfs:label ?name . OPTIONAL { ?coauthor dblp:orcid ?orcids . } OPTIONAL { ?coauthor dblp:primaryAffiliation ?affiliation . } ?publ dblp:authoredBy ?coauthor . ?publ dblp:omid ?omid . ?cite cito:hasCitedEntity ?omid . } GROUP BY ?name ?affiliation ?coauthor ORDER BY DESC(?cites) LIMIT 10"
+  },
+  {
+    "question": "Who are the authors of the paper named: Attentions is all you need?",
+    "entities": [
+      { "type": "publication", "label": "Ashish Vaswani et al.: Attention is All you Need. (2017)", "uri": "https://dblp.org/rec/conf/nips/VaswaniSPUJGKP17" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> SELECT ?author ?author_name WHERE { VALUES ?publication { <https://dblp.org/rec/conf/nips/VaswaniSPUJGKP17> } . ?publication dblp:authoredBy ?author . ?author dblp:creatorName ?author_name . }"
+  },
+  {
+    "question": "Return the 10 most cited papers of Nicholas Carlini",
+    "entities": [
+      { "type": "person", "label": "Nicholas Carlini", "uri": "https://dblp.org/pid/145/1806" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> PREFIX cito: <http://purl.org/spar/cito/> SELECT ?paper ?title (COUNT(?cites) AS ?citation_count) WHERE { ?paper dblp:authoredBy <https://dblp.org/pid/145/1806> . ?paper dblp:title ?title . ?paper dblp:omid ?omid . ?cite cito:hasCitedEntity ?omid . } GROUP BY ?paper ?title ORDER BY DESC(?citation_count) LIMIT 10"
+  },
+  {
+    "question": "Database papers published in the Semantic Web Journal.",
+    "entities": [
+      { "type": "publication", "label": "Keith G. Jeffery: Database Conference Calendar / Calls For Papers. (1993)", "uri": "https://dblp.org/rec/journals/sigmod/Jeffery93" },
+      { "type": "venue", "label": "Journal of Web Semantics", "uri": "https://dblp.org/streams/journals/ws" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> SELECT ?paper ?title WHERE { ?paper dblp:publishedInStream <https://dblp.org/streams/journals/ws> . ?paper dblp:bibtexType \"article\" . ?paper dblp:title ?title . }"
+  },
+  {
+    "question": "Which papers did Ian Goodfellow publish after 2018?",
+    "entities": [
+      { "type": "person", "label": "Ian J. Goodfellow", "uri": "https://dblp.org/pid/43/7940" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> SELECT ?title ?year WHERE { VALUES ?author { <https://dblp.org/pid/43/7940> } ?publication dblp:authoredBy ?author . ?publication dblp:title ?title . ?publication dblp:yearOfPublication ?year . FILTER (?year > 2018) }"
+  },
+  {
+    "question": "What are the most cited papers on federated learning?",
+    "entities": [
+      { "type": "publication", "label": "Tianli Gao et al.: Federated Learning Meets Network Coding: Efficient Coded Hierarchical Federated Learning. (2024)", "uri": "https://dblp.org/rec/conf/itw/GaoLLTG24" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> PREFIX cito: <http://purl.org/spar/cito/> SELECT ?title (COUNT(?cite) AS ?cites) WHERE { ?publ dblp:title ?title ; dblp:omid ?omid . ?cite cito:hasCitedEntity ?omid . } GROUP BY ?title ORDER BY DESC(?cites) LIMIT 10"
+  },
+  {
+    "question": "List all coauthors of Yoshua Bengio.",
+    "entities": [
+      { "type": "person", "label": "Yoshua Bengio", "uri": "https://dblp.org/pid/56/953" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> SELECT ?coauthor ?coauthor_name WHERE { VALUES ?author { <https://dblp.org/pid/56/953> } . ?publication dblp:authoredBy ?author . ?publication dblp:authoredBy ?coauthor . FILTER (?author != ?coauthor) ?coauthor dblp:creatorName ?coauthor_name . }"
+  },
+  {
+    "question": "How many papers has Andrew Ng published in NeurIPS?",
+    "entities": [
+      { "type": "person", "label": "Andrew Y. Ng", "uri": "https://dblp.org/pid/n/AndrewYNg" },
+      { "type": "venue", "label": "Conference on Neural Information Processing Systems (NeurIPS)", "uri": "https://dblp.org/streams/conf/nips" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> SELECT (COUNT(?paper) AS ?numberOfPapers) WHERE { VALUES ?author { <https://dblp.org/pid/n/AndrewYNg> } VALUES ?venue { <https://dblp.org/streams/conf/nips> } ?paper dblp:authoredBy ?author . ?paper dblp:publishedInStream ?venue . }"
+  },
+  {
+    "question": "Show papers that cite “Attention Is All You Need.”",
+    "entities": [
+      { "type": "publication", "label": "Cem Subakan et al.: Attention Is All You Need In Speech Separation. (2021)", "uri": "https://dblp.org/rec/conf/icassp/SubakanRCBZ21" }
+    ],
+    "query": "PREFIX dblp: <https://dblp.org/rdf/schema#> PREFIX cito: <http://purl.org/spar/cito/> SELECT ?citing_paper ?citing_paper_title WHERE { VALUES ?cited_paper { <https://dblp.org/rec/conf/icassp/SubakanRCBZ21> } ?citing_paper cito:cites ?cited_paper . ?citing_paper dblp:title ?citing_paper_title . }"
+  }
+]

@@ -1,0 +1,1645 @@
+{
+    "answers": [
+        {
+            "id": "Q0001",
+            "query_type": "SINGLE_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/amcis/ShahMAA22"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/access/MuhammadAO23"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/access/MuhammadAO24"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/cma/SabirSMAB17"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/fdata/HartNMLHD19"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/fdata/NartowtHMLSD20"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/frai/AhmedNKQHAM24"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/frai/HartYHLNMD20"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/frai/HartYNRSMD22"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/frai/MuhammadHNFJLD19"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ijmi/ShahLHFM24"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ipm/AhmadSLM26"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/itp/ShahML23"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/kbs/AhmadSLNM25"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0002",
+            "query_type": "SINGLE_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "http://www.wikidata.org/entity/Q16728514"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0003",
+            "query_type": "SINGLE_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Federal University of Rio Grande do Sul, Porto Alegre, Brazil"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0004",
+            "query_type": "SINGLE_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://scholar.google.com/citations?user=J_XhIsgAAAAJ"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0005",
+            "query_type": "SINGLE_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ijbidm/GrabmeierL07"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ijces/LambeLN03"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0351",
+            "query_type": "MULTI_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0352",
+            "query_type": "MULTI_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "FDG"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "GEM"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ICIDS (1)"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ICPEC"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "JCSG"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0353",
+            "query_type": "MULTI_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "CoRR"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "EUROSPEECH"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ExLing"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ICPhS"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "INTERSPEECH"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "J. Cogn. Neurosci."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "J. Quant. Linguistics"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "NeuroImage"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Speech Commun."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "WOCCI"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0354",
+            "query_type": "MULTI_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/neuroimage/Okon-SingerPSBZNH11"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0355",
+            "query_type": "MULTI_FACT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "answer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ACC"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Auton. Robots"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "CDC"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "CDC/ECC"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "CoRR"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "DARS"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ECMR"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Eur. J. Control"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Found. Trends Robotics"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "FSR"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ICRA"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ICVS"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "IEEE Robotics Autom. Lett."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "IEEE Robotics Autom. Mag."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "IEEE Trans. Autom. Control."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "IEEE Trans. Robotics"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "IEEE Trans. Robotics Autom."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Inf. Fusion"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Int. J. Comput. Vis."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Int. J. Robotics Res."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "IROS"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ISRR"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "J. Field Robotics"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "MED"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "MRS"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "ROBIO"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Robotics Auton. Syst."
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "Robotics: Science and Systems"
+                            }
+                        },
+                        {
+                            "answer": {
+                                "type": "literal",
+                                "value": "SIAM Conf. on Control and its Applications"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0701",
+            "query_type": "DOUBLE_INTENT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "firstanswer",
+                        "secondanswer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/mfcs/Kwasowiec74"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "1975"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/iandc/Kwasowiec70"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "1970"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0702",
+            "query_type": "DOUBLE_INTENT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "firstanswer",
+                        "secondanswer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analytic Variations on Bucket Selection and Sorting."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Balancing m-ary search trees with compressions on the fringe."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Distances in random digital search trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Erratum: The size of random bucket trees via urn models."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Limit laws for terminal nodes in random circuits with restricted fan-out: a family of graphs generalizing binary search trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "On the Average Internal Path Length of  m  -ary Search Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Random sprouts as internet models, and P\u00f3lya processes."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The size of random bucket trees via urn models."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Acta Informatica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Throughput analysis in wireless networks with multiple users and multiple channels."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Adv. Appl. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Local and global degree profiles of randomly grown self-similar hooking networks under uniform and preferential attachment."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Adv. Appl. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Two-color balanced affine urn models with multiple drawings."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Algorithmica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "A Limit Law for Outputs in Random Recursive Circuits."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Algorithmica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analysis of Quickselect Under Yaroslavskiy's Dual-Pivoting Algorithm."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Algorithmica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Probabilistic Analysis of MULTIPLE QUICK SELECT."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Algorithmica"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The Joint Distribution of the Three Types of Nodes in Uniform Binary Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Am. Math. Mon."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Bar Bets and Generating Functions: The Distribution of the Separation of Two Distinct Card Ranks."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "ANALCO"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Average-case Analysis of Moves in Quick Select."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "ANALCO"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Perpetuities in fair leader election algorithms."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "ANALCO"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Phases in the Mixing of Gases via the Ehrenfest Urn Model."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "ANALCO"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Survivors in Leader Election Algorithms."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "ANALCO"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The Class of Tenable Zero-balanced Polya Urn Schemes: Characterization and Gaussian Phases."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Appl. Math. Lett."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Asymptotic distribution of two-protected nodes in random binary search trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Compositionality"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Degrees in random m-ary hooking networks."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Comput. J."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The Expected Distribution of Degrees in Random Binary Search Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "CoRR"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analysis of Quickselect under Yaroslavskiy's Dual-Pivoting Algorithm."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "CoRR"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Exactly Solvable Balanced Tenable Urns with Random Entries via the Analytic Methodology"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "CoRR"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Probabilistic analysis of arithmetic coding showing its robustness."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Discret. Appl. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analysis of a generalized Friedman's urn with multiple drawings."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Discret. Appl. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Corrigendum."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Discret. Appl. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "On the joint distribution of the insertion path length and the number of comparisons in search trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Discret. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Paths in m-ary interval trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "EDBT"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "JISC: Adaptive Stream Processing Using Just-In-Time State Completion."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Inf. Process. Lett."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Insertion depth in power-weight trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Inf. Process. Lett."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "On Rotations in Fringe-Balanced Binary Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Int. J. Comput. Math. Comput. Syst. Theory"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Average measures in polymer graphs."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Int. J. Comput. Math. Comput. Syst. Theory"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Some empirical and theoretical attributes of random multi-hooking networks."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Int. J. Comput. Math. Comput. Syst. Theory"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Some properties of exponential trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Int. J. Found. Comput. Sci."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Storage Overhead of O-Trees, B-Trees and Prefix B-Trees: A Comparative Analysis."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Algorithms"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "A multivariate view of random bucket digital search trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Algorithms"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analysis of the Space of Search Trees under the Random Insertion Algorithm."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "A Binomial Splitting Process in Connection with Corner Parking Problems."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "A model for the spreading of fake news."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Asymptotic Properties of Protected Nodes in Random Recursive Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Degrees in random self-similar bipolar networks."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "On affine multicolor urns grown under multiple drawing."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The containment profile of hyper-recursive trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The Gini index of random trees with an application to caterpillars."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "J. Appl. Probab."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Trees grown under young-age preferential attachment."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Netw. Sci."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Exponentially preferential trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Netw. Sci."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Random networks grown by fusing edges via urns."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "RAIRO Theor. Informatics Appl."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analysis of Quickselect: An Algorithm for Order Statistics."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Random Struct. Algorithms"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "A stochastic model for solitons."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Random Struct. Algorithms"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Analysis of Boyer-Moore-Horspool string-matching heuristic."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Random Struct. Algorithms"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Asymptitic Hoint Normality of Outdegrees of Nodes in Random Recursive Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Random Struct. Algorithms"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "On the Structure of Random Plane-oriented Recursive Trees and Their Branches."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "SIAM J. Comput."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "The Joint Distribution of Elastic Buckets in Multiway Search Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "SIAM J. Discret. Math."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Phase Changes in Subtree Varieties in Random Recursive and Binary Search Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Theor. Comput. Sci."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Distributional analysis of swaps in Quick Select."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Theor. Comput. Sci."
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Probabilistic Analysis of Bucket Recursive Trees."
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "literal",
+                                "value": "Wiley-Interscience series in discrete mathematics and optimization"
+                            },
+                            "secondanswer": {
+                                "type": "literal",
+                                "value": "Evolution of random search trees."
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0703",
+            "query_type": "DOUBLE_INTENT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "firstanswer",
+                        "secondanswer"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0704",
+            "query_type": "DOUBLE_INTENT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "firstanswer",
+                        "secondanswer"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q0705",
+            "query_type": "DOUBLE_INTENT",
+            "answer": {
+                "head": {
+                    "vars": [
+                        "firstanswer",
+                        "secondanswer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/books/sp/08/SjobergDAH08"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2008"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/ease/KampenesAD08"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2008"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/ecoop/AndaSJ01"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2001"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/enase/BenestadAA09"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2009"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/enase/BenestadAA09a"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2010"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/esem/SjobergAM12"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2012"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/esem/YamashitaBAASM09"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2009"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/esernet/SjobergAADJKV03"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2003"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/hicss/SyversenAS03"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2003"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/icse/MohagheghiAC05"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2005"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/icsm/Anda07"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2007"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/isese/AndaBH05"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2005"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/isese/AndaH06"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2006"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/isese/AndaS03"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2003"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/isese/SjobergAADJKKV02"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2002"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/iwpse/Anda07"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2007"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/metrics/HoveA05"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2005"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/profes/AndaAR02"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2002"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/profes/BenestadAA06"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2006"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/seke/AndaS02"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2002"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/conf/uml/AndaDSJ01"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2001"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ese/AndaHGT06"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2006"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ese/AndaS05"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2005"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ese/BenestadAA10"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2010"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/ese/KarahasanovicAAHJSW05"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2005"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/infsof/AndaHS09"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2009"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/iwc/FolstadAS10"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2010"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/smr/BenestadAA09"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2009"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/tse/AndaSM09"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2009"
+                            }
+                        },
+                        {
+                            "firstanswer": {
+                                "type": "uri",
+                                "value": "https://dblp.org/rec/journals/tse/SjobergYAMD13"
+                            },
+                            "secondanswer": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+                                "type": "literal",
+                                "value": "2013"
+                            }
+                        }
+                    ]
+                },
+                "boolean": null
+            }
+        },
+        {
+            "id": "Q1051",
+            "query_type": "BOOLEAN",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": true
+            }
+        },
+        {
+            "id": "Q1052",
+            "query_type": "BOOLEAN",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": true
+            }
+        },
+        {
+            "id": "Q1053",
+            "query_type": "BOOLEAN",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": false
+            }
+        },
+        {
+            "id": "Q1054",
+            "query_type": "BOOLEAN",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": false
+            }
+        },
+        {
+            "id": "Q1055",
+            "query_type": "BOOLEAN",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": true
+            }
+        },
+        {
+            "id": "Q1056",
+            "query_type": "BOOLEAN",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": true
+            }
+        },
+        {
+            "id": "Q1403",
+            "query_type": "NEGATION",
+            "answer": {
+                "head": {},
+                "results": {},
+                "boolean": false
+            }
+        }
+    ]
+}

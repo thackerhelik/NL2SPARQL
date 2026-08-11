@@ -1,0 +1,378 @@
+Evaluation Complete! Accuracy: 68.00% (17/25)
+
+================================================================================
+Evaluation Results for 25 questions:
+Question ID: Q0001
+Question Type: SELECT
+Question: What are the papers written by the person Wazir Muhammad?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ?pub ?title WHERE {
+  ?pub dblp:authoredBy <https://dblp.org/pid/211/3355> .
+  OPTIONAL { ?pub dblp:title ?title }
+}
+Expected Result Count: 14
+Actual Result Count: 14
+--------------------------------------------------------------------------------
+Question ID: Q0002
+Question Type: SELECT
+Question: What is the Wikidata ID of Yvo Desmedt?
+Correct: ❌
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+SELECT ?wikidataID WHERE {
+  <https://dblp.org/pid/d/YvoDesmedt> dblp:wikidata ?uri .
+  BIND( REPLACE(STR(?uri), "^.*(Q[0-9]+)$", "$1") AS ?wikidataID )
+}
+Expected Result Count: 1
+Actual Result Count: 1
+--------------------------------------------------------------------------------
+Question ID: Q0003
+Question Type: SELECT
+Question: What is the primary affiliation of Leandro Krug Wives?
+Correct: ✅
+Generated Query:
+PREFIX d: <https://dblp.org/rdf/schema#>
+SELECT ?affiliation WHERE {
+  <https://dblp.org/pid/w/LeandroKrugWives> d:primaryAffiliation ?affiliation .
+}
+Expected Result Count: 1
+Actual Result Count: 1
+--------------------------------------------------------------------------------
+Question ID: Q0004
+Question Type: SELECT
+Question: What is the webpage of Ravi Kumar?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ?webpage WHERE {
+  <https://dblp.org/pid/k/RaviKumar> dblp:webpage ?webpage .
+}
+Expected Result Count: 1
+Actual Result Count: 1
+--------------------------------------------------------------------------------
+Question ID: Q0005
+Question Type: SELECT
+Question: Which publications did Lambe, Larry A. author?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ?pub ?title WHERE {
+  ?pub dblp:authoredBy <https://dblp.org/pid/13/378> .
+  OPTIONAL { ?pub dblp:title ?title . }
+}
+Expected Result Count: 2
+Actual Result Count: 2
+--------------------------------------------------------------------------------
+Question ID: Q0351
+Question Type: SELECT
+Question: Which papers did Dan O. Popa publish in the last 9 years?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?pub ?title ?year WHERE {
+  ?pub dblp:authoredBy <https://dblp.org/pid/61/5165> .
+  ?pub dblp:title ?title .
+  ?pub dblp:yearOfPublication ?year .
+  FILTER (xsd:integer(?year) >= 2017)
+}
+Expected Result Count: 0
+Actual Result Count: 0
+--------------------------------------------------------------------------------
+Question ID: Q0352
+Question Type: SELECT
+Question: Mention the venues in which Alberto R. published.
+Correct: ✅
+Generated Query:
+PREFIX dl: <https://dblp.org/rdf/schema#>
+SELECT DISTINCT ?venue WHERE {
+  ?pub a dl:Publication .
+  ?pub dl:authoredBy <https://dblp.org/pid/274/3007> .
+  { ?pub dl:publishedIn ?venue . }
+  UNION
+  { ?pub dl:publishedInJournal ?venue . }
+  UNION
+  { ?pub dl:publishedInSeries ?venue . }
+  UNION
+  { ?pub dl:publishedInStream ?venue . }
+  UNION
+  { ?pub dl:publishedInBook ?venue . }
+  UNION
+  { ?pub dl:publishedInBookChapter ?venue . }
+  UNION
+  { ?pub dl:publishedInJournalVolume ?venue . }
+  UNION
+  { ?pub dl:publishedInJournalVolumeIssue ?venue . }
+  UNION
+  { ?pub dl:publishedInSeriesVolume ?venue . }
+}
+Expected Result Count: 5
+Actual Result Count: 13
+--------------------------------------------------------------------------------
+Question ID: Q0353
+Question Type: SELECT
+Question: What are the venues in which Niels O. Schiller published?
+Correct: ❌
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT DISTINCT ?venue WHERE {
+  ?pub a dblp:Publication .
+  ?pub dblp:authoredBy <https://dblp.org/pid/64/1423> .
+  ?pub dblp:publishedInStream ?venue .
+}
+Expected Result Count: 10
+Actual Result Count: 10
+--------------------------------------------------------------------------------
+Question ID: Q0354
+Question Type: SELECT
+Question: Which papers did Eti Ben-Simon and Andrey Z. write together?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ?pub ?title WHERE {
+  ?pub a dblp:Publication .
+  ?pub dblp:authoredBy <https://dblp.org/pid/83/11395> .
+  ?pub dblp:authoredBy <https://dblp.org/pid/83/10230> .
+  OPTIONAL { ?pub dblp:title ?title . }
+}
+Expected Result Count: 1
+Actual Result Count: 1
+--------------------------------------------------------------------------------
+Question ID: Q0355
+Question Type: SELECT
+Question: Mention the venues in which Agostino M. published.
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT DISTINCT ?venue WHERE {
+  VALUES ?person { <https://dblp.org/pid/67/6850> }
+  ?pub dblp:authoredBy ?person .
+  { ?pub dblp:publishedIn ?venue . }
+  UNION { ?pub dblp:publishedInJournal ?venue . }
+  UNION { ?pub dblp:publishedInSeries ?venue . }
+  UNION { ?pub dblp:publishedInStream ?venue . }
+}
+Expected Result Count: 29
+Actual Result Count: 58
+--------------------------------------------------------------------------------
+Question ID: Q0701
+Question Type: N/A
+Question: None
+Correct: ❌
+Generated Query:
+N/A
+--------------------------------------------------------------------------------
+Question ID: Q0702
+Question Type: SELECT
+Question: List the titles of the papers that Hosam M. Mahmoud published and in which venues.
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ?title ?venue WHERE {
+  ?pub dblp:authoredBy <https://dblp.org/pid/m/HosamMMahmoud> ;
+       dblp:title ?title ;
+       dblp:publishedIn ?venue .
+}
+Expected Result Count: 60
+Actual Result Count: 60
+--------------------------------------------------------------------------------
+Question ID: Q0703
+Question Type: SELECT
+Question: What are the titles of the papers that Andrew P. Black published in the last six years and in which venues?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?title ?venue ?year WHERE {
+  ?pub a dblp:Publication ;
+       dblp:authoredBy <https://dblp.org/pid/b/APBlack> ;
+       dblp:title ?title ;
+       dblp:yearOfPublication ?year .
+  OPTIONAL { ?pub dblp:publishedIn ?venue . }
+  FILTER (xsd:integer(?year) >= 2020 && xsd:integer(?year) <= 2025)
+}
+ORDER BY DESC(?year)
+Expected Result Count: 0
+Actual Result Count: 0
+--------------------------------------------------------------------------------
+Question ID: Q0704
+Question Type: SELECT
+Question: Name the co-authors of Dingxuan Li in the last three years and where are they affiliated?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?coName ?affiliation WHERE {
+  VALUES ?li { <https://dblp.org/pid/300/8467> }
+  ?pub dblp:authoredBy ?li .
+  ?pub dblp:yearOfPublication ?year .
+  FILTER(xsd:integer(?year) >= 2023)
+  ?pub dblp:authoredBy ?co .
+  FILTER(?co != ?li)
+  ?co dblp:creatorName ?coName .
+  OPTIONAL { ?co dblp:affiliation ?affiliation . }
+}
+Expected Result Count: 0
+Actual Result Count: 0
+--------------------------------------------------------------------------------
+Question ID: Q0705
+Question Type: SELECT
+Question: Mention the papers published by B. Anda and in which year.
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ?paper ?title ?year WHERE {
+  ?paper a dblp:Publication .
+  ?paper dblp:authoredBy <https://dblp.org/pid/91/2927> .
+  ?paper dblp:title ?title .
+  ?paper dblp:yearOfPublication ?year .
+}
+Expected Result Count: 30
+Actual Result Count: 30
+--------------------------------------------------------------------------------
+Question ID: Q1051
+Question Type: ASK
+Question: Did Wanlei Zhou and Chowdhury, Morshed U. co-author the paper 'MVGL Analyser for Multi-classifier Based Spam Filtering System'? 
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+ASK WHERE {
+  <https://dblp.org/rec/conf/ACISicis/IslamZC09> dblp:authoredBy ?c1 , ?c2 .
+  VALUES ?c1 { <https://dblp.org/pid/92/2939> }
+  VALUES ?c2 { <https://dblp.org/pid/74/4874> }
+}
+Expected Boolean: True
+Actual Boolean: True
+--------------------------------------------------------------------------------
+Question ID: Q1052
+Question Type: ASK
+Question: Did Andreas Rauh publish the paper 'Observer-based predictive temperature control for distributed heating systems based on the method of integrodifferential relations' in MMAR?
+Correct: ❌
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+ASK {
+  <https://dblp.org/rec/conf/mmar/RauhSDA12> dblp:authoredBy <https://dblp.org/pid/85/1529> .
+  <https://dblp.org/rec/conf/mmar/RauhSDA12> dblp:publishedIn ?venue .
+  FILTER CONTAINS(LCASE(?venue), "mmar")
+}
+Expected Boolean: False
+Actual Boolean: True
+--------------------------------------------------------------------------------
+Question ID: Q1054
+Question Type: ASK
+Question: Did Ye, Xinyue publish the paper 'Assessment of drought occurrence in Bei-bu wheat districts, China between 1960 and 2012' in the last 7 years?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+ASK {
+  <https://dblp.org/rec/conf/geoinformatics/ZhaiSYYH17> a dblp:Publication ;
+      dblp:yearOfPublication ?year ;
+      dblp:authoredBy <https://dblp.org/pid/118/4187> .
+  FILTER(?year >= 2019 && ?year <= 2025)
+}
+Expected Boolean: False
+Actual Boolean: False
+--------------------------------------------------------------------------------
+Question ID: Q1055
+Question Type: ASK
+Question: Did Banville, H. J. publish the paper 'Self-supervised representation learning from electroencephalography signals' in CoRR?    
+Correct: ❌
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+ASK WHERE {
+  <https://dblp.org/rec/journals/corr/abs-1911-05419> dblp:authoredBy <https://dblp.org/pid/160/4305> .
+  <https://dblp.org/rec/journals/corr/abs-1911-05419> dblp:publishedIn ?venue .
+  FILTER(CONTAINS(LCASE(?venue), "corr"))
+}
+Expected Boolean: False
+Actual Boolean: True
+--------------------------------------------------------------------------------
+Question ID: Q1056
+Question Type: ASK
+Question: Did Xiaotong Z. publish the paper 'Book Rating Model Based on Self-Attention and LSTM' in ICRAI?
+Correct: ❌
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+ASK WHERE {
+  <https://dblp.org/rec/conf/icrai/Zhao20> dblp:authoredBy <https://dblp.org/pid/197/3519> .
+}
+Expected Boolean: False
+Actual Boolean: True
+--------------------------------------------------------------------------------
+Question ID: Q1403
+Question Type: N/A
+Question: None
+Correct: ❌
+Generated Query:
+N/A
+--------------------------------------------------------------------------------
+Question ID: Q1407
+Question Type: SELECT
+Question: Was the paper 'SoundFactory: a framework for generating datasets for deep learning SELD algorithms' not published by Alberto Scionti in CF?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+SELECT ?pub WHERE {
+  BIND(<https://dblp.org/rec/conf/cf/SciontiCT20> AS ?pub)
+  FILTER NOT EXISTS {
+    ?pub dblp:authoredBy <https://dblp.org/pid/45/7691> .
+    ?pub dblp:publishedIn "CF" .
+  }
+}
+Expected Result Count: 0
+Actual Result Count: 0
+--------------------------------------------------------------------------------
+Question ID: Q1408
+Question Type: SELECT
+Question: Was the paper 'A mechanism for replicated data consistency in mobile computing environments' not co-authored by Lifschitz, S\u00E9rgio and A. Brayner?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+SELECT ( NOT EXISTS {
+  <https://dblp.org/rec/conf/sac/MonteiroBL07> dblp:authoredBy <https://dblp.org/pid/l/SLifschitz> .
+  <https://dblp.org/rec/conf/sac/MonteiroBL07> dblp:authoredBy <https://dblp.org/pid/b/AngeloBrayner> .
+} AS ?notCoAuthored )
+WHERE {}
+Expected Result Count: 0
+Actual Result Count: 1
+--------------------------------------------------------------------------------
+Question ID: Q1409
+Question Type: ASK
+Question: Wasn't the paper 'Bayesian user modeling: evaluation metrics of an adaptive user interface' published by the author Abid, Mohamed in International Conference on Machine Vision?
+Correct: ✅
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+ASK WHERE {
+  <https://dblp.org/rec/conf/icmv/RimAMA16> dblp:authoredBy <https://dblp.org/pid/71/1639> .
+  <https://dblp.org/rec/conf/icmv/RimAMA16> dblp:publishedIn ?venue .
+  FILTER regex(?venue, "International Conference on Machine Vision", "i")
+}
+Expected Boolean: False
+Actual Boolean: False
+--------------------------------------------------------------------------------
+Question ID: Q1410
+Question Type: ASK
+Question: Did Bashir, Murwan not publish the paper 'Convex Combination of LMF and ZA-LMF for Variable Sparse System Identification' in ACSSC?
+Correct: ❌
+Generated Query:
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+
+ASK WHERE {
+  BIND(<https://dblp.org/rec/conf/acssc/IqbalBZA19> AS ?pub)
+  BIND(<https://dblp.org/pid/176/8132> AS ?person)
+  ?pub dblp:authoredBy ?person .
+  ?pub dblp:publishedIn ?venue .
+  FILTER(CONTAINS(LCASE(STR(?venue)), "acssc"))
+}
+Expected Boolean: False
+Actual Boolean: True
+--------------------------------------------------------------------------------

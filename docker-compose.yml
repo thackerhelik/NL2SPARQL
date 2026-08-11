@@ -1,0 +1,44 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        INSTALL_DEV: "true"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend/src:/app/src
+      - ./backend/pyproject.toml:/app/pyproject.toml:ro
+      - ./fuseki/schema:/app/fuseki-schema:ro
+      - ./backend/tests/data:/app/backend-test-data:ro
+    env_file:
+      - .env
+    environment:
+      - PRELOAD_SCHEMAS=${PRELOAD_SCHEMAS:-DBLP,PERSONS}
+      - PYTHONUNBUFFERED=1
+    command: sh -c "pip install --no-cache-dir -U '.[dev]' && uvicorn src.main:app --host 0.0.0.0 --port 8080 --reload"
+
+  fuseki:
+    build:
+      context: ./fuseki
+      dockerfile: Dockerfile
+    ports:
+      - "3030:3030"
+    restart: always
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    environment:
+      - PORT=3000
+      - NEXT_PUBLIC_API_URL=/api
+      - NEXT_PROXY_TARGET=http://backend:8080
+      - WATCHPACK_POLLING=true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/frontend
+      - /frontend/node_modules
+    depends_on:
+      - backend

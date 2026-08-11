@@ -1,0 +1,34 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.5
+    hooks:
+      - id: ruff
+        args: [--fix]
+        files: ^backend/
+        types_or: [python, pyi]
+      - id: ruff-format
+        files: ^backend/
+        types_or: [python, pyi]
+  - repo: local
+    hooks:
+      - id: frontend-prettier
+        name: Frontend Prettier
+        entry: bash -c 'cd frontend && npx prettier --write --list-different .'
+        language: system
+        pass_filenames: false
+        files: ^frontend/
+        exclude: node_modules
+      - id: frontend-eslint
+        name: Frontend ESLint
+        entry: bash -c 'cd frontend && npx eslint --fix "src/**/*.{js,jsx,ts,tsx}" || true'
+        language: system
+        pass_filenames: false
+        files: ^frontend/
+        exclude: node_modules
+        always_run: true

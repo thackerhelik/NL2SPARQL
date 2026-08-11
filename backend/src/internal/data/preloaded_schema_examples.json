@@ -1,0 +1,25 @@
+{
+  "DBLP": [
+    {
+      "question": "Who are the authors of \"Attention Is All You Need\"?",
+      "sparql": "PREFIX dblp: <https://dblp.org/rdf/schema#>\nSELECT ?author ?authorName WHERE {\n  BIND (<https://dblp.org/rec/journals/corr/VaswaniSPUJGKP17> AS ?pub)\n  ?pub dblp:authoredBy ?author .\n  OPTIONAL { ?author dblp:creatorName ?authorName . }\n}"
+    },
+    {
+      "question": "Did Semih Cayci write Finite-Time Analysis of Gradient Descent for Shallow Transformers?",
+      "sparql": "PREFIX dblp: <https://dblp.org/rdf/schema#>\nASK WHERE {\n   <https://dblp.org/rec/journals/corr/abs-2601-16514> dblp:authoredBy <https://dblp.org/pid/135/4985> . }"
+    },
+    {
+      "question": "Return all venues in which Nicholas Carlini published.",
+      "sparql": "PREFIX dblp: <https://dblp.org/rdf/schema#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?venueAsIRI\nWHERE {\n  BIND (<https://dblp.org/pid/145/1806> AS ?creator)\n  ?paper a dblp:Publication .\n  ?paper dblp:authoredBy ?creator .\n ?paper dblp:publishedInStream ?venueAsIRI .\n}"
+    },
+    {
+      "question": "Return all co-authors of the last 7 years of Hannah Bast",
+      "sparql": "PREFIX dblp: https://dblp.org/rdf/schema# \nPREFIX xsd: http://www.w3.org/2001/XMLSchema# \nSELECT DISTINCT ?coauthor WHERE { \n  BIND (https://dblp.org/pid/b/HannahBast AS ?author) \n  ?pub a dblp:Publication ; \n       dblp:authoredBy ?author ; \n       dblp:authoredBy ?coauthor ; \n       dblp:yearOfPublication ?y . \n  FILTER(?coauthor != ?author) \n  FILTER(STR(?y) > STR(YEAR(NOW()) - 7)) \n}"
+    },
+    {
+      "question": "Return citations in Proofs that yield nothing but their validity and a methodology of cryptographic protocol design.",
+      "sparql": "PREFIX dblp: <https://dblp.org/rdf/schema#>\n PREFIX cito: <http://purl.org/spar/cito/>\n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT ?label (?ref as ?dblp) (SAMPLE(?dois) as ?doi)  WHERE {\n   VALUES ?publ { <https://dblp.org/rec/books/acm/19/0001MW19> }\n   ?publ dblp:omid ?publ_omid .\n   ?cite cito:hasCitingEntity ?publ_omid ; cito:hasCitedEntity ?ref_omid .\n   ?ref dblp:omid ?ref_omid ; a dblp:Publication . \n   OPTIONAL {\n     ?ref rdfs:label ?label .\n     OPTIONAL { ?ref dblp:doi ?dois . }\n   }\n }\n GROUP BY ?label ?ref "
+    }
+  ],
+  "PERSONS": []
+}

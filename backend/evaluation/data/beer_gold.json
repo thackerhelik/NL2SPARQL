@@ -1,0 +1,2975 @@
+[
+    {
+        "id": "Q0001",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Who is the creator of the beer dataset definition?"
+        },
+        "paraphrased_question": {
+            "string": "Who created the dataset definition for the beer ontology?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#datasetdefinition> <http://purl.org/dc/terms/creator> ?answer }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "beer dataset definition",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "beer dataset definition",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "datasetdefinition",
+                "iri": "https://rdf.ag/o/beer#datasetdefinition"
+            }
+        ],
+        "relations": [
+            "<http://purl.org/dc/terms/creator>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#myra"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#singer"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#warren"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 40,
+                "result-size-total": 3
+            }
+        }
+    },
+    {
+        "id": "Q0002",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Which class is equivalent to Beer?"
+        },
+        "paraphrased_question": {
+            "string": "What is the equivalent class of Beer?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#Beer> <http://www.w3.org/2002/07/owl#equivalentClass> ?answer }"
+        },
+        "template_id": "TC02",
+        "mentions": [
+            {
+                "text": "Beer",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Beer",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Beer",
+                "iri": "https://rdf.ag/o/beer#Beer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#equivalentClass>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "http://purl.obolibrary.org/obo/FOODON_00001260"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 11,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0109",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Belgian Beer?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Belgian Beer?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#BelgianBeer> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Belgian Beer",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Belgian Beer",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Belgian Beer",
+                "iri": "https://rdf.ag/o/beer#BelgianBeer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#BelgianAle"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0112",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of British Style Ale?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of British Style Ale?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#EnglishStyleAle> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "British Style Ale",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "British Style Ale",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "British Style Ale",
+                "iri": "https://rdf.ag/o/beer#EnglishStyleAle"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#EnglishPaleAle"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0105",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Liquid Container?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Liquid Container?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#LiquidContainer> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Liquid Container",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Liquid Container",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Liquid Container",
+                "iri": "https://rdf.ag/o/beer#LiquidContainer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#BeverageBottle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#BeverageCan"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Keg"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 14,
+                "result-size-total": 3
+            }
+        }
+    },
+    {
+        "id": "BQ0110",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of British Pale Ale?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of British Pale Ale?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#EnglishPaleAle> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "British Pale Ale",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "British Pale Ale",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "British Pale Ale",
+                "iri": "https://rdf.ag/o/beer#EnglishPaleAle"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#IndiaPaleAle"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0111",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Lager?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Lager?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Lager> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Lager",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Lager",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Lager",
+                "iri": "https://rdf.ag/o/beer#Lager"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#AmericanLager"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Oktoberfestbier"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Pilsner"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#TraditionalOktoberfestbier"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 4
+            }
+        }
+    },
+    {
+        "id": "BQ0128",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the sameAs link for Mini Keg?"
+        },
+        "paraphrased_question": {
+            "string": "Which resource is exactly the same as Mini Keg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#miniKeg> <http://www.w3.org/2002/07/owl#sameAs> ?answer }"
+        },
+        "template_id": "TC04",
+        "mentions": [
+            {
+                "text": "Mini Keg",
+                "type": "http://www.w3.org/2002/07/owl#Thing"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Mini Keg",
+                "type": "http://www.w3.org/2002/07/owl#Thing",
+                "label": "Mini Keg",
+                "iri": "https://rdf.ag/o/beer#miniKeg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#sameAs>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "http://rdf.ag/o/beer#miniKeg"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0116",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "List all instances of Keg."
+        },
+        "paraphrased_question": {
+            "string": "What are the Keg entities?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer a <https://rdf.ag/o/beer#Keg> }"
+        },
+        "template_id": "TC13",
+        "mentions": [
+            {
+                "text": "Keg",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Keg",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Keg",
+                "iri": "https://rdf.ag/o/beer#Keg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D201"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D251"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D301"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D501"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro20"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro25"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro30"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro50"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#corneliusKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#halfBarrelKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#miniKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#quarterKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#sixthBarrelKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#slimQuarterKeg"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 27,
+                "result-size-total": 14
+            }
+        }
+    },
+    {
+        "id": "BQ0106",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "List all instances of Liquid Container."
+        },
+        "paraphrased_question": {
+            "string": "What are the Liquid Container entities?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer a <https://rdf.ag/o/beer#LiquidContainer> }"
+        },
+        "template_id": "TC13",
+        "mentions": [
+            {
+                "text": "Liquid Container",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Liquid Container",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Liquid Container",
+                "iri": "https://rdf.ag/o/beer#LiquidContainer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D201"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D251"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D301"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#D501"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro20"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro25"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro30"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Euro50"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#can355"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#can473"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#can500"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#corneliusKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#halfBarrelKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#miniKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#quarterKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#sixthBarrelKeg"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#slimQuarterKeg"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 14,
+                "result-size-total": 17
+            }
+        }
+    },
+    {
+        "id": "BQ0100",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Which class is equivalent to Beverage Can?"
+        },
+        "paraphrased_question": {
+            "string": "What is the equivalent class of Beverage Can?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#BeverageCan> <http://www.w3.org/2002/07/owl#equivalentClass> ?answer }"
+        },
+        "template_id": "TC02",
+        "mentions": [
+            {
+                "text": "Beverage Can",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Beverage Can",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Beverage Can",
+                "iri": "https://rdf.ag/o/beer#BeverageCan"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#equivalentClass>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "http://purl.obolibrary.org/obo/FOODON_03490204"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0113",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Ale?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Ale?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Ale> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Ale",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Ale",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Ale",
+                "iri": "https://rdf.ag/o/beer#Ale"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#PaleAle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#BelgianAle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#BlondeAle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#BrownAle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#EnglishStyleAle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Stout"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#SummerAle"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 7
+            }
+        }
+    },
+    {
+        "id": "BQ0118",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Stout?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Stout?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Stout> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Stout",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Stout",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Stout",
+                "iri": "https://rdf.ag/o/beer#Stout"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#MilkStout"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0102",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Which class is equivalent to Honey Wine?"
+        },
+        "paraphrased_question": {
+            "string": "What is the equivalent class of Honey Wine?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#Mead> <http://www.w3.org/2002/07/owl#equivalentClass> ?answer }"
+        },
+        "template_id": "TC02",
+        "mentions": [
+            {
+                "text": "Honey Wine",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Honey Wine",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Honey Wine",
+                "iri": "https://rdf.ag/o/beer#Mead"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#equivalentClass>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#http://purl.obolibrary.org/obo/FOODON_03307306"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0103",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Ale PÃ¢le?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Ale PÃ¢le?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#PaleAle> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Ale PÃ¢le",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Ale PÃ¢le",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Ale PÃ¢le",
+                "iri": "https://rdf.ag/o/beer#PaleAle"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#AmericanPaleAle"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#EnglishPaleAle"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 2
+            }
+        }
+    },
+    {
+        "id": "BQ0104",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Craft Brewery?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Craft Brewery?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Craftbrewery> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Craft Brewery",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Craft Brewery",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Craft Brewery",
+                "iri": "https://rdf.ag/o/beer#Craftbrewery"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Brewpub"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0114",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Brewery?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Brewery?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Brewery> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Brewery",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Brewery",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Brewery",
+                "iri": "https://rdf.ag/o/beer#Brewery"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Craftbrewery"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0115",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Which class is equivalent to Cider?"
+        },
+        "paraphrased_question": {
+            "string": "What is the equivalent class of Cider?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#Cider> <http://www.w3.org/2002/07/owl#equivalentClass> ?answer }"
+        },
+        "template_id": "TC02",
+        "mentions": [
+            {
+                "text": "Cider",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Cider",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Cider",
+                "iri": "https://rdf.ag/o/beer#Cider"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#equivalentClass>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "http://purl.obolibrary.org/obo/FOODON_03301134"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0117",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Which class is equivalent to Bottle?"
+        },
+        "paraphrased_question": {
+            "string": "What is the equivalent class of Bottle?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#BeverageBottle> <http://www.w3.org/2002/07/owl#equivalentClass> ?answer }"
+        },
+        "template_id": "TC02",
+        "mentions": [
+            {
+                "text": "Bottle",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Bottle",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Bottle",
+                "iri": "https://rdf.ag/o/beer#BeverageBottle"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#equivalentClass>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "http://purl.obolibrary.org/obo/FOODON_03490214"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 20,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "BQ0101",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "List all instances of Beverage Can."
+        },
+        "paraphrased_question": {
+            "string": "What are the Beverage Can entities?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer a <https://rdf.ag/o/beer#BeverageCan> }"
+        },
+        "template_id": "TC13",
+        "mentions": [
+            {
+                "text": "Beverage Can",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Beverage Can",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Beverage Can",
+                "iri": "https://rdf.ag/o/beer#BeverageCan"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#can355"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#can473"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#can500"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 3
+            }
+        }
+    },
+    {
+        "id": "BQ0107",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What are the subclasses of Beer?"
+        },
+        "paraphrased_question": {
+            "string": "Which classes are subclasses of Beer?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Beer> }"
+        },
+        "template_id": "TC11",
+        "mentions": [
+            {
+                "text": "Beer",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Beer",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "Beer",
+                "iri": "https://rdf.ag/o/beer#Beer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#Ale"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#GermanPurityLawBeer"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 2
+            }
+        }
+    },
+    {
+        "id": "Q0022",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the weight of a mini keg in pounds?"
+        },
+        "paraphrased_question": {
+            "string": "How many pounds does a mini keg weigh?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#miniKeg> <http://schema.org/weight> ?weightObj . ?weightObj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/LB> . ?weightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC02",
+        "mentions": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Mini Keg",
+                "iri": "https://rdf.ag/o/beer#miniKeg"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "1.4"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0023",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the weight of a mini keg in kilograms and pounds?"
+        },
+        "paraphrased_question": {
+            "string": "How much does a mini keg weigh?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#miniKeg> <http://schema.org/weight> ?weightObj . ?weightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC03",
+        "mentions": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Mini Keg",
+                "iri": "https://rdf.ag/o/beer#miniKeg"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "0.6"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "1.4"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 15,
+                "result-size-total": 2
+            }
+        }
+    },
+    {
+        "id": "Q0024",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the volume capacity of a half barrel keg in fluid ounces?"
+        },
+        "paraphrased_question": {
+            "string": "How many fluid ounces can a half barrel keg hold?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?obs <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://rdf.ag/o/beer#halfBarrelKeg> . ?obs <http://www.w3.org/ns/sosa/hasResult> ?res . ?res <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> . ?res <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC04",
+        "mentions": [
+            {
+                "text": "half barrel keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "half barrel keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Half Barrel Keg",
+                "iri": "https://rdf.ag/o/beer#halfBarrelKeg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/ns/sosa/hasFeatureOfInterest>",
+            "<http://www.w3.org/ns/sosa/hasResult>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "1981"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 29,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0025",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the height of a Cornelius keg in millimeters?"
+        },
+        "paraphrased_question": {
+            "string": "How many millimeters tall is a Cornelius keg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#corneliusKeg> <https://gs1.org/voc/inPackageHeight> ?heightObj . ?heightObj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/MilliM> . ?heightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC04",
+        "mentions": [
+            {
+                "text": "Cornelius keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Cornelius keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Cornelius Keg",
+                "iri": "https://rdf.ag/o/beer#corneliusKeg"
+            }
+        ],
+        "relations": [
+            "<https://gs1.org/voc/inPackageHeight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "584"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 14,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0026",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "How much does a Euro 20 keg weigh in kilograms?"
+        },
+        "paraphrased_question": {
+            "string": "What is the weight of a Euro 20 container in kg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#Euro20> <http://schema.org/weight> ?weightObj . ?weightObj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/KiloGM> . ?weightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC04",
+        "mentions": [
+            {
+                "text": "Euro 20 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Euro 20 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Euro 20",
+                "iri": "https://rdf.ag/o/beer#Euro20"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "8.6"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0027",
+        "query_type": "MULTI_FACT",
+        "question": {
+            "string": "What are the height and diameter of a slim quarter keg in inches?"
+        },
+        "paraphrased_question": {
+            "string": "How many inches tall and wide is a slim quarter keg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { { <https://rdf.ag/o/beer#slimQuarterKeg> <https://gs1.org/voc/inPackageHeight> ?obj . ?obj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/IN> . ?obj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer } UNION { <https://rdf.ag/o/beer#slimQuarterKeg> <https://gs1.org/voc/inPackageDiameter> ?obj . ?obj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/IN> . ?obj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer } }"
+        },
+        "template_id": "TC05",
+        "mentions": [
+            {
+                "text": "slim quarter keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "slim quarter keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Slim Quarter Keg",
+                "iri": "https://rdf.ag/o/beer#slimQuarterKeg"
+            }
+        ],
+        "relations": [
+            "<https://gs1.org/voc/inPackageHeight>",
+            "<https://gs1.org/voc/inPackageDiameter>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "23.4"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "11.25"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 28,
+                "result-size-total": 2
+            }
+        }
+    },
+    {
+        "id": "Q0028",
+        "query_type": "MULTI_FACT",
+        "question": {
+            "string": "What are the different volume measurements for a D501 container?"
+        },
+        "paraphrased_question": {
+            "string": "List all volume capacities associated with a D501."
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?obs <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://rdf.ag/o/beer#D501> . ?obs <http://www.w3.org/ns/sosa/observedProperty> ?prop . FILTER (?prop IN (<https://rdf.ag/o/beer#netcontent>, <https://rdf.ag/o/beer#sosaNominalCapacity>)) ?obs <http://www.w3.org/ns/sosa/hasResult> ?res . ?res <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC05",
+        "mentions": [
+            {
+                "text": "D501",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "D501",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "D501",
+                "iri": "https://rdf.ag/o/beer#D501"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/ns/sosa/hasFeatureOfInterest>",
+            "<http://www.w3.org/ns/sosa/observedProperty>",
+            "<https://rdf.ag/o/beer#netcontent>",
+            "<https://rdf.ag/o/beer#sosaNominalCapacity>",
+            "<http://www.w3.org/ns/sosa/hasResult>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "13.2"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "50200"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "1690"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 35,
+                "result-size-total": 3
+            }
+        }
+    },
+    {
+        "id": "Q0029",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the weight of a mini keg in tons?"
+        },
+        "paraphrased_question": {
+            "string": "How many tons does a mini keg weigh?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#miniKeg> <http://schema.org/weight> ?weightObj . ?weightObj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/TON> . ?weightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer }"
+        },
+        "template_id": "TC04",
+        "mentions": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Mini Keg",
+                "iri": "https://rdf.ag/o/beer#miniKeg"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": []
+            }
+        }
+    },
+    {
+        "id": "Q0030",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "Who is the manufacturer of the D201 keg?"
+        },
+        "paraphrased_question": {
+            "string": "Which company makes the D201 keg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#D201> <http://schema.org/manufacturer> ?answer }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "D201 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "D201 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "D201",
+                "iri": "https://rdf.ag/o/beer#D201"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/manufacturer>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": []
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 0
+            }
+        }
+    },
+    {
+        "id": "Q0031",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the ABV of a Cornelius Keg?"
+        },
+        "paraphrased_question": {
+            "string": "What is the alcohol by volume content of a Cornelius Keg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#corneliusKeg> <https://rdf.ag/o/beer#abv> ?answer }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "Cornelius Keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Cornelius Keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Cornelius Keg",
+                "iri": "https://rdf.ag/o/beer#corneliusKeg"
+            }
+        ],
+        "relations": [
+            "<https://rdf.ag/o/beer#abv>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": []
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 0
+            }
+        }
+    },
+    {
+        "id": "Q0032",
+        "query_type": "BOOLEAN",
+        "question": {
+            "string": "Does a mini keg weigh 1.4 pounds?"
+        },
+        "paraphrased_question": {
+            "string": "Is the weight of a mini keg 1.4 lbs?"
+        },
+        "query": {
+            "sparql": "ASK WHERE { <https://rdf.ag/o/beer#miniKeg> <http://schema.org/weight> ?weightObj . ?weightObj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/LB> . ?weightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> \"1.4\"^^<http://www.w3.org/2001/XMLSchema#decimal> }"
+        },
+        "template_id": "TC06",
+        "mentions": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "mini keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Mini Keg",
+                "iri": "https://rdf.ag/o/beer#miniKeg"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "boolean": true,
+            "head": {}
+        }
+    },
+    {
+        "id": "Q0033",
+        "query_type": "BOOLEAN",
+        "question": {
+            "string": "Is a half barrel keg a type of liquid container?"
+        },
+        "paraphrased_question": {
+            "string": "Can a half barrel keg be classified as a liquid container?"
+        },
+        "query": {
+            "sparql": "ASK WHERE { <https://rdf.ag/o/beer#halfBarrelKeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf.ag/o/beer#LiquidContainer> }"
+        },
+        "template_id": "TC06",
+        "mentions": [
+            {
+                "text": "half barrel keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            },
+            {
+                "text": "liquid container",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "half barrel keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Half Barrel Keg",
+                "iri": "https://rdf.ag/o/beer#halfBarrelKeg"
+            },
+            {
+                "text": "liquid container",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Liquid Container",
+                "iri": "https://rdf.ag/o/beer#LiquidContainer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "boolean": true,
+            "head": {}
+        }
+    },
+    {
+        "id": "Q0034",
+        "query_type": "BOOLEAN",
+        "question": {
+            "string": "Does a D201 keg weigh 50 kilograms?"
+        },
+        "paraphrased_question": {
+            "string": "Is the weight of a D201 keg equal to 50 kg?"
+        },
+        "query": {
+            "sparql": "ASK WHERE { <https://rdf.ag/o/beer#D201> <http://schema.org/weight> ?weightObj . ?weightObj <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/KiloGM> . ?weightObj <http://www.qudt.org/2.1/schema/qudtnumericalValue> \"50.0\"^^<http://www.w3.org/2001/XMLSchema#double> }"
+        },
+        "template_id": "TC06",
+        "mentions": [
+            {
+                "text": "D201 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "D201 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "D201",
+                "iri": "https://rdf.ag/o/beer#D201"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {},
+            "boolean": false
+        }
+    },
+    {
+        "id": "Q0035",
+        "query_type": "COUNT",
+        "question": {
+            "string": "How many types of kegs are defined in the dataset?"
+        },
+        "paraphrased_question": {
+            "string": "What is the total number of keg subclasses or instances?"
+        },
+        "query": {
+            "sparql": "SELECT (COUNT(DISTINCT ?keg) as ?answer) WHERE { { ?keg <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf.ag/o/beer#Keg> } UNION { ?keg <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#Keg> } }"
+        },
+        "template_id": "TC07",
+        "mentions": [
+            {
+                "text": "kegs",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "kegs",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Keg",
+                "iri": "https://rdf.ag/o/beer#Keg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "14"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0036",
+        "query_type": "BOOLEAN",
+        "question": {
+            "string": "Is a Euro 20 keg wider than a D201 keg in diameter?"
+        },
+        "paraphrased_question": {
+            "string": "Does the Euro 20 keg have a larger diameter than the D201?"
+        },
+        "query": {
+            "sparql": "ASK WHERE { <https://rdf.ag/o/beer#Euro20> <https://gs1.org/voc/inPackageDiameter> ?d1 . ?d1 <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?v1 . ?d1 <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/MilliM> . <https://rdf.ag/o/beer#D201> <https://gs1.org/voc/inPackageDiameter> ?d2 . ?d2 <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?v2 . ?d2 <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/MilliM> . FILTER(?v1 > ?v2) }"
+        },
+        "template_id": "TC06",
+        "mentions": [
+            {
+                "text": "Euro 20 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            },
+            {
+                "text": "D201 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Euro 20 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Euro 20",
+                "iri": "https://rdf.ag/o/beer#Euro20"
+            },
+            {
+                "text": "D201 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "D201",
+                "iri": "https://rdf.ag/o/beer#D201"
+            }
+        ],
+        "relations": [
+            "<https://gs1.org/voc/inPackageDiameter>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "boolean": true,
+            "head": {}
+        }
+    },
+    {
+        "id": "Q0037",
+        "query_type": "SUPERLATIVE",
+        "question": {
+            "string": "Which keg has the largest capacity in milliliters?"
+        },
+        "paraphrased_question": {
+            "string": "What is the biggest keg by volume in mL?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf.ag/o/beer#Keg> . ?obs <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ?answer . ?obs <http://www.w3.org/ns/sosa/observedProperty> ?prop . FILTER (?prop IN (<https://rdf.ag/o/beer#netcontent>, <https://rdf.ag/o/beer#sosaNominalCapacity>)) ?obs <http://www.w3.org/ns/sosa/hasResult> ?res . ?res <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/MilliL> . ?res <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?vol } ORDER BY DESC(?vol) LIMIT 1"
+        },
+        "template_id": "TC08",
+        "mentions": [
+            {
+                "text": "keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Keg",
+                "iri": "https://rdf.ag/o/beer#Keg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+            "<http://www.w3.org/ns/sosa/hasFeatureOfInterest>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#halfBarrelKeg"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 15,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0038",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the English label for gs1:packaging?"
+        },
+        "paraphrased_question": {
+            "string": "How is gs1:packaging labeled in English?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://gs1.org/voc/packaging> <http://www.w3.org/2000/01/rdf-schema#label> ?answer . FILTER(LANG(?answer) = 'en') }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "gs1:packaging",
+                "type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+            }
+        ],
+        "entities": [
+            {
+                "text": "gs1:packaging",
+                "type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+                "label": "packaging",
+                "iri": "https://gs1.org/voc/packaging"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#label>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "xml:lang": "en",
+                            "value": "In Packaging"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0039",
+        "query_type": "NEGATION",
+        "question": {
+            "string": "Are there any kegs that do not have a defined weight?"
+        },
+        "paraphrased_question": {
+            "string": "Which kegs are missing weight information?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf.ag/o/beer#Keg> . FILTER NOT EXISTS { ?answer <http://schema.org/weight> ?weight } }"
+        },
+        "template_id": "TC09",
+        "mentions": [
+            {
+                "text": "kegs",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "kegs",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Keg",
+                "iri": "https://rdf.ag/o/beer#Keg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+            "<http://schema.org/weight>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": []
+            }
+        }
+    },
+    {
+        "id": "Q0040",
+        "query_type": "COUNT",
+        "question": {
+            "string": "How many different volume measurements does a sixth barrel keg have?"
+        },
+        "paraphrased_question": {
+            "string": "What is the total number of volume facts for a sixth barrel keg?"
+        },
+        "query": {
+            "sparql": "SELECT (COUNT(DISTINCT ?val) as ?answer) WHERE { ?obs <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <https://rdf.ag/o/beer#sixthBarrelKeg> . ?obs <http://www.w3.org/ns/sosa/observedProperty> ?prop . FILTER (?prop IN (<https://rdf.ag/o/beer#netcontent>, <https://rdf.ag/o/beer#sosaNominalCapacity>)) ?obs <http://www.w3.org/ns/sosa/hasResult> ?res . ?res <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?val }"
+        },
+        "template_id": "TC07",
+        "mentions": [
+            {
+                "text": "sixth barrel keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "sixth barrel keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Sixth Barrel Keg",
+                "iri": "https://rdf.ag/o/beer#sixthBarrelKeg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/ns/sosa/hasFeatureOfInterest>",
+            "<http://www.w3.org/ns/sosa/observedProperty>",
+            "<http://www.w3.org/ns/sosa/hasResult>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "3"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 16,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0041",
+        "query_type": "BOOLEAN",
+        "question": {
+            "string": "Is a quarter keg heavier than a slim quarter keg in kilograms?"
+        },
+        "paraphrased_question": {
+            "string": "Does a quarter keg have a greater mass than a slim quarter keg?"
+        },
+        "query": {
+            "sparql": "ASK WHERE { <https://rdf.ag/o/beer#quarterKeg> <http://schema.org/weight> ?w1 . ?w1 <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/KiloGM> . ?w1 <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?v1 . <https://rdf.ag/o/beer#slimQuarterKeg> <http://schema.org/weight> ?w2 . ?w2 <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/KiloGM> . ?w2 <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?v2 . FILTER(?v1 > ?v2) }"
+        },
+        "template_id": "TC06",
+        "mentions": [
+            {
+                "text": "quarter keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            },
+            {
+                "text": "slim quarter keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "quarter keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Quarter Keg",
+                "iri": "https://rdf.ag/o/beer#quarterKeg"
+            },
+            {
+                "text": "slim quarter keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Slim Quarter Keg",
+                "iri": "https://rdf.ag/o/beer#slimQuarterKeg"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "boolean": false,
+            "head": {}
+        }
+    },
+    {
+        "id": "Q0042",
+        "query_type": "DOUBLE_INTENT",
+        "question": {
+            "string": "What is the weight in pounds and the height in inches of a D301?"
+        },
+        "paraphrased_question": {
+            "string": "Give me the weight in lbs and height in inches for the D301 keg."
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { { <https://rdf.ag/o/beer#D301> <http://schema.org/weight> ?w . ?w <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/LB> . ?w <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer } UNION { <https://rdf.ag/o/beer#D301> <https://gs1.org/voc/inPackageHeight> ?h . ?h <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/IN> . ?h <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer } }"
+        },
+        "template_id": "TC10",
+        "mentions": [
+            {
+                "text": "D301",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "D301",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "D301",
+                "iri": "https://rdf.ag/o/beer#D301"
+            }
+        ],
+        "relations": [
+            "<http://schema.org/weight>",
+            "<https://gs1.org/voc/inPackageHeight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "19.6"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                            "value": "15.906"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 14,
+                "result-size-total": 2
+            }
+        }
+    },
+    {
+        "id": "Q0043",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the English definition of Beer?"
+        },
+        "paraphrased_question": {
+            "string": "How is Beer defined in English?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#Beer> <http://www.w3.org/2004/02/skos/core#definition> ?answer . FILTER(LANG(?answer) = 'en') }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "Beer",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Beer",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Beer",
+                "iri": "https://rdf.ag/o/beer#Beer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2004/02/skos/core#definition>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "xml:lang": "en",
+                            "value": "Beer a drink that is created as a result of the fermentation of yeast malt and is flavored with hops. The fermentation process results in alcohol, however there are some beers that are specifically brewed to be non-alcoholic."
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 14,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0044",
+        "query_type": "MULTI_FACT",
+        "question": {
+            "string": "What are all the alternative labels (altLabel) for the D501?"
+        },
+        "paraphrased_question": {
+            "string": "What other names are used for the D501?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#D501> <http://www.w3.org/2004/02/skos/core#altLabel> ?answer }"
+        },
+        "template_id": "TC05",
+        "mentions": [
+            {
+                "text": "D501",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "D501",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "D501",
+                "iri": "https://rdf.ag/o/beer#D501"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2004/02/skos/core#altLabel>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "xml:lang": "en",
+                            "value": "DIN501"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 13,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0045",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the equivalent class of the brand property?"
+        },
+        "paraphrased_question": {
+            "string": "What class is gs1:brand equivalent to in owl?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://gs1.org/voc/brand> <http://www.w3.org/2002/07/owl#sameAs> ?answer }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "brand",
+                "type": "http://www.w3.org/2002/07/owl#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "brand",
+                "type": "http://www.w3.org/2002/07/owl#Class",
+                "label": "brand",
+                "iri": "https://gs1.org/voc/brand"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2002/07/owl#sameAs>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "http://gs1.org/voc/brand"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 11,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0046",
+        "query_type": "BOOLEAN",
+        "question": {
+            "string": "Is Pale Ale a type of Beer Product?"
+        },
+        "paraphrased_question": {
+            "string": "Does Pale Ale fall under the category of Beer Product?"
+        },
+        "query": {
+            "sparql": "ASK WHERE { <https://rdf.ag/o/beer#PaleAle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf.ag/o/beer#BeerProduct> }"
+        },
+        "template_id": "TC06",
+        "mentions": [
+            {
+                "text": "Pale Ale",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            },
+            {
+                "text": "Beer Product",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Pale Ale",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Pale Ale",
+                "iri": "https://rdf.ag/o/beer#PaleAle"
+            },
+            {
+                "text": "Beer Product",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Beer Product",
+                "iri": "https://rdf.ag/o/beer#BeerProduct"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "boolean": false,
+            "head": {}
+        }
+    },
+    {
+        "id": "Q0047",
+        "query_type": "COUNT",
+        "question": {
+            "string": "How many creators are defined for the beer datasetdefinition?"
+        },
+        "paraphrased_question": {
+            "string": "Count the number of creators of the dataset definition."
+        },
+        "query": {
+            "sparql": "SELECT (COUNT(DISTINCT ?val) as ?answer) WHERE { <https://rdf.ag/o/beer#datasetdefinition> <http://purl.org/dc/terms/creator> ?val }"
+        },
+        "template_id": "TC07",
+        "mentions": [
+            {
+                "text": "datasetdefinition",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "datasetdefinition",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "datasetdefinition",
+                "iri": "https://rdf.ag/o/beer#datasetdefinition"
+            }
+        ],
+        "relations": [
+            "<http://purl.org/dc/terms/creator>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "3"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 12,
+                "result-size-total": 1
+            }
+        }
+    },
+    {
+        "id": "Q0048",
+        "query_type": "SINGLE_FACT",
+        "question": {
+            "string": "What is the French definition for a Liquid Container?"
+        },
+        "paraphrased_question": {
+            "string": "How is a liquid container defined in French?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { <https://rdf.ag/o/beer#LiquidContainer> <http://www.w3.org/2004/02/skos/core#definition> ?answer . FILTER(LANG(?answer) = 'fr') }"
+        },
+        "template_id": "TC01",
+        "mentions": [
+            {
+                "text": "Liquid Container",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Liquid Container",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Liquid Container",
+                "iri": "https://rdf.ag/o/beer#LiquidContainer"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/2004/02/skos/core#definition>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "xml:lang": "fr",
+                            "value": "Un rÃ©cipient conÃ§u pour contenir des liquides."
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "Q0049",
+        "query_type": "DOUBLE_INTENT",
+        "question": {
+            "string": "What are the height and diameter in millimeters of the Euro 25 keg?"
+        },
+        "paraphrased_question": {
+            "string": "Give me the height and width of a Euro 25 keg in mm."
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { { <https://rdf.ag/o/beer#Euro25> <https://gs1.org/voc/inPackageHeight> ?h . ?h <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/MilliM> . ?h <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer } UNION { <https://rdf.ag/o/beer#Euro25> <https://gs1.org/voc/inPackageDiameter> ?d . ?d <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/MilliM> . ?d <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?answer } }"
+        },
+        "template_id": "TC10",
+        "mentions": [
+            {
+                "text": "Euro 25 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "Euro 25 keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Euro 25",
+                "iri": "https://rdf.ag/o/beer#Euro25"
+            }
+        ],
+        "relations": [
+            "<https://gs1.org/voc/inPackageHeight>",
+            "<https://gs1.org/voc/inPackageDiameter>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "327"
+                        }
+                    },
+                    {
+                        "answer": {
+                            "type": "literal",
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "value": "395"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 15,
+                "result-size-total": 2
+            }
+        }
+    },
+    {
+        "id": "Q0050",
+        "query_type": "SUPERLATIVE",
+        "question": {
+            "string": "Which is the lightest keg in kilograms?"
+        },
+        "paraphrased_question": {
+            "string": "What keg weighs the least in kg?"
+        },
+        "query": {
+            "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf.ag/o/beer#Keg> . ?answer <http://schema.org/weight> ?w . ?w <http://www.qudt.org/2.1/schema/qudtunit> <http://www.qudt.org/2.1/vocab/unit/KiloGM> . ?w <http://www.qudt.org/2.1/schema/qudtnumericalValue> ?val } ORDER BY ASC(?val) LIMIT 1"
+        },
+        "template_id": "TC08",
+        "mentions": [
+            {
+                "text": "keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+        ],
+        "entities": [
+            {
+                "text": "keg",
+                "type": "http://www.w3.org/2000/01/rdf-schema#Class",
+                "label": "Keg",
+                "iri": "https://rdf.ag/o/beer#Keg"
+            }
+        ],
+        "relations": [
+            "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+            "<http://schema.org/weight>",
+            "<http://www.qudt.org/2.1/schema/qudtunit>",
+            "<http://www.qudt.org/2.1/schema/qudtnumericalValue>"
+        ],
+        "temporal": false,
+        "held_out": false,
+        "answer": {
+            "head": {
+                "vars": [
+                    "answer"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "answer": {
+                            "type": "uri",
+                            "value": "https://rdf.ag/o/beer#miniKeg"
+                        }
+                    }
+                ]
+            },
+            "meta": {
+                "query-time-ms": 14,
+                "result-size-total": 1
+            }
+        }
+    }
+]

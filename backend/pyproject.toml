@@ -1,0 +1,56 @@
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "PLC0415"]
+ignore = ["E501", "UP006", "UP007", "UP035", "UP045", "B008", "E402"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+force-sort-within-sections = true
+
+[tool.pytest.ini_options]
+log_cli = true
+log_level = "DEBUG"
+asyncio_mode = "strict"
+asyncio_default_test_loop_scope = "session"
+asyncio_default_fixture_loop_scope = "session"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nl2sparql-backend"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.120.0",
+  "ollama==0.6.1",
+  "openai==2.24.0",
+  "python-dotenv==1.2.1",
+  "python-multipart==0.0.9",
+  "rdflib==7.3.0",
+  "sparqlx==0.7.0",
+  "tqdm>=4.67.1",
+  "uvicorn[standard]==0.34.0",
+  "tenacity==9.1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit==4.2.*",
+  "pytest==8.3.5",
+  "pytest-asyncio==0.26.*",
+  "pytest-cov==6.1.1",
+  "ruff==0.13.*",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

@@ -1,0 +1,4117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <https://rdf.ag/o/beer#> .
+@prefix gs1: <https://gs1.org/voc/> .
+@prefix schema: <http://schema.org/> .
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cereals: <https://rdf.ag/o/cerealsToo#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <http://sws.geonames.org/> .
+@prefix loc: <http://id.loc.gov/vocabulary/relators/> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix unit: <http://www.qudt.org/2.1/vocab/unit> .
+@prefix qudt: <http://www.qudt.org/2.1/schema/qudt> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:creator
+    a owl:Thing ;
+    owl:sameAs dcterms:creator .
+
+foaf:maker
+    a owl:Thing ;
+    owl:sameAs foaf:maker .
+
+gs1:brand
+    a owl:Thing ;
+    owl:sameAs <http://gs1.org/voc/brand> .
+
+gs1:manufacturer
+    a owl:Thing ;
+    owl:sameAs <http://gs1.org/voc/manufacturer> .
+
+gs1:packaging
+    a owl:ObjectProperty ;
+    rdfs:label "Conteneur"@fr, "In Packaging"@en ;
+    owl:sameAs <http://gs1.org/voc/packaging> .
+
+<https://rdf.ag/o/_:genid1>
+    owl:sameAs <https://rdf.ag/o/_:genid1> .
+
+<https://rdf.ag/o/_:genid2>
+    owl:sameAs <https://rdf.ag/o/_:genid2> .
+
+<https://rdf.ag/o/_:genid3>
+    owl:sameAs <https://rdf.ag/o/_:genid3> .
+
+<https://rdf.ag/o/_:genid4>
+    owl:sameAs <https://rdf.ag/o/_:genid4> .
+
+<https://rdf.ag/o/_:genid5>
+    owl:sameAs <https://rdf.ag/o/_:genid5> .
+
+<https://rdf.ag/o/_:genid6>
+    owl:sameAs <https://rdf.ag/o/_:genid6> .
+
+<https://rdf.ag/o/beer>
+    dcterms:creator :myra, :singer, :warren ;
+    dcterms:date "2021-03-24"^^xsd:date ;
+    dcterms:description "L'ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    dcterms:rights <https://creativecommons.org/licenses/by/3.0/>, "Dual license. All rights reserved." ;
+    dcterms:subject <http://id.loc.gov/authorities/subjects/sh85012832> ;
+    dcterms:title "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en ;
+    vann:preferredNamespacePrefix "beer" ;
+    vann:preferredNamespaceUri "https://rdf.ag/o/beer#" ;
+    void:inDataset :datasetdefinition ;
+    a <http://purl.org/vocommons/voaf#Vocabulary>, owl:Ontology ;
+    rdfs:comment "L'Ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    rdfs:label "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en ;
+    owl:imports <http://www.w3.org/2006/time#>, <http://www.w3.org/ns/prov#>, <http://www.w3.org/ns/sosa/>, <http://www.w3.org/ns/ssn/> ;
+    owl:priorVersion <https://rdf.ag/o/beer-2021-02-04> ;
+    owl:sameAs <http://rdf.ag/o/beer> ;
+    owl:versionInfo "1.2" ;
+    vs:term_status "Stable"@en, "Stable"@fr ;
+    skos:definition "L'Ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    foaf:name "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en .
+
+:Ale
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Ale"@en ;
+    rdfs:subClassOf :Beer ;
+    owl:sameAs <http://rdf.ag/o/beer#Ale> ;
+    skos:definition """La principale caractÃ©ristique distinctive d'un Ale est le type de levure utilisÃ© dans le processus de brassage, Saccharomyces cerevisiae. S. cerevisiae prÃ©fÃ¨re gÃ©nÃ©ralement une gamme de brassage plus chaude et n'a pas la capacitÃ© de mÃ©taboliser les sucres complexes: mÃ©libiose et raffinose.
+         
+         Les Ales sont gÃ©nÃ©ralement fermentÃ©es, en fonction bien sÃ»r de la souche de levure, Ã  16-24Â°C (60-75Â°F). Ce qui est gÃ©nÃ©ralement, mais pas exclusivement, plus chaud que la fermentation de lager.
+         
+         Les Ales ne subissent pas non plus de phase de conditionnement Ã  froid. Cependant, il n'est pas rare que certaines lagers ne subissent pas de phase froide."""@fr, """The main distinguishing feature of an ale is the type of yeast used in the brewing process, Saccharomyces cerevisiae. S. cerevisiae typically prefers a warmer brewing range and lacks the ability to metabolize the complex sugars: melibiose and raffinose.
+         
+         Ales are typically fermented, depending of course on the strain yeast, at 16-24ËšC (60-75ËšF) temperature range. Which is typically, but not exclusively, warmer than lager fermentation.
+         
+         Ales also do not undergo a cold-conditioning phase. However it is not uncommon for some lagers to not undergo a cold phase."""@en ;
+    prov:hadPrimarySource :Carpenter2017 ;
+    foaf:name "Ale" .
+
+:AmericanLager
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "American Lager"@en ;
+    rdfs:subClassOf :Lager ;
+    owl:sameAs <http://rdf.ag/o/beer#AmericanLager> ;
+    skos:definition "American lagers came about from german immigrants bringing over their brewing style while using American ingredients. This beer is typically characterized as being light in color, low in bitterness and alcohol."@en, "Les lagers amÃ©ricaines sont issues d'immigrants allemands apportant leur style de brassage tout en utilisant des ingrÃ©dients amÃ©ricains. Cette biÃ¨re est gÃ©nÃ©ralement caractÃ©risÃ©e comme Ã©tant de couleur claire, faible en amertume et en alcool."@fr ;
+    foaf:name "American Lager" .
+
+:AmericanPaleAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "APA"@en ;
+    rdfs:subClassOf :PaleAle ;
+    owl:sameAs <http://rdf.ag/o/beer#AmericanPaleAle> ;
+    skos:definition "American Pale Ale is based on the English Pale Ale style however rather than the woody aromas of English hops, American IPAs use American hops that are usually more citrus and piney."@en, "L'American Pale Ale est basÃ©e sur le style anglais Pale Ale, mais plutÃ´t que les arÃ´mes boisÃ©s du houblon anglais, les IPA amÃ©ricaines utilisent des houblons amÃ©ricains qui sont gÃ©nÃ©ralement plus d'agrumes et de pins."@fr ;
+    prov:hadPrimarySource <https://rdf.ag/o/beer#Craftbeer.com2020APA> ;
+    foaf:name "American Pale Ale" .
+
+:BarleyWine
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Barley Wine"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#BarleyWine> ;
+    skos:definition "Contrairement Ã  leur nom, les vins d'orge ne sont pas un type de vin. Le vin d'orge est en fait une biÃ¨re de type pf Ã  base d'orge. Les vins d'orge ont une teneur en alcool beaucoup plus Ã©levÃ©e que les biÃ¨res typiques."@fr, "Contrary to their name, barley wines are not a type of wine. Barley wine is actually a type of beer with a base of barley. Barley wines have a much higher alcohol content than typical beers."@en ;
+    foaf:name "Barley Wine" .
+
+:Beer
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Beer"@en, "BiÃ¨re"@fr ;
+    rdfs:subClassOf schema:ProductGroup ;
+    owl:equivalentClass <http://purl.obolibrary.org/obo/FOODON_00001260> ;
+    owl:sameAs <http://rdf.ag/o/beer#Beer> ;
+    skos:definition "Beer a drink that is created as a result of the fermentation of yeast malt and is flavored with hops. The fermentation process results in alcohol, however there are some beers that are specifically brewed to be non-alcoholic."@en, "La biÃ¨re est une boisson crÃ©Ã©e Ã  la suite de la fermentation du malt de levure et aromatisÃ©e au houblon. Le processus de fermentation donne de l'alcool, mais certaines biÃ¨res sont spÃ©cifiquement brassÃ©es pour Ãªtre non alcoolisÃ©es."@fr .
+
+:BeerBoilingActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Boiling"@en, "Bouillir"@fr ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerBoilingActivity> ;
+    skos:definition "After the wort has been extracted from the malt, it is necessary to boil the wort before fermation. Boiling does a number of things to the malt such as: sterilization, enzyme denaturing, color development, increasing the concentration, secondary products are distilled and oxidized and finally hop aromas are extracted and isomerized."@en, "Une fois le moÃ»t extrait du malt, il est nÃ©cessaire de faire bouillir le moÃ»t avant la fermentation. L'Ã©bullition fait un certain nombre de choses au malt telles que: la stÃ©rilisation, la dÃ©naturation enzymatique, le dÃ©veloppement de la couleur, l'augmentation de la concentration, les produits secondaires sont distillÃ©s et oxydÃ©s et enfin les arÃ´mes de houblon sont extraits et isomÃ©risÃ©s."@fr ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:BeerConditioningActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Conditioning"@en, "Conditionnement"@fr ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerConditioningActivity> ;
+    skos:definition "Beer is conditioned to the finaly beer product by being allowed to age in vessel, usually a wooden cask, for a certain amount of time for any unwanted byproducts to be absorbed and for the aroma to mature."@en, "La biÃ¨re est conditionnÃ©e au produit final de la biÃ¨re en Ã©tant laissÃ©e vieillir dans un rÃ©cipient, gÃ©nÃ©ralement un tonneau en bois, pendant un certain temps pour que tous les sous-produits indÃ©sirables soient absorbÃ©s et que l'arÃ´me mÃ»risse."@fr ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:BeerFermentationActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Fermentation"@en, "Fermentation"@fr ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerFermentationActivity> ;
+    skos:definition "After boiling, the beer undergoes fermentation. A process by which yeasts anaerobically convert the sugars from the malts into ethanol."@en, "AprÃ¨s Ã©bullition, la biÃ¨re subit une fermentation. Un processus par lequel les levures convertissent de maniÃ¨re anaÃ©robie les sucres des malts en Ã©thanol."@fr ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:BeerHQ2021
+    dcterms:creator :BeerHQ2021-632d0d92f39a0b1007bbe32485ddc44a ;
+    dcterms:title "BrewHQ - Beer Style Profile: M{\\\"a}rzenbier (Oktoberfest)" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerHQ2021> ;
+    vs:term_status "Unstable" .
+
+:BeerHQ2021-632d0d92f39a0b1007bbe32485ddc44a
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerHQ2021-632d0d92f39a0b1007bbe32485ddc44a> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "" ;
+    foaf:lastName "BeerHQ" .
+
+:BeerMashingActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Mashing"@en, "Ã‰crasement"@fr ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerMashingActivity> ;
+    skos:definition """Semblable Ã  la production de thÃ© Ã  partir de feuilles de thÃ©, le moÃ»t est produit en laissant le grist infuser. C'est Ã  ce stade que les enzymes, principalement alpha et bÃªta amylase, du malt sont activÃ©es.
+    
+        C'est Ã  ce stade que les enzymes transforment l'amidon en sucre, qui peut ensuite Ãªtre consommÃ© par la levure pendant le processus de fermentation."""@fr, """Similar to producing tea from tea leaves, wort is produced by allowing the the grist to steep. It is at this stage the the enzymes, mainly alpha and beta amylase, in the malt are activated.
+        
+        It is at this stage that the enzymes convert starch into sugar, which can be then be consumed by yeast during the fermentation process."""@en ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:BeerMillingActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Fraisage"@fr, "Milling"@en ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerMillingActivity> ;
+    skos:definition """Le processus par lequel les malts sont convertis en grist. Pour augmenter la surface des malts, ils sont broyÃ©s puis de l'eau chaude est appliquÃ©e afin que l'amidon puisse Ãªtre extrait.
+        
+        Le grain ne peut pas Ãªtre trop grossier, sinon certains des amidons ne seront pas libÃ©rÃ©s. Le grain ne peut pas non plus Ãªtre trop fin ou une pÃ¢te se formera et l'eau ne pourra pas s'Ã©goutter correctement."""@fr, """The process by which malts are converted to grist. To increase the surface area of the malts, they are milled and then hot water is applied so that the starch can be extracted.
+        
+        The grist cannot be too coarse or else the some of the starches will not be released. Nor can the grist be too fine or a paste will form and water will not be able to drain properly."""@en ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:BeerProduct
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Beer"@en, "BiÃ¨re"@fr ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001002>, schema:Product, gs1:Product ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerProduct> ;
+    skos:definition "Beer a drink that is created as a result of the fermentation of yeast malt and is flavored with hops. The fermentation process results in alcohol, however there are some beers that are specifically brewed to be non-alcoholic."@en, "La biÃ¨re est une boisson crÃ©Ã©e Ã  la suite de la fermentation du malt de levure et aromatisÃ©e au houblon. Le processus de fermentation donne de l'alcool, mais certaines biÃ¨res sont spÃ©cifiquement brassÃ©es pour Ãªtre non alcoolisÃ©es."@fr .
+
+:BeerRackingActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Racking"@en, "Soutirage"@fr ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#BeerRackingActivity> ;
+    skos:definition "Beer racking is the careful transferral of the beer from one vessel to another, this must be done carefully in order to minimize the disturbance of the beer."@en, "Le soutirage de la biÃ¨re est le transfert soigneux de la biÃ¨re d'un rÃ©cipient Ã  un autre, cela doit Ãªtre fait avec soin afin de minimiser la perturbation de la biÃ¨re."@fr ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:BelgianAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Belgian Ale"@en, "BiÃ¨re Belge"@fr ;
+    rdfs:subClassOf :Ale, :BelgianBeer ;
+    owl:sameAs <http://rdf.ag/o/beer#BelgianAle> ;
+    skos:definition "Belgian Ales are ales are that are brewed in the Belgian style."@en, "Les biÃ¨res belges sont des biÃ¨res brassÃ©es dans le style belge."@fr ;
+    foaf:name "Belgian Ale" .
+
+:BelgianBeer
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Belgian Beer"@en, "BiÃ¨re Belge"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#BelgianBeer> ;
+    skos:definition "Belgian beers are a grouping of beer styles produced in Belgium or in the Belgian style. These styles are mostly ales that use fruity yeasts and malts."@en, "Les biÃ¨res belges sont un regroupement de styles de biÃ¨res produits en Belgique ou dans le style belge. Ces styles sont principalement des ales qui utilisent des levures et des malts fruitÃ©s."@fr ;
+    foaf:name "Belgian Beer" .
+
+:BeverageBottle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Bottle"@en, "Bouteille"@fr ;
+    rdfs:subClassOf gs1:PackagingDetails, :LiquidContainer ;
+    owl:equivalentClass <http://purl.obolibrary.org/obo/FOODON_03490214> ;
+    owl:sameAs <http://rdf.ag/o/beer#BeverageBottle> ;
+    skos:definition "A container that is usually round and made of glass that has a narrow mouth for serving."@en, "Un rÃ©cipient gÃ©nÃ©ralement cylindrique Ã  sa base et en verre, resserrÃ© Ã  son sommet."@fr .
+
+:BeverageCan
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Beverage Can"@en, "Canette"@fr ;
+    rdfs:subClassOf :LiquidContainer ;
+    owl:equivalentClass <http://purl.obolibrary.org/obo/FOODON_03490204> ;
+    owl:sameAs <http://rdf.ag/o/beer#BeverageCan> ;
+    skos:definition "A cylindrical metal container mean to hold a liquid."@en, "Un contenant mÃ©tallique pour contenir un liquide."@fr .
+
+:BlondeAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Blonde Ale"@en ;
+    rdfs:subClassOf :Ale ;
+    owl:sameAs <http://rdf.ag/o/beer#BlondeAle> ;
+    skos:definition "Blonde Ales are mostly characterized by their light coloring, which is determined by the types of malts rather than by style."@en, "Les biÃ¨res blondes se caractÃ©risent principalement par leur coloration claire, qui est dÃ©terminÃ©e par les types de malts plutÃ´t que par le style."@fr ;
+    foaf:name "Blonde Ale" .
+
+:BrewersAssociation2020
+    dcterms:creator :BrewersAssociation2020-537e9bae73ad8228d2b4a53fa3d5d839 ;
+    dcterms:title "Craft Beer Industry Market Segments" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#BrewersAssociation2020> ;
+    vs:term_status "Unstable" .
+
+:BrewersAssociation2020-537e9bae73ad8228d2b4a53fa3d5d839
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#BrewersAssociation2020-537e9bae73ad8228d2b4a53fa3d5d839> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Brewers" ;
+    foaf:lastName "Association" .
+
+:Brewery
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brasserie"@fr, "Brewery"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#Brewery> ;
+    skos:definition "A brewery is a location or corporate entity that produces beer."@en, "Une brasserie est une entreprise ou un lieu qui produit de la biÃ¨re."@fr .
+
+:Brewpub
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brewpub"@en, "Brewpub"@fr ;
+    rdfs:subClassOf :Craftbrewery ;
+    owl:sameAs <http://rdf.ag/o/beer#Brewpub> ;
+    skos:definition "A brewpub is a type of brewery also provides food services sells about 25% or more of its beer on site. The rest can also be sold to off site distributers or through carry-outs."@en, "Un brewpub est un type de brasserie qui fournit Ã©galement des services de restauration et vend environ 25% ou plus de sa biÃ¨re sur place. Le reste peut Ã©galement Ãªtre vendu Ã  des distributeurs hors site ou par le biais de report."@fr ;
+    prov:hadPrimarySource :BrewersAssociation2020 .
+
+:BrownAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brown Ale"@en ;
+    rdfs:subClassOf :Ale ;
+    owl:sameAs <http://rdf.ag/o/beer#BrownAle> ;
+    skos:definition "Brown Ales are mostly characterized by their coloring, which is determined by the types of malts rather than by style."@en, "Les biÃ¨res brunes se caractÃ©risent principalement par leur coloration, qui est dÃ©terminÃ©e par les types de malts plutÃ´t que par le style."@fr ;
+    foaf:name "Brown Ale" .
+
+:Carpenter2017
+    dcterms:creator :Carpenter2017-0bbb8ac367040ddf66e08add084e9325 ;
+    dcterms:title " What Is the Difference between Ale and Lager?" ;
+    a bibo:AcademicArticle ;
+    owl:sameAs <http://rdf.ag/o/beer#Carpenter2017> ;
+    vs:term_status "Unstable" .
+
+:Carpenter2017-0bbb8ac367040ddf66e08add084e9325
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Carpenter2017-0bbb8ac367040ddf66e08add084e9325> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Dave" ;
+    foaf:lastName "Carpenter" .
+
+:Cider
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:comment """En AmÃ©rique du Nord, en particulier aux Ã‰tats-Unis, le cidre est une boisson non fermentÃ©e produite Ã  partir du broyage de pommes, mais peut Ãªtre fabriquÃ© Ã  partir d'autres fruits.
+         
+         Bien que les fruits broyÃ©s fermentÃ©s (cidre) ne soient pas un type de biÃ¨re, cette classe est dans l'ontologie de la biÃ¨re pour plus de commoditÃ©."""@fr, """In North America, particularly the US, cider is an unfermented beverage produced from crushing apples, but can be made from other fruit.
+         
+         While fermented crushed fruit (cider) is not a type of beer this class is in the Beer Ontology for convenience."""@en ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Cider"@en, "Cidre"@fr, "Hard Cider"@en ;
+    owl:equivalentClass <http://purl.obolibrary.org/obo/FOODON_03301134> ;
+    owl:sameAs <http://rdf.ag/o/beer#Cider> ;
+    skos:definition "Cider is made from fermenting the juice of crushed fruit, usually apples."@en, "Le cidre est fabriquÃ© Ã  partir de la fermentation du jus de fruits Ã©crasÃ©s, gÃ©nÃ©ralement des pommes."@fr ;
+    foaf:name "Cider" .
+
+:ContractBrewery
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brasserie sous Contrat"@fr, "Contract Brewery"@en ;
+    rdfs:subClassOf :CraftBrewery ;
+    owl:sameAs <http://rdf.ag/o/beer#ContractBrewery> ;
+    skos:definition "A brewery that has a contract with a company that handles the marketing and sales part of the business while the producer-brewery only focuses on brewing beer."@en, "Une brasserie qui a un contrat avec une entreprise qui gÃ¨re la partie marketing et ventes de l'entreprise, tandis que la brasserie-producteur se concentre uniquement sur le brassage de la biÃ¨re."@fr ;
+    prov:hadPrimarySource :BrewersAssociation2020 .
+
+<https://rdf.ag/o/beer#Craftbeer.com2020APA>
+    dcterms:creator <https://rdf.ag/o/beer#Craftbeer.com2020APA-494fc92e25c1794fa83e1dd94bf68249> ;
+    dcterms:title "IPA" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#Craftbeer.com2020APA> ;
+    vs:term_status "Unstable" .
+
+<https://rdf.ag/o/beer#Craftbeer.com2020APA-494fc92e25c1794fa83e1dd94bf68249>
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Craftbeer.com2020APA-494fc92e25c1794fa83e1dd94bf68249> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "" ;
+    foaf:lastName "Craftbeer.com" .
+
+<https://rdf.ag/o/beer#Craftbeer.com2020IPA>
+    dcterms:creator <https://rdf.ag/o/beer#Craftbeer.com2020IPA-494fc92e25c1794fa83e1dd94bf68249> ;
+    dcterms:title "IPA" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#Craftbeer.com2020IPA> ;
+    vs:term_status "Unstable" .
+
+<https://rdf.ag/o/beer#Craftbeer.com2020IPA-494fc92e25c1794fa83e1dd94bf68249>
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Craftbeer.com2020IPA-494fc92e25c1794fa83e1dd94bf68249> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "" ;
+    foaf:lastName "Craftbeer.com" .
+
+:Craftbrewery
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brasserie Artisanale"@fr, "Craft Brewery"@en ;
+    rdfs:subClassOf :Brewery ;
+    owl:sameAs <http://rdf.ag/o/beer#Craftbrewery> ;
+    skos:definition "As defined by the Brewers Association, a craft brewery is a small, independent brewer."@en, "Une brasserie est une entreprise ou un lieu qui produit de la biÃ¨re."@fr ;
+    prov:hadPrimarySource :BrewersAssociation2020 .
+
+:Curry2017
+    dcterms:creator :Curry2017-3134e8b3c5645bb5acf11d54fe13994d ;
+    dcterms:title "Our 9,000-Year Love Affair With Booze" ;
+    a bibo:AcademicArticle ;
+    owl:sameAs <http://rdf.ag/o/beer#Curry2017> ;
+    vs:term_status "Unstable" .
+
+:Curry2017-3134e8b3c5645bb5acf11d54fe13994d
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Curry2017-3134e8b3c5645bb5acf11d54fe13994d> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Andrew" ;
+    foaf:lastName "Curry" .
+
+:D201
+    void:inDataset :datasetdefinition ;
+    schema:weight :D201WeightKG, :D201WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "FÃ»t DIN201"@fr, "German DIN201"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#D201> ;
+    skos:altLabel "DIN201"@en ;
+    skos:definition "FÃ»t DIN201"@fr, "German DIN201"@en ;
+    sosa:isFeatureOfInterestOf :D201ContentSosaGAL, :D201ContentSosaML, :D201ContentSosaOZ, :D201DiameterSosaIN, :D201DiameterSosaMM, :D201HeightSosaIN, :D201HeightSosaMM, :D201WeightSosaKG, :D201WeightSosaLB ;
+    gs1:inPackageDiameter :D201DiameterIN, :D201DiameterMM ;
+    gs1:inPackageHeight :D201HeightIN, :D201HeightMM ;
+    :nominalCapacity "20200"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:D201ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 5.28 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 5.28 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "5.28" .
+
+:D201ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 20200 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 20200 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "20200" .
+
+:D201ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 676 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 676 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "676" .
+
+:D201ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201ContentGal ;
+    sosa:hasSimpleResult "5.28"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:D201ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201ContentSosaML> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201ContentML ;
+    sosa:hasSimpleResult "20200"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D201ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201ContentOZ ;
+    sosa:hasSimpleResult "676"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D201DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 14.291 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 14.291 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "14.291" .
+
+:D201DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 363 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 363 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "363" .
+
+:D201DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201DiameterIN ;
+    sosa:hasSimpleResult "14.291"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:D201DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201DiameterMM ;
+    sosa:hasSimpleResult "363"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:D201HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 12.205 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 12.205 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "12.205" .
+
+:D201HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 310 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 310 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "310" .
+
+:D201HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201HeightIN ;
+    sosa:hasSimpleResult "12.205"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:D201HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201HeightMM ;
+    sosa:hasSimpleResult "310"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:D201WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 7.3 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 7.3 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "7.3" .
+
+:D201WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 16.1 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 16.1 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "16.1" .
+
+:D201WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201WeightKG ;
+    sosa:hasSimpleResult "7.3"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:D201WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D201WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :D201 ;
+    sosa:hasResult :D201WeightLB ;
+    sosa:hasSimpleResult "16.1"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:D251
+    void:inDataset :datasetdefinition ;
+    schema:weight :D251WeightKG, :D251WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "FÃ»t DIN251"@fr, "German DIN251"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#D251> ;
+    skos:altLabel "DIN251"@en ;
+    skos:definition "FÃ»t DIN251"@fr, "German DIN251"@en ;
+    sosa:isFeatureOfInterestOf :D251ContentSosaGAL, :D251ContentSosaML, :D251ContentSosaOZ, :D251DiameterSosaIN, :D251DiameterSosaMM, :D251HeightSosaIN, :D251HeightSosaMM, :D251WeightSosaKG, :D251WeightSosaLB ;
+    gs1:inPackageDiameter :D251DiameterIN, :D251DiameterMM ;
+    gs1:inPackageHeight :D251HeightIN, :D251HeightMM ;
+    :nominalCapacity "25200"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:D251ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 6.60 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 6.60 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "6.60" .
+
+:D251ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 25200 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 25200 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "25200" .
+
+:D251ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 845 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 845 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "845" .
+
+:D251ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251ContentGal ;
+    sosa:hasSimpleResult "6.60"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:D251ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251ContentSosaML> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251ContentML ;
+    sosa:hasSimpleResult "25200"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D251ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251ContentOZ ;
+    sosa:hasSimpleResult "845"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D251DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 14.291 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 14.291 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "14.291" .
+
+:D251DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 363 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 363 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "363" .
+
+:D251DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251DiameterIN ;
+    sosa:hasSimpleResult "14.291"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:D251DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251DiameterMM ;
+    sosa:hasSimpleResult "363"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:D251HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 14.173 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 14.173 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "14.173" .
+
+:D251HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 360 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 360 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "360" .
+
+:D251HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251HeightIN ;
+    sosa:hasSimpleResult "14.173"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:D251HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251HeightMM ;
+    sosa:hasSimpleResult "360"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:D251WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 8.5 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 8.5 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "8.5" .
+
+:D251WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 18.7 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 18.7 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "18.7" .
+
+:D251WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251WeightKG ;
+    sosa:hasSimpleResult "8.5"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:D251WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D251WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :D251 ;
+    sosa:hasResult :D251WeightLB ;
+    sosa:hasSimpleResult "18.7"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:D301
+    void:inDataset :datasetdefinition ;
+    schema:weight :D301WeightKG, :D301WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "FÃ»t DIN301"@fr, "German DIN301"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#D301> ;
+    skos:altLabel "DIN301"@en ;
+    skos:definition "FÃ»t DIN301"@fr, "German DIN301"@en ;
+    sosa:isFeatureOfInterestOf :D301ContentSosaGAL, :D301ContentSosaML, :D301ContentSosaOZ, :D301DiameterSosaIN, :D301DiameterSosaMM, :D301HeightSosaIN, :D301HeightSosaMM, :D301WeightSosaKG, :D301WeightSosaLB ;
+    gs1:inPackageDiameter :D301DiameterIN, :D301DiameterMM ;
+    gs1:inPackageHeight :D301HeightIN, :D301HeightMM ;
+    :nominalCapacity "30200"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:D301ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 7.92 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 7.92 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "7.92" .
+
+:D301ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 30200 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 30200 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "30200" .
+
+:D301ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1014 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1014 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "1014" .
+
+:D301ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301ContentGal ;
+    sosa:hasSimpleResult "7.92"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:D301ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301ContentSosaML> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301ContentML ;
+    sosa:hasSimpleResult "30200"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D301ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301ContentOZ ;
+    sosa:hasSimpleResult "1014"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D301DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 15.000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 15.000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "15.000" .
+
+:D301DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 381 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 381 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "381" .
+
+:D301DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301DiameterIN ;
+    sosa:hasSimpleResult "15.000"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:D301DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301DiameterMM ;
+    sosa:hasSimpleResult "381"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:D301HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 15.906 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 15.906 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "15.906" .
+
+:D301HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 404 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 404 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "404" .
+
+:D301HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301HeightIN ;
+    sosa:hasSimpleResult "15.906"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:D301HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301HeightMM ;
+    sosa:hasSimpleResult "404"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:D301WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 8.9 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 8.9 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "8.9" .
+
+:D301WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 19.6 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 19.6 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "19.6" .
+
+:D301WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301WeightKG ;
+    sosa:hasSimpleResult "8.9"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:D301WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D301WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :D301 ;
+    sosa:hasResult :D301WeightLB ;
+    sosa:hasSimpleResult "19.6"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:D501
+    void:inDataset :datasetdefinition ;
+    schema:weight :D501WeightKG, :D501WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "FÃ»t DIN501"@fr, "German DIN501"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#D501> ;
+    skos:altLabel "DIN501"@en ;
+    skos:definition "FÃ»t DIN501"@fr, "German DIN501"@en ;
+    sosa:isFeatureOfInterestOf :D501ContentSosaGAL, :D501ContentSosaML, :D501ContentSosaOZ, :D501DiameterSosaIN, :D501DiameterSosaMM, :D501HeightSosaIN, :D501HeightSosaMM, :D501WeightSosaKG, :D501WeightSosaLB ;
+    gs1:inPackageDiameter :D501DiameterIN, :D501DiameterMM ;
+    gs1:inPackageHeight :D501HeightIN, :D501HeightMM ;
+    :nominalCapacity "50200"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:D501ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 13.20 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 13.20 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "13.20" .
+
+:D501ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 50200 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 50200 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "50200" .
+
+:D501ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1690 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1690 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "1690" .
+
+:D501ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501ContentGal ;
+    sosa:hasSimpleResult "13.20"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:D501ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501ContentSosaML> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501ContentML ;
+    sosa:hasSimpleResult "50200"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D501ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501ContentOZ ;
+    sosa:hasSimpleResult "1690"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:D501DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 15.000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 15.000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "15.000" .
+
+:D501DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 381 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 381 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "381" .
+
+:D501DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501DiameterIN ;
+    sosa:hasSimpleResult "15.000"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:D501DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501DiameterMM ;
+    sosa:hasSimpleResult "381"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:D501HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 23.622 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 23.622 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "23.622" .
+
+:D501HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 600 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 600 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "600" .
+
+:D501HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501HeightIN ;
+    sosa:hasSimpleResult "23.622"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:D501HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501HeightMM ;
+    sosa:hasSimpleResult "600"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:D501WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 11.1 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 11.1 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "11.1" .
+
+:D501WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 24.5 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 24.5 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "24.5" .
+
+:D501WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501WeightKG ;
+    sosa:hasSimpleResult "11.1"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:D501WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#D501WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :D501 ;
+    sosa:hasResult :D501WeightLB ;
+    sosa:hasSimpleResult "24.5"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:EnglishPaleAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "British Pale Ale"@en, "English Pale Ale"@en, "English-Style Pale Ale"@en ;
+    rdfs:subClassOf :EnglishStyleAle, :PaleAle ;
+    owl:sameAs <http://rdf.ag/o/beer#EnglishPaleAle> ;
+    skos:definition "English Pale Ale is a type of pale ale that is brewed in the English style, usually more with more hop flavor and bitterness."@en, "La Pale Ale anglaise est un type de ale pÃ¢le brassÃ©e dans le style anglais, gÃ©nÃ©ralement plus avec plus de saveur de houblon et d'amertume."@fr ;
+    foaf:name "English Pale Ale" .
+
+:EnglishStyleAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "British Style Ale"@en, "English Style Ale"@en, "Style Anglais"@fr ;
+    rdfs:subClassOf :Ale ;
+    owl:sameAs <http://rdf.ag/o/beer#EnglishStyleAle> ;
+    skos:definition "English Style Ales are ales are that are brewed in the English style."@en, "Les ales Ã  l'anglaise sont des ales brassÃ©es dans le style Anglais."@fr ;
+    foaf:name "English Style Ale" .
+
+:Euro20
+    void:inDataset :datasetdefinition ;
+    schema:weight :Euro20WeightKG, :Euro20WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "European 20L Keg"@en, "FÃ»t EuropÃ©en 20L"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20> ;
+    skos:definition "European 20L Keg"@en, "FÃ»t EuropÃ©en 20L"@fr ;
+    sosa:isFeatureOfInterestOf :Euro20ContentSosaGAL, :Euro20ContentSosaML, :Euro20ContentSosaOZ, :Euro20DiameterSosaIN, :Euro20DiameterSosaMM, :Euro20HeightSosaIN, :Euro20HeightSosaMM, :Euro20WeightSosaKG, :Euro20WeightSosaLB ;
+    gs1:inPackageDiameter :Euro20DiameterIN, :Euro20DiameterMM ;
+    gs1:inPackageHeight :Euro20HeightIN, :Euro20HeightMM ;
+    :nominalCapacity "20000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:Euro20ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 4.40 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 4.40 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "4.40" .
+
+:Euro20ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 20000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 20000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "20000" .
+
+:Euro20ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 563 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 563 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "563" .
+
+:Euro20ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20ContentGal ;
+    sosa:hasSimpleResult "4.40"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:Euro20ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20ContentSosaML> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20ContentML ;
+    sosa:hasSimpleResult "20000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro20ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20ContentOZ ;
+    sosa:hasSimpleResult "563"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro20DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 15.551 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 15.551 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "15.551" .
+
+:Euro20DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 395 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 395 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "395" .
+
+:Euro20DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20DiameterIN ;
+    sosa:hasSimpleResult "15.551"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:Euro20DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20DiameterMM ;
+    sosa:hasSimpleResult "395"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:Euro20HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 8.504 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 8.504 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "8.504" .
+
+:Euro20HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 216 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 216 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "216" .
+
+:Euro20HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20HeightIN ;
+    sosa:hasSimpleResult "8.504"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:Euro20HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20HeightMM ;
+    sosa:hasSimpleResult "216"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:Euro20WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 8.6 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 8.6 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "8.6" .
+
+:Euro20WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 19.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 19.0 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "19.0" .
+
+:Euro20WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20WeightKG ;
+    sosa:hasSimpleResult "8.6"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro20WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro20WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :Euro20 ;
+    sosa:hasResult :Euro20WeightLB ;
+    sosa:hasSimpleResult "19.0"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro25
+    void:inDataset :datasetdefinition ;
+    schema:weight :Euro25WeightKG, :Euro25WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "European 25L Keg"@en, "FÃ»t EuropÃ©en 25L"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25> ;
+    skos:definition "European 25L Keg"@en, "FÃ»t EuropÃ©en 25L"@fr ;
+    sosa:isFeatureOfInterestOf :Euro25ContentSosaGAL, :Euro25ContentSosaML, :Euro25ContentSosaOZ, :Euro25DiameterSosaIN, :Euro25DiameterSosaMM, :Euro25HeightSosaIN, :Euro25HeightSosaMM, :Euro25WeightSosaKG, :Euro25WeightSosaLB ;
+    gs1:inPackageDiameter :Euro25DiameterIN, :Euro25DiameterMM ;
+    gs1:inPackageHeight :Euro25HeightIN, :Euro25HeightMM ;
+    :nominalCapacity "25000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:Euro25ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 5.50 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 5.50 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "5.50" .
+
+:Euro25ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 25000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 25000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "25000" .
+
+:Euro25ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 704 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 704 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "704" .
+
+:Euro25ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25ContentGal ;
+    sosa:hasSimpleResult "5.50"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:Euro25ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25ContentSosaML> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25ContentML ;
+    sosa:hasSimpleResult "25000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro25ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25ContentOZ ;
+    sosa:hasSimpleResult "704"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro25DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 15.551 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 15.551 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "15.551" .
+
+:Euro25DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 395 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 395 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "395" .
+
+:Euro25DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25DiameterIN ;
+    sosa:hasSimpleResult "15.551"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:Euro25DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25DiameterMM ;
+    sosa:hasSimpleResult "395"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:Euro25HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 12.874 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 12.874 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "12.874" .
+
+:Euro25HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 327 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 327 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "327" .
+
+:Euro25HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25HeightIN ;
+    sosa:hasSimpleResult "12.874"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:Euro25HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25HeightMM ;
+    sosa:hasSimpleResult "327"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:Euro25WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 8.9 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 8.9 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "8.9" .
+
+:Euro25WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 19.6 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 19.6 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "19.6" .
+
+:Euro25WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25WeightKG ;
+    sosa:hasSimpleResult "8.9"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro25WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro25WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :Euro25 ;
+    sosa:hasResult :Euro25WeightLB ;
+    sosa:hasSimpleResult "19.6"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro30
+    void:inDataset :datasetdefinition ;
+    schema:weight :Euro30WeightKG, :Euro30WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "European 30L Keg"@en, "FÃ»t EuropÃ©en 30L"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30> ;
+    skos:definition "European 30L Keg"@en, "FÃ»t EuropÃ©en 30L"@fr ;
+    sosa:isFeatureOfInterestOf :Euro30ContentSosaGAL, :Euro30ContentSosaML, :Euro30ContentSosaOZ, :Euro30DiameterSosaIN, :Euro30DiameterSosaMM, :Euro30HeightSosaIN, :Euro30HeightSosaMM, :Euro30WeightSosaKG, :Euro30WeightSosaLB ;
+    gs1:inPackageDiameter :Euro30DiameterIN, :Euro30DiameterMM ;
+    gs1:inPackageHeight :Euro30HeightIN, :Euro30HeightMM ;
+    :nominalCapacity "30000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:Euro30ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 6.60 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 6.60 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "6.60" .
+
+:Euro30ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 30000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 30000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "30000" .
+
+:Euro30ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 845 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 845 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "845" .
+
+:Euro30ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30ContentGal ;
+    sosa:hasSimpleResult "6.60"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:Euro30ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30ContentSosaML> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30ContentML ;
+    sosa:hasSimpleResult "30000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro30ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30ContentOZ ;
+    sosa:hasSimpleResult "845"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro30DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 16.063 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 16.063 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "16.063" .
+
+:Euro30DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 408 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 408 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "408" .
+
+:Euro30DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30DiameterIN ;
+    sosa:hasSimpleResult "16.063"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:Euro30DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30DiameterMM ;
+    sosa:hasSimpleResult "408"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:Euro30HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 14.370 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 14.370 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "14.370" .
+
+:Euro30HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 365 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 365 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "365" .
+
+:Euro30HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30HeightIN ;
+    sosa:hasSimpleResult "14.370"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:Euro30HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30HeightMM ;
+    sosa:hasSimpleResult "365"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:Euro30WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 9.5 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 9.5 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "9.5" .
+
+:Euro30WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 20.9 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 20.9 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "20.9" .
+
+:Euro30WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30WeightKG ;
+    sosa:hasSimpleResult "9.5"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro30WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro30WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :Euro30 ;
+    sosa:hasResult :Euro30WeightLB ;
+    sosa:hasSimpleResult "20.9"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro50
+    void:inDataset :datasetdefinition ;
+    schema:weight :Euro50WeightKG, :Euro50WeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "European 50L Keg"@en, "FÃ»t EuropÃ©en 50L"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50> ;
+    skos:altLabel "Import Keg"@en ;
+    skos:definition "European 50L Keg"@en, "FÃ»t EuropÃ©en 50L"@fr ;
+    sosa:isFeatureOfInterestOf :Euro50ContentSosaGAL, :Euro50ContentSosaML, :Euro50ContentSosaOZ, :Euro50DiameterSosaIN, :Euro50DiameterSosaMM, :Euro50HeightSosaIN, :Euro50HeightSosaMM, :Euro50WeightSosaKG, :Euro50WeightSosaLB ;
+    gs1:inPackageDiameter :Euro50DiameterIN, :Euro50DiameterMM ;
+    gs1:inPackageHeight :Euro50HeightIN, :Euro50HeightMM ;
+    :nominalCapacity "50000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:Euro50ContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 13.00 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 13.00 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50ContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "13.00" .
+
+:Euro50ContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 50000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 50000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50ContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "50000" .
+
+:Euro50ContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1665 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1665 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50ContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "1665" .
+
+:Euro50ContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50ContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50ContentGal ;
+    sosa:hasSimpleResult "13.00"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:Euro50ContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50ContentSosaML> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50ContentML ;
+    sosa:hasSimpleResult "50000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro50ContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50ContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50ContentOZ ;
+    sosa:hasSimpleResult "1665"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:Euro50DiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 16.060 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 16.060 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50DiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "16.060" .
+
+:Euro50DiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 408 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 408 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50DiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "408" .
+
+:Euro50DiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50DiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50DiameterIN ;
+    sosa:hasSimpleResult "16.060"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:Euro50DiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50DiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50DiameterMM ;
+    sosa:hasSimpleResult "408"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:Euro50HeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 20.940 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 20.940 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50HeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "20.940" .
+
+:Euro50HeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 532 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 532 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50HeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "532" .
+
+:Euro50HeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50HeightSosaIN> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50HeightIN ;
+    sosa:hasSimpleResult "20.940"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:Euro50HeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50HeightSosaMM> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50HeightMM ;
+    sosa:hasSimpleResult "532"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:Euro50WeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 12.7 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 12.7 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50WeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "12.7" .
+
+:Euro50WeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 28.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 28.0 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50WeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "28.0" .
+
+:Euro50WeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50WeightSosaKG> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50WeightKG ;
+    sosa:hasSimpleResult "12.7"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:Euro50WeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#Euro50WeightSosaLB> ;
+    sosa:hasFeatureOfInterest :Euro50 ;
+    sosa:hasResult :Euro50WeightLB ;
+    sosa:hasSimpleResult "28.0"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:Foster1999
+    dcterms:creator :Foster1999-7fa2ceed97a2314e4386f46f09e41d28 ;
+    dcterms:title "Pale ale" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#Foster1999> ;
+    vs:term_status "Unstable" .
+
+:Foster1999-7fa2ceed97a2314e4386f46f09e41d28
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Foster1999-7fa2ceed97a2314e4386f46f09e41d28> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Terry" ;
+    foaf:lastName "Foster" .
+
+:Foster2020
+    dcterms:creator :Foster2020-7fa2ceed97a2314e4386f46f09e41d28 ;
+    dcterms:title "The Oxford Companion to Beer definition of Pale Ale" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#Foster2020> ;
+    vs:term_status "Unstable" .
+
+:Foster2020-7fa2ceed97a2314e4386f46f09e41d28
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Foster2020-7fa2ceed97a2314e4386f46f09e41d28> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Terry" ;
+    foaf:lastName "Foster" .
+
+:GermanPurityLawBeer
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "BiÃ¨re PuretÃ© Allemande"@fr, "German Purity Law Beer"@en ;
+    rdfs:subClassOf :Beer ;
+    owl:sameAs <http://rdf.ag/o/beer#GermanPurityLawBeer> ;
+    skos:definition "A beer that meets the requirements of the German Beer Purity Law of 1516 where beer was made exclusively from water, barley, hops and yeast."@en, "Une biÃ¨re qui rÃ©pond aux exigences de la loi allemande sur la puretÃ© de la biÃ¨re de 1516, oÃ¹ la biÃ¨re Ã©tait fabriquÃ©e exclusivement Ã  partir d'eau, d'orge, de houblon et de levure."@fr .
+
+:IndiaPaleAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "IPA"@en ;
+    rdfs:subClassOf :EnglishPaleAle ;
+    owl:sameAs <http://rdf.ag/o/beer#IndiaPaleAle> ;
+    skos:definition "India Pale Ale is actually a type of pale ale that is brewed in the \"English\" style, contrary to its name. It was originally brewed for the Indian market which is where it got its name. It's origins are still debated to this day but this beer is known for its use of English hops and yeast."@en, "L'Inde Pale Ale est en fait un type de ale pÃ¢le qui est brassÃ©e dans le style \"anglais\", contrairement Ã  son nom. Il Ã©tait Ã  l'origine brassÃ© pour le marchÃ© indien, d'oÃ¹ il tire son nom. Ses origines sont encore dÃ©battues Ã  ce jour, mais cette biÃ¨re est connue pour son utilisation de houblon anglais et de levure."@fr ;
+    prov:hadPrimarySource <https://rdf.ag/o/beer#Craftbeer.com2020IPA> ;
+    foaf:name "India Pale Ale" .
+
+:Jackson1993
+    dcterms:creator :Jackson1993-252131996aaf598f70de9ffeda7af3dc ;
+    dcterms:title "Michael Jackson's beer companion" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#Jackson1993> ;
+    vs:term_status "Unstable" .
+
+:Jackson1993-252131996aaf598f70de9ffeda7af3dc
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Jackson1993-252131996aaf598f70de9ffeda7af3dc> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Michael" ;
+    foaf:lastName "Jackson" .
+
+:Keg
+    void:inDataset :datasetdefinition ;
+    a <http://purl.obolibrary.org/obo/FOODON_03490100>, rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "FÃ»t"@fr, "Keg"@en ;
+    rdfs:subClassOf :LiquidContainer ;
+    owl:sameAs <http://rdf.ag/o/beer#Keg> ;
+    skos:definition "A small barrel used to store and serve beer."@en, "Un contenant rÃ©utilisable pour entreposer et servir la biÃ¨re."@fr .
+
+:Kulkarni2016
+    dcterms:creator :Kulkarni2016-238a6647405cebfd3d3768d2a4012953, :Kulkarni2016-8f6715e75c2500bfe4f830a1a8ff1cb8 ;
+    dcterms:editor :Kulkarni2016-238a6647405cebfd3d3768d2a4012953, :Kulkarni2016-8f6715e75c2500bfe4f830a1a8ff1cb8 ;
+    dcterms:title "Chapter 7 - Preparation and Stability Testing" ;
+    bibo:numPages "99 - 135" ;
+    a bibo:BookSection ;
+    owl:sameAs <http://rdf.ag/o/beer#Kulkarni2016> ;
+    vs:term_status "Unstable" .
+
+:Kulkarni2016-238a6647405cebfd3d3768d2a4012953
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Kulkarni2016-238a6647405cebfd3d3768d2a4012953> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Vitthal S." ;
+    foaf:lastName "Kulkarni" .
+
+:Kulkarni2016-8f6715e75c2500bfe4f830a1a8ff1cb8
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Kulkarni2016-8f6715e75c2500bfe4f830a1a8ff1cb8> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Charles" ;
+    foaf:lastName "Shaw" .
+
+:Lager
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Lager"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#Lager> ;
+    skos:definition """Lagers are fermented with the yeast strain Saccharomyces pastorianus, which typically ferments better in colder temperatures 7-13ËšC (45-55ËšF) than S. cerevisiae.
+         
+         Lagers are also known for having a cold-conditioning phase of the brewing process, although not all lagers go through this phase.
+     
+         Lagers can be pale yellow, amber or dark."""@en, """Les lagers sont fermentÃ©es avec la souche de levure Saccharomyces pastorianus, qui fermente gÃ©nÃ©ralement mieux Ã  des tempÃ©ratures plus froides de 7 Ã  13 Â° C (45 Ã  55 Â° F) que S. cerevisiae.
+         
+         Les lagers sont Ã©galement connues pour avoir une phase de conditionnement Ã  froid du processus de brassage, bien que toutes les lagers ne passent pas par cette phase.
+         
+         Les lagers peuvent Ãªtre jaune pÃ¢le, ambre ou foncÃ©."""@fr ;
+    prov:hadPrimarySource :Carpenter2017 ;
+    foaf:name "Lager" .
+
+:LiquidContainer
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Conteneur de Liquide"@fr, "Liquid Container"@en ;
+    rdfs:subClassOf gs1:PackagingDetails ;
+    owl:sameAs <http://rdf.ag/o/beer#LiquidContainer> ;
+    skos:definition "A container made for holding liquids."@en, "Un rÃ©cipient conÃ§u pour contenir des liquides."@fr .
+
+:MasterBrewersAssociationoftheAmericas1999
+    dcterms:creator :MasterBrewersAssociationoftheAmericas1999-ddf4f6dbdb05e17b722146cb742b128e ;
+    dcterms:editor :MasterBrewersAssociationoftheAmericas1999-85e5d59d6782b07ea38989b39b4746de ;
+    dcterms:title "The Practical Brewer" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#MasterBrewersAssociationoftheAmericas1999> ;
+    vs:term_status "Unstable" .
+
+:MasterBrewersAssociationoftheAmericas1999-85e5d59d6782b07ea38989b39b4746de
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#MasterBrewersAssociationoftheAmericas1999-85e5d59d6782b07ea38989b39b4746de> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "John T." ;
+    foaf:lastName "McCabe" .
+
+:MasterBrewersAssociationoftheAmericas1999-ddf4f6dbdb05e17b722146cb742b128e
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#MasterBrewersAssociationoftheAmericas1999-ddf4f6dbdb05e17b722146cb742b128e> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Master Brewers Association" ;
+    foaf:lastName "Americas" .
+
+:Mead
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:comment "L'hydromel n'est pas techniquement une biÃ¨re puisque sa principale source de sucre provient du miel, mais pour des raisons de commoditÃ©, cette classe se trouve dans l'ontologie de la biÃ¨re."@fr, "Mead is not technically a beer since its primary source of sugar comes from honey, but for the sake of convenience this class is in the Beer Ontology."@en ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Honey Wine"@en, "Hydromel"@fr, "Mead"@en ;
+    owl:equivalentClass <https://rdf.ag/o/beer#http://purl.obolibrary.org/obo/FOODON_03307306> ;
+    owl:sameAs <http://rdf.ag/o/beer#Mead> ;
+    skos:definition "L'hydromel est l'une des boissons alcoolisÃ©es les plus anciennes, produite par la fermentation du miel (bien que certains autres ingrÃ©dients comme les fruits puissent Ã©galement Ãªtre ajoutÃ©s). La teneur en alcool varie gÃ©nÃ©ralement de 5 Ã  20% et le profil de saveur varie de trÃ¨s sec Ã  trÃ¨s sucrÃ©."@fr, "Mead is one of the oldest alcoholic beverages, produced by fermenting honey (although some other ingredients like fruit can be added in as well). The alcohol content usually ranges from 5 to 20% and the flavor profile ranges from very dry to very sweet."@en ;
+    foaf:name "Mead" .
+
+:Microbrewery
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Microbrasserie"@fr, "Microbrewery"@en ;
+    rdfs:subClassOf :CraftBrewery ;
+    owl:sameAs <http://rdf.ag/o/beer#Microbrewery> ;
+    skos:definition "Les microbrasseries vendent gÃ©nÃ©ralement environ 75% ou plus de leur biÃ¨re hors site et produisent environ 15 000 barils par an. Les microbrasseries vendront de la biÃ¨re soit aux grossistes, aux dÃ©taillants, soit directement aux consommateurs (Ã  emporter ou en salle)."@fr, "Microbreweries typically sell about 75% or more of its beer off-site and produce about 15,000 barrels per year. Microbreweries will sell beer either to wholesalers, retailers or directly to the consumers (carry-out or taproom)."@en ;
+    prov:hadPrimarySource :BrewersAssociation2020 .
+
+:MilkStout
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:comment "Any stouts that that use milk or any milk product as an ingredient is an instance of this class despite the UK Food Labelling Regulations of 1996 to ensure that consumers are aware of a possibility of lactose in their beer."@en, "Toute stout qui utilise du lait ou tout produit laitier comme ingrÃ©dient est un exemple de cette classe malgrÃ© les rÃ©glementations britanniques sur l'Ã©tiquetage des aliments de 1996 pour s'assurer que les consommateurs sont conscients d'une possibilitÃ© de lactose dans leur biÃ¨re."@fr ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Milk Stout"@en, "Milk Stout"@fr ;
+    rdfs:subClassOf :Stout ;
+    owl:sameAs <http://rdf.ag/o/beer#MilkStout> ;
+    skos:definition "Les stouts de lait sont un type de stouts qui ont Ã©tÃ© Ã©dulcorÃ©s par l'ajout de lait ou de produits laitiers."@fr, "Milk stouts are a type of stouts that have been sweetened by the addition of milk or milk products."@en ;
+    skos:historyNote "Au Royaume-Uni, le Food Labelling Regulations de 1996 stipule que les stouts de lait ne peuvent pas Ãªtre dÃ©crits comme contenant du Â«laitÂ», Ã©tant donnÃ© que les Ã©lÃ©ments nutritifs du lait sont dÃ©truits ou transformÃ©s dans le processus de brassage et que ce qui reste n'est pas du Â«laitÂ»."@fr, "In the United Kingdom, theÂ Food Labelling Regulations of 1996 state that milk stouts cannot be described as containing 'milk', since the milk nutrients are destroyed or transformed in the brewing process and what is left is not 'milk'."@en ;
+    prov:hadPrimarySource :UKGovLegislation1996 ;
+    foaf:name "Milk Stout" .
+
+:Oktoberfestbier
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:comment "According to German Law, Oktoberfestbier is legally reserved for the six breweries who are allowed to serve their beer at the Munich Oktoberfest. Those brewers are: Augustiner, Hacker-Pschorr, HofbrÃ¤uhaus, LÃ¶wenbrÃ¤u, Paulaner, and Spaten. However, German Law does not extend beyond the German borders so the mÃ¤rzen/oktoberfest is used as a label for a beer style elsewhere, particulary among craft brewers."@en, "According to German Law, Oktoberfestbier is legally reserved for the six breweries who are allowed to serve their beer at the Munich Oktoberfest. Those brewers are: Augustiner, Hacker-Pschorr, HofbrÃ¤uhaus, LÃ¶wenbrÃ¤u, Paulaner, and Spaten. However, German Law does not extend beyond the German borders so the mÃ¤rzen/oktoberfest is used as a label for a beer style elsewhere, particulary among craft brewers."@fr ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "MÃ¤rzen"@en, "Oktoberfest Beer"@en ;
+    rdfs:subClassOf :Lager ;
+    owl:sameAs <http://rdf.ag/o/beer#Oktoberfestbier> ;
+    skos:definition """Les biÃ¨res de style MÃ¤rzen sont des lagers lÃ©gÃ¨res qui sont gÃ©nÃ©ralement brassÃ©es avec des malts de Vienne, de Munich et parfois Pilsner et du houblon allemand traditionnel Ã  faible teneur en acide alpha comme Hallertau et Tettnanger, mais peuvent Ãªtre remplacÃ©s par le mont. Hood ou Saaz. L'arÃ´me de MÃ¤rzen est lÃ©gÃ¨rement amer et pas trop houblonnÃ©, de sorte que la saveur du malt de Vienne et de Munich est plus prononcÃ©e. Cette biÃ¨re a gÃ©nÃ©ralement une teneur en alcool plus Ã©levÃ©e que les lagers allemandes traditionnelles Ã  environ 5-6% abv. L'arÃ´me est comparable Ã  le Lager de Vienne.
+         
+         Historiquement, ce style de biÃ¨re Ã©tait brassÃ© en mars, d'oÃ¹ le MÃ¤rzen signifiant Â«marsÂ» en allemand. En raison du manque de rÃ©frigÃ©ration Ã  l'Ã©poque, le duc bavarois Albrecht V a dÃ©crÃ©tÃ© qu'aucun brassage ne devrait avoir lieu entre le 23 avril et le 29 septembre pour rÃ©duire la dÃ©tÃ©rioration de la biÃ¨re. Par consÃ©quent, les biÃ¨res ont Ã©tÃ© brassÃ©es en mars et mises en biÃ¨re (conservÃ©es au frais) jusqu'Ã  l'Oktoberfest. Traditionnellement, ces biÃ¨res Ã©taient plus foncÃ©es mais sont devenues de plus en plus lÃ©gÃ¨res pour correspondre aux goÃ»ts modernes."""@fr, "MÃ¤rzen-style beers are light lagers that are typically brewed with Vienna, Munich and sometimes Pilsner malts and traditional German hops with low alpha acid contents such as Hallertau and Tettnanger but can substituted with Mt. Hood or Saaz. The aroma of MÃ¤rzen is slightly bitter and not overly hoppy so that the Vienna and Munich malt flavor is more promenant. This beer is typically higher in alcohol content than traditional German lagers at around 5-6% abv. The aroma is comparable to Vienna lager."@en ;
+    prov:hadPrimarySource :BeerHQ2021, :Oliver2012 ;
+    foaf:name "MÃ¤rzenbier", "Oktoberfest Beer"@en, "Oktoberfestbier"@de .
+
+:Oliver2012
+    dcterms:creator :Oliver2012-63901b983163dde264eb06fb3f1b95bd ;
+    dcterms:editor :Oliver2012-63901b983163dde264eb06fb3f1b95bd ;
+    dcterms:title "The Oxford Companion to Beer" ;
+    a bibo:Book ;
+    owl:sameAs <http://rdf.ag/o/beer#Oliver2012> ;
+    vs:term_status "Unstable" .
+
+:Oliver2012-63901b983163dde264eb06fb3f1b95bd
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Oliver2012-63901b983163dde264eb06fb3f1b95bd> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Garrett" ;
+    foaf:lastName "Oliver" .
+
+:PackagingActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Emballage"@fr, "Packaging"@en ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#PackagingActivity> ;
+    skos:definition "Le processus par lequel la biÃ¨re finie est transfÃ©rÃ©e dans un conteneur avec un Ã©tiquetage spÃ©cifique afin qu'elle puisse maintenant Ãªtre vendue en tant que produit."@fr, "The process by which the finished beer is transferred into a container with specific labelling so that it can now be sold as a product."@en ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:PaleAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Ale PÃ¢le"@en, "Pale Ale"@en, "Une Blonde"@fr ;
+    rdfs:subClassOf :Ale ;
+    owl:sameAs <http://rdf.ag/o/beer#PaleAle> ;
+    skos:definition """Les Pale Ales sont un style de biÃ¨re gÃ©nÃ©ralement de couleur claire, aux saveurs de houblon fort et Ã  faible teneur en alcool. Ce terme gÃ©nÃ©rique comprend les IPA, les APA et les Ales PÃ¢le Anglaises.
+         
+         La plupart des Pale Ales sont de style anglais, car elles sont devenues trÃ¨s populaires, de nombreux pays ont dÃ©veloppÃ© leurs propres versions de pÃ¢les ales qui provenaient du style anglais de brassage de biÃ¨re.
+         
+         Samuel Allsopp Ã  Burton, au Royaume-Uni, a brassÃ© la premiÃ¨re Ale PÃ¢le pour le marchÃ© indien en 1822 et elle a Ã©tÃ© expÃ©diÃ©e en 1823 en Inde, ce qui a eu un impact durable qui a conduit Ã  l'essor des India Pale Ales.
+         
+         Les ales pÃ¢les Ã©taient autrefois appelÃ©es Â«bitter alesÂ», mais maintenant elles sont devenues trois versions Â«ordinairesÂ» qui vont de 3% -4% ABV, Â«spÃ©cialesÂ» et Â«extra spÃ©cialesÂ» qui vont de 4,5-5% ABV."""@fr, """Pale Ales are a style of beer that are typically light in color, have stong hop flavors, and low in alcohol content. This umbrella term includes IPAs, APAs and English pale ales.
+      
+      Most Pale Ales are english-style, since it has become quite popular, many countries developed their own versions of pale ales that originated from English style of brewing beer.
+      
+      Samuel Allsopp in Burton, UK brewed the first pale ale for the Indian market in 1822 and it was shipped in 1823 to India which had a lasting impact that lead to the rise of India Pale Ales.
+      
+     Pale ales used to be called \"bitter ales\" in the past but now it has become three versions being \"ordinary\" that range in 3%-4% ABV, \"special\" and \"extra special\" that range 4.5-5% ABV."""@en ;
+    prov:hadPrimarySource :Foster1999, :Foster2020, :Jackson1993, :Oliver2012 ;
+    foaf:name "Pale Ale" .
+
+:Pilsner
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Pilsner"@en ;
+    rdfs:subClassOf :Lager ;
+    owl:sameAs <http://rdf.ag/o/beer#Pilsner> ;
+    skos:definition "Les pilsners sont un type de lager qui est apparu pour la premiÃ¨re fois Ã  Pilsen, en BohÃªme, de Josef Groll. C'est une biÃ¨re de couleur claire qui se caractÃ©rise par sa fraÃ®cheur et sa faible teneur en alcool."@fr, "Pilsners are a type of lager that first appeared in Pilsen, Bohemia from Josef Groll. It is a light colored beer that is characterized by being refreshing and low in alcohol."@en ;
+    foaf:name "Pilsner" .
+
+:Porter
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Porter"@en, "Porter"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#Porter> ;
+    skos:definition "Bien que Ã©troitement apparentÃ©s aux stouts et de couleur sombre, les porteurs utilisent gÃ©nÃ©ralement une combinaison de malts pÃ¢les et foncÃ©s."@fr, "While closely related to stouts and both dark in color, porters usually use a combination of pale and dark malts."@en ;
+    foaf:name "Porter" .
+
+:RegionalBrewery
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brasserie rÃ©gionale"@fr, "Regional Brewery"@en ;
+    rdfs:subClassOf :CraftBrewery ;
+    owl:sameAs <http://rdf.ag/o/beer#RegionalBrewery> ;
+    skos:definition "A regional brewery is a brewery that produces around 15,000 to 6 million barrels of beer per year."@en, "Une brasserie rÃ©gionale est une brasserie qui produit environ 15 000 Ã  6 millions de barils de biÃ¨re par an."@fr ;
+    prov:hadPrimarySource :BrewersAssociation2020 .
+
+:Saison
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Saison"@en, "Saison"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#Saison> ;
+    skos:definition "Les biÃ¨res de saison sont des biÃ¨res de saison qui sont gÃ©nÃ©ralement apprÃ©ciÃ©es pendant l'Ã©tÃ© jusqu'Ã  la fin de la rÃ©colte. Il existe une grande variÃ©tÃ© de saisons brassÃ©es Ã  la mode, choisies Ã  la discrÃ©tion du brasseur. Les saisons sont gÃ©nÃ©ralement plus fruitÃ©es et plus faibles en alcool que les biÃ¨res typiques. Alors que les saisons sont originaires de Belgique, il y a une popularitÃ© croissante parmi les brasseurs artisanaux amÃ©ricains pour produire leurs propres saisons."@fr, "Saison beers are seasonal beers that are typically enjoyed during the summer until the end of harvest. There are a wide variety of saisons brewed in the fasion as choosen at the brewer's discretion. Saisons are typically fruitier and lower in alcohol content than typical beers. While saisons originated in Belgium, there is increasing popularity among American craft brewers to produce their own saisons."@en ;
+    prov:hadPrimarySource :Oliver2012 ;
+    foaf:name "Saison" .
+
+:ShippingActivity
+    void:inDataset :datasetdefinition ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "ExpÃ©dition"@fr, "Shipping"@en ;
+    rdfs:subClassOf time:TemporalEntity, prov:Activity ;
+    owl:sameAs <http://rdf.ag/o/beer#ShippingActivity> ;
+    skos:definition "Once the beer has been packaged, it can then be shipped to another location to be sold."@en, "Une fois la biÃ¨re emballÃ©e, elle peut Ãªtre expÃ©diÃ©e vers un autre endroit pour Ãªtre vendue."@fr ;
+    prov:hadPrimarySource :MasterBrewersAssociationoftheAmericas1999 .
+
+:SourBeer
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Sour Beer"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#SourBeer> ;
+    skos:definition "Les biÃ¨res acidulÃ©es sont un groupe de biÃ¨res au goÃ»t aigre, acide ou acidulÃ©. Ils proviennent d'une variÃ©tÃ© de styles et d'ingrÃ©dients."@fr, "Sour beers are a grouping of beers that taste sour, acidic or tart. They come about from a variety of styles and ingredients."@en ;
+    foaf:name "Sour Beer" .
+
+:Stewart2018
+    dcterms:creator :Stewart2018-a275083f2e1285c725e4f0f86f021f1c ;
+    dcterms:title "Yeast FlocculationÃ¢Â€Â”Sedimentation and Flotation" ;
+    a bibo:AcademicArticle ;
+    owl:sameAs <http://rdf.ag/o/beer#Stewart2018> ;
+    vs:term_status "Unstable" .
+
+:Stewart2018-a275083f2e1285c725e4f0f86f021f1c
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#Stewart2018-a275083f2e1285c725e4f0f86f021f1c> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "Graham G." ;
+    foaf:lastName "Stewart" .
+
+:Stout
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Stout"@en, "Stout"@fr ;
+    rdfs:subClassOf :Ale ;
+    owl:sameAs <http://rdf.ag/o/beer#Stout> ;
+    skos:definition "Les stouts sont un type de biÃ¨re noire qui utilise une orge Â«fumÃ©eÂ» ou maltÃ©e, qui donne son arÃ´me distinctif de Â«cafÃ©Â» ou de Â«chocolatÂ». Les stouts sont similaires aux porteurs mais sont gÃ©nÃ©ralement plus Ã©pais et plus sains."@fr, "Stouts are a dark type of ale that use a 'smoked' or malted barley, which give its distinctive 'coffee' or 'chocolate' flavored. Stouts are similar to porters but are usually thicker and healthier."@en ;
+    foaf:name "Stout" .
+
+:SummerAle
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Ale d'Ã‰tÃ©"@fr, "Summer Ale"@en ;
+    rdfs:subClassOf :Ale ;
+    owl:sameAs <http://rdf.ag/o/beer#SummerAle> ;
+    skos:definition "Les biÃ¨res d'Ã©tÃ© sont gÃ©nÃ©ralement caractÃ©risÃ©es comme une biÃ¨re d'Ã©tÃ© aux agrumes et rafraÃ®chissante. Ils sont le plus souvent une forme de biÃ¨re de blÃ© amÃ©ricaine, mais peuvent inclure d'autres styles de biÃ¨re."@fr, "Summer Ales are typically characterized as citrus-y and refreshing summer beer. They are most commonly a form of American Wheat beer or English-style summer ale, but can include other styles of ale."@en ;
+    foaf:name "Summer Ale" .
+
+:TaproomBrewery
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Brasserie Taproom"@fr, "Taproom Brewery"@en ;
+    rdfs:subClassOf :CraftBrewery ;
+    owl:sameAs <http://rdf.ag/o/beer#TaproomBrewery> ;
+    skos:definition "A taproom brewery is a brewery that sells at least 25% of their beer on-site but does not offer food services. The rest of the beer can be sold as carry-outs or to off-site retailers."@en, "Une brasserie taproom est une brasserie qui vend au moins 25% de sa biÃ¨re sur place mais n'offre pas de services de restauration. Le reste de la biÃ¨re peut Ãªtre vendu sous forme de report ou Ã  des dÃ©taillants hors site."@fr ;
+    prov:hadPrimarySource :BrewersAssociation2020 .
+
+:TraditionalOktoberfestbier
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:comment "According to German Law, Oktoberfestbier is legally reserved for the six breweries who are allowed to serve their beer at the Munich Oktoberfest. Those brewers are: Augustiner, Hacker-Pschorr, HofbrÃ¤uhaus, LÃ¶wenbrÃ¤u, Paulaner, and Spaten. However, German Law does not extend beyond the German borders so the mÃ¤rzen/oktoberfest is used as a label for a beer style elsewhere, particulary among craft brewers."@en, "According to German Law, Oktoberfestbier is legally reserved for the six breweries who are allowed to serve their beer at the Munich Oktoberfest. Those brewers are: Augustiner, Hacker-Pschorr, HofbrÃ¤uhaus, LÃ¶wenbrÃ¤u, Paulaner, and Spaten. However, German Law does not extend beyond the German borders so the mÃ¤rzen/oktoberfest is used as a label for a beer style elsewhere, particulary among craft brewers."@fr ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Traditional MÃ¤rzenbier"@en, "Traditional Oktoberfest Beer"@en ;
+    rdfs:subClassOf :Lager ;
+    owl:sameAs <http://rdf.ag/o/beer#TraditionalOktoberfestbier> ;
+    skos:definition """Historically, this style of beer was brewed in March, hence the MÃ¤rzen meaning 'March' in German. Due to the lack of refrigeration at the time, the Bavarian Duke Albrecht V decreed that no brewing should occur between April 23 and September 29th to reduce beer spoilage. Therefore the beers were brewed in March and lagered (stored cool) until Oktoberfest. Traditionally these beers were darker but have now become increasing lighter to match modern tastes.
+         
+         The first lager that was officially labelled 'MÃ¤rzenbier' was brewed in 1841 by the Spaten Brewery of Munich and was introduced at that year's Oktoberfest. In 1872 Spaten was the first to label their mÃ¤rzen-style lager as Oktoberfestbier, and the recipe Spaten uses today is still largely based on the one used in 1872."""@en, """Historiquement, ce style de biÃ¨re Ã©tait brassÃ© en mars, d'oÃ¹ le MÃ¤rzen signifiant Â«marsÂ» en allemand. En raison du manque de rÃ©frigÃ©ration Ã  l'Ã©poque, le duc bavarois Albrecht V a dÃ©crÃ©tÃ© qu'aucun brassage ne devrait avoir lieu entre le 23 avril et le 29 septembre pour rÃ©duire la dÃ©tÃ©rioration de la biÃ¨re. Par consÃ©quent, les biÃ¨res ont Ã©tÃ© brassÃ©es en mars et conservÃ©es au frais jusqu'Ã  l'Oktoberfest. Traditionnellement, ces biÃ¨res Ã©taient plus foncÃ©es mais sont devenues de plus en plus lÃ©gÃ¨res pour correspondre aux goÃ»ts modernes.
+     
+         La premiÃ¨re lager officiellement Ã©tiquetÃ©e Â«MÃ¤rzenbierÂ» a Ã©tÃ© brassÃ©e en 1841 par la brasserie Spaten de Munich et a Ã©tÃ© prÃ©sentÃ©e Ã  l'Oktoberfest de cette annÃ©e-lÃ . En 1872, Spaten fut le premier Ã  Ã©tiqueter son lager de style mÃ¤rzen comme Oktoberfestbier, et la recette que Spaten utilise aujourd'hui est encore largement basÃ©e sur celle utilisÃ©e en 1872."""@fr ;
+    prov:hadPrimarySource :BeerHQ2021, :Oliver2012 ;
+    foaf:name "Traditional MÃ¤rzenbier", "Traditional Oktoberfest Beer"@en .
+
+:UKGovLegislation1996
+    dcterms:creator :UKGovLegislation1996-cffd6ca55416051f36999774ebd5ac86 ;
+    dcterms:title "The Food Labelling Regulations 1996" ;
+    a bibo:AcademicArticle ;
+    owl:sameAs <http://rdf.ag/o/beer#UKGovLegislation1996> ;
+    vs:term_status "Unstable" .
+
+:UKGovLegislation1996-cffd6ca55416051f36999774ebd5ac86
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#UKGovLegislation1996-cffd6ca55416051f36999774ebd5ac86> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "UK Government" ;
+    foaf:lastName "Legislation" .
+
+:WHO2018
+    dcterms:creator :WHO2018-a0c8f1fedd1ee194a390e08de946d66f ;
+    dcterms:title "Global status report on alcohol and health 2018" ;
+    a bibo:AcademicArticle ;
+    owl:sameAs <http://rdf.ag/o/beer#WHO2018> ;
+    vs:term_status "Unstable" .
+
+:WHO2018-a0c8f1fedd1ee194a390e08de946d66f
+    a foaf:Person ;
+    owl:sameAs <http://rdf.ag/o/beer#WHO2018-a0c8f1fedd1ee194a390e08de946d66f> ;
+    vs:term_status "Unstable" ;
+    foaf:firstName "World Health" ;
+    foaf:lastName "Organization" .
+
+:WheatBeer
+    void:inDataset :datasetdefinition ;
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "BiÃ¨re de BlÃ©"@en, "Wheat Beer"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#WheatBeer> ;
+    skos:definition "Les biÃ¨res de blÃ© sont originaires d'Allemagne et sont gÃ©nÃ©ralement des ales pÃ¢les. Le style Ahe se caractÃ©rise par un pourcentage Ã©levÃ© de blÃ© maltÃ© ou non."@fr, "Wheat beers originated in Germany and are usually pale ales. Ahe style is characterized by having a large percentage of malted or unmalted wheat."@en ;
+    foaf:name "Wheat Beer" .
+
+:abv
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Alcohol By Volume"@en, "Alcohol By Volume"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#abv> ;
+    skos:definition "La quantitÃ© d'Ã©thanol pur dans 100mL d'une solution."@fr, "The amount of pure ethanol in 100mL of a solution."@en .
+
+:abvValue
+    void:inDataset :datasetdefinition ;
+    a owl:datatypeProperty ;
+    rdfs:comment """Alcohol by volume is a standard observable property in alcoholic beverages. It is the measurement of pure ethanol in 100 ml of a solution at a temperature of 20ËšC (68ËšF).
+         
+         The (unmaintained) bevon ontology previously maintained a property (http://rdfs.co/bevon/latest/html#term-abv) for this."""@en ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Alcohol By Volume"@en, "Alcohol By Volume"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#abvValue> ;
+    skos:definition "La quantitÃ© d'Ã©thanol pur dans 100mL d'une solution."@fr, "The amount of pure ethanol in 100mL of a solution."@en .
+
+:beerJsonld
+    schema:contentUrl "https://rdf.ag/o/beer-2021-03-24.jsonld" ;
+    schema:encodingFormat "application/ld+json" ;
+    a schema:DataDownload ;
+    owl:sameAs <http://rdf.ag/o/beer#beerJsonld> .
+
+:beerXML
+    schema:contentUrl "https://rdf.ag/o/beer-2021-03-24.owl" ;
+    schema:encodingFormat "XML" ;
+    a schema:DataDownload ;
+    owl:sameAs <http://rdf.ag/o/beer#beerXML> .
+
+:beerXMLRDF
+    schema:contentUrl "https://rdf.ag/o/beer-2021-03-24.owl" ;
+    schema:encodingFormat "application/rdf+xml" ;
+    a schema:DataDownload ;
+    owl:sameAs <http://rdf.ag/o/beer#beerXMLRDF> .
+
+:beerXMLTTL
+    schema:contentUrl "https://rdf.ag/o/beer-2021-03-24.ttl" ;
+    schema:encodingFormat "application/x-turtle" ;
+    a schema:DataDownload ;
+    owl:sameAs <http://rdf.ag/o/beer#beerXMLTTL> .
+
+:bibliography
+    void:inDataset :datasetdefinition ;
+    a bibo:Collection ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#bibliography> .
+
+:brewedBy
+    void:inDataset :datasetdefinition ;
+    a owl:objectProperty ;
+    rdfs:comment "Cette propriÃ©tÃ© est probablement la moins dÃ©finie dans cette ontologie. Bien que flexible ontologiquement avec une equivalence Ã  plusieurs cas et vocabulaires, elle est conÃ§u comme un fourre-tout pour les situations oÃ¹ une relation \"bon sens\" exister sans Ãªtre immÃ©diatement Ã©vidente."@en, "This is likely the least defined property within this ontology. While ontologically flexible to a number of different vocabulary, it is meant as a catch-all for situations where a common sense relationship is known to exist while not being immediatly obvious."@en ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "BrassÃ© Par"@fr, "Brewed By"@en ;
+    owl:oneOf (<https://schema.org/manufacturer>
+        gs1:brand
+        gs1:manufacturer
+        foaf:maker
+        dcterms:creator
+        <https://schema.org/creator>
+    ) ;
+    owl:sameAs <http://rdf.ag/o/beer#brewedBy> ;
+    skos:definition "La brasserie qui commercialise ou qui physiquement brasse la biÃ¨re. "@fr, "The brewery that is marketing or physically brewing the beer."@en .
+
+:can355
+    void:inDataset :datasetdefinition ;
+    a gs1:PackagingDetails, :BeverageCan, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "12oz/355ml Metal Beverage Can"@en, "Canette Ã  Boisson MÃ©tallique, 12oz/355ml"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#can355> ;
+    skos:definition "A one time use 12oz/355ml metal container meant to hold a liquid, commonly referred to as 202-211 (413 Height)."@en, "Un contenant non-rÃ©utilisable mÃ©tallique de 12oz/355ml pour contenir un liquide, souvent appeler 202-211 (Hauteur 413)."@fr ;
+    sosa:isFeatureOfInterestOf :can355ContentSosa, :can355DiameterSosa, :can355EndDiameterSosa, :can355HeightSosa ;
+    gs1:inPackageDiameter :can355Diameter ;
+    gs1:inPackageHeight :can355Height ;
+    gs1:netContent :can355Content .
+
+:can355Content
+    qudt:numericalValue 355 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 355 ;
+    owl:sameAs <http://rdf.ag/o/beer#can355Content> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "355" .
+
+:can355ContentSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can355ContentSosa> ;
+    sosa:hasFeatureOfInterest :can355 ;
+    sosa:hasResult :can355Content ;
+    sosa:hasSimpleResult "355"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :netcontent .
+
+:can355Diameter
+    qudt:numericalValue 68.262 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 68.262 ;
+    owl:sameAs <http://rdf.ag/o/beer#can355Diameter> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "68.262" .
+
+:can355DiameterSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can355DiameterSosa> ;
+    sosa:hasFeatureOfInterest :can355 ;
+    sosa:hasResult :can355Diameter ;
+    sosa:hasSimpleResult "68.252"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:can355EndDiameter
+    qudt:numericalValue 55.033164 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 55.033164 ;
+    owl:sameAs <http://rdf.ag/o/beer#can355EndDiameter> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "55.033164" .
+
+:can355EndDiameterSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can355EndDiameterSosa> ;
+    sosa:hasFeatureOfInterest :can355 ;
+    sosa:hasResult :can355EndDiameter ;
+    sosa:hasSimpleResult "55.033164"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :endDiameter .
+
+:can355Height
+    qudt:numericalValue 115.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 115.0 ;
+    owl:sameAs <http://rdf.ag/o/beer#can355Height> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "115.0" .
+
+:can355HeightSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can355HeightSosa> ;
+    sosa:hasFeatureOfInterest :can355 ;
+    sosa:hasResult :can355Height ;
+    sosa:hasSimpleResult "115.0"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:can473
+    void:inDataset :datasetdefinition ;
+    a gs1:PackagingDetails, :BeverageCan, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "16oz/473ml Metal Beverage Can"@en, "Canette Ã  Boisson MÃ©tallique, 16oz/473ml"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#can473> ;
+    skos:definition "A one time use 16oz/473ml metal container meant to hold a liquid, commonly referred to as 202-211 (Height 603)."@en, "Un contenant non-rÃ©utilisable mÃ©tallique de 16oz/473ml pour contenir un liquide, souvent appeler 202-211 (Hauteur 603)."@fr ;
+    sosa:isFeatureOfInterestOf :can473ContentSosa, :can473DiameterSosa, :can473EndDiameterSosa, :can473HeightSosa ;
+    gs1:inPackageDiameter :can473Diameter ;
+    gs1:inPackageHeight :can473Height ;
+    gs1:netContent :can473Content .
+
+:can473Content
+    qudt:numericalValue 473 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 473 ;
+    owl:sameAs <http://rdf.ag/o/beer#can473Content> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "473" .
+
+:can473ContentSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can473ContentSosa> ;
+    sosa:hasFeatureOfInterest :can473 ;
+    sosa:hasResult :can473Content ;
+    sosa:hasSimpleResult "473"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :netcontent .
+
+:can473Diameter
+    qudt:numericalValue 68.262 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 68.262 ;
+    owl:sameAs <http://rdf.ag/o/beer#can473Diameter> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "68.262" .
+
+:can473DiameterSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can473DiameterSosa> ;
+    sosa:hasFeatureOfInterest :can473 ;
+    sosa:hasResult :can473Diameter ;
+    sosa:hasSimpleResult "68.262"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:can473EndDiameter
+    qudt:numericalValue 55.033164 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 55.033164 ;
+    owl:sameAs <http://rdf.ag/o/beer#can473EndDiameter> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "55.033164" .
+
+:can473EndDiameterSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can473EndDiameterSosa> ;
+    sosa:hasFeatureOfInterest :can473 ;
+    sosa:hasResult :can473EndDiameter ;
+    sosa:hasSimpleResult "55.033164"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :endDiameter .
+
+:can473Height
+    qudt:numericalValue 158.75 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 158.75 ;
+    owl:sameAs <http://rdf.ag/o/beer#can473Height> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "158.75" .
+
+:can473HeightSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can473HeightSosa> ;
+    sosa:hasFeatureOfInterest :can473 ;
+    sosa:hasResult :can473Height ;
+    sosa:hasSimpleResult "158.75"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:can500
+    void:inDataset :datasetdefinition ;
+    a gs1:PackagingDetails, :BeverageCan, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "16.9oz/500ml Metal Beverage Can"@en, "Canette Ã  Boisson MÃ©tallique, 16.9oz/500ml"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#can500> ;
+    skos:definition "A one time use 16.9oz/500ml metal container meant to hold a liquid, commonly referred to as 202-211 (Height 603)."@en, "Un contenant non-rÃ©utilisable mÃ©tallique de 16.9oz/500ml pour contenir un liquide, souvent appeler 202-211 (Hauteur 603)."@fr ;
+    sosa:isFeatureOfInterestOf :can500ContentSosa, :can500DiameterSosa, :can500EndDiameterSosa, :can500HeightSosa ;
+    gs1:inPackageDiameter :can500Diameter ;
+    gs1:inPackageHeight :can500Height ;
+    gs1:netContent :can500Content .
+
+:can500Content
+    qudt:numericalValue 500 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 500 ;
+    owl:sameAs <http://rdf.ag/o/beer#can500Content> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "500" .
+
+:can500ContentSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can500ContentSosa> ;
+    sosa:hasFeatureOfInterest :can500 ;
+    sosa:hasResult :can500Content ;
+    sosa:hasSimpleResult "500"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :netcontent .
+
+:can500Diameter
+    qudt:numericalValue 68.262 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 68.262 ;
+    owl:sameAs <http://rdf.ag/o/beer#can500Diameter> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "68.262" .
+
+:can500DiameterSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can500DiameterSosa> ;
+    sosa:hasFeatureOfInterest :can500 ;
+    sosa:hasResult :can500Diameter ;
+    sosa:hasSimpleResult "68.262"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:can500EndDiameter
+    qudt:numericalValue 55.033164 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 55.033164 ;
+    owl:sameAs <http://rdf.ag/o/beer#can500EndDiameter> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "55.033164" .
+
+:can500EndDiameterSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can500EndDiameterSosa> ;
+    sosa:hasFeatureOfInterest :can500 ;
+    sosa:hasResult :can500EndDiameter ;
+    sosa:hasSimpleResult "55.033164"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :endDiameter .
+
+:can500Height
+    qudt:numericalValue 168 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 168 ;
+    owl:sameAs <http://rdf.ag/o/beer#can500Height> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "168" .
+
+:can500HeightSosa
+    a sosa:Observation ;
+    owl:sameAs <http://rdf.ag/o/beer#can500HeightSosa> ;
+    sosa:hasFeatureOfInterest :can500 ;
+    sosa:hasResult :can500Height ;
+    sosa:hasSimpleResult "168"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:corneliusKeg
+    void:inDataset :datasetdefinition ;
+    schema:weight :corneliusKegWeightKG, :corneliusKegWeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Cornelius Keg"@en, "FÃ»t Cornelius"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKeg> ;
+    skos:altLabel "Soda Keg"@en ;
+    skos:definition "Cornelius Keg"@en, "FÃ»t Cornelius"@fr ;
+    sosa:isFeatureOfInterestOf :corneliusKegContentSosaGAL, :corneliusKegContentSosaML, :corneliusKegContentSosaOZ, :corneliusKegDiameterSosaIN, :corneliusKegDiameterSosaMM, :corneliusKegHeightSosaIN, :corneliusKegHeightSosaMM, :corneliusKegWeightSosaKG, :corneliusKegWeightSosaLB ;
+    gs1:inPackageDiameter :corneliusKegDiameterIN, :corneliusKegDiameterMM ;
+    gs1:inPackageHeight :corneliusKegHeightIN, :corneliusKegHeightMM ;
+    :nominalCapacity "18930"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:corneliusKegContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 5.23 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 5.23 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "5.23" .
+
+:corneliusKegContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 18930 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 18930 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "18930" .
+
+:corneliusKegContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 640 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 640 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "640" .
+
+:corneliusKegContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegContentGal ;
+    sosa:hasSimpleResult "5.23"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:corneliusKegContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegContentSosaML> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegContentML ;
+    sosa:hasSimpleResult "18930"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:corneliusKegContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegContentOZ ;
+    sosa:hasSimpleResult "640"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:corneliusKegDiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 9.000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 9.000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegDiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "9.000" .
+
+:corneliusKegDiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 229 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 229 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegDiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "229" .
+
+:corneliusKegDiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegDiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegDiameterIN ;
+    sosa:hasSimpleResult "9.000"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:corneliusKegDiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegDiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegDiameterMM ;
+    sosa:hasSimpleResult "229"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:corneliusKegHeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 23.000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 23.000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegHeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "23.000" .
+
+:corneliusKegHeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 584 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 584 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegHeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "584" .
+
+:corneliusKegHeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegHeightSosaIN> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegHeightIN ;
+    sosa:hasSimpleResult "23.000"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:corneliusKegHeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegHeightSosaMM> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegHeightMM ;
+    sosa:hasSimpleResult "584"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:corneliusKegWeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 4.1 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 4.1 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegWeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "4.1" .
+
+:corneliusKegWeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 9.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 9.0 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegWeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "9.0" .
+
+:corneliusKegWeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegWeightSosaKG> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegWeightKG ;
+    sosa:hasSimpleResult "4.1"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:corneliusKegWeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#corneliusKegWeightSosaLB> ;
+    sosa:hasFeatureOfInterest :corneliusKeg ;
+    sosa:hasResult :corneliusKegWeightLB ;
+    sosa:hasSimpleResult "9.0"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:datasetdefinition
+    cc:Jurisdiction dbpedia:Canada ;
+    cc:attributionURL <http://rdf.ag/> ;
+    cc:license <https://creativecommons.org/licenses/by/3.0/>, "Dual license. All rights reserved." ;
+    dcterms:creator :myra, :singer, :warren ;
+    dcterms:description "L'Ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    dcterms:subject <http://id.loc.gov/authorities/subjects/sh85012832> ;
+    dcterms:title "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en ;
+    void:entities "415" ;
+    void:feature <http://www.w3.org/ns/formats/N-Triples>, <http://www.w3.org/ns/formats/N3>, <http://www.w3.org/ns/formats/RDF_XML>, <http://www.w3.org/ns/formats/Turtle> ;
+    void:triples "3834" ;
+    schema:creator :myra, :singer, :warren ;
+    schema:description "L'Ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    schema:distribution :beerJsonld, :beerXML, :beerXMLRDF, :beerXMLTTL ;
+    schema:identifier "https://rdf.ag/o/beer" ;
+    schema:keywords "Beer", "Brewing", "Cider" ;
+    schema:license "Dual license. All rights reserved.", "https://creativecommons.org/licenses/by/3.0/" ;
+    schema:name "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en ;
+    schema:url "http://rdf.ag/o/beer-2021-03-24" ;
+    schema:version "1.2" ;
+    a void:Dataset, <http://www.w3.org/ns/dcat#Dataset>, <https://schema.org/Dataset> ;
+    rdfs:comment "L'Ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    rdfs:isDefinedBy <https://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#datasetdefinition> ;
+    skos:definition "L'Ontologie de la BiÃ¨re est une ontologie crÃ©Ã©e pour reprÃ©senter des donnÃ©es sur la biÃ¨re."@fr, "The Beer Ontology is an ontology created to represent data about beer."@en ;
+    foaf:name "L'Ontologie de la BiÃ¨re"@fr, "The Beer Ontology"@en .
+
+:diameter
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Diameter"@en, "DiamÃ¨tre"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#diameter> ;
+    skos:definition "A diameter is a chord that runs through the center point of the circle."@en, "Le diamÃ¨tre est un segment de droite passant par le centre."@fr .
+
+:endDiameter
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "DiamÃ¨tre de Bout"@fr, "End Diameter"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#endDiameter> ;
+    skos:definition "A diameter is a chord that runs through the center point of the circle at the extremeties of the can."@en, "Le diamÃ¨tre est un segment de droite passant par le centre Ã  l'extrÃ©mitÃ© de la canette."@fr .
+
+:grossWeight
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Gross Weight"@en, "Poids Brut"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#grossWeight> ;
+    skos:definition "La masse volumique du contenant et du produit."@fr, "The weight of the product and the packaging."@en .
+
+:halfBarrelKeg
+    void:inDataset :datasetdefinition ;
+    schema:weight :halfBarrelKegWeightKG, :halfBarrelKegWeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Demi FÃ»t"@fr, "Half Barrel Keg"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKeg> ;
+    skos:definition "Demi FÃ»t"@fr, "Half Barrel Keg"@en ;
+    sosa:isFeatureOfInterestOf :halfBarrelKegContentSosaGAL, :halfBarrelKegContentSosaML, :halfBarrelKegContentSosaOZ, :halfBarrelKegDiameterSosaIN, :halfBarrelKegDiameterSosaMM, :halfBarrelKegHeightSosaIN, :halfBarrelKegHeightSosaMM, :halfBarrelKegWeightSosaKG, :halfBarrelKegWeightSosaLB ;
+    gs1:inPackageDiameter :halfBarrelKegDiameterIN, :halfBarrelKegDiameterMM ;
+    gs1:inPackageHeight :halfBarrelKegHeightIN, :halfBarrelKegHeightMM ;
+    :nominalCapacity "58600"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:halfBarrelKegContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 15.47 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 15.47 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "15.47" .
+
+:halfBarrelKegContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 58600 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 58600 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "58600" .
+
+:halfBarrelKegContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1981 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1981 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "1981" .
+
+:halfBarrelKegContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegContentGal ;
+    sosa:hasSimpleResult "15.47"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:halfBarrelKegContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegContentSosaML> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegContentML ;
+    sosa:hasSimpleResult "58600"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:halfBarrelKegContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegContentOZ ;
+    sosa:hasSimpleResult "1981"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:halfBarrelKegDiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 16.120 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 16.120 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegDiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "16.120" .
+
+:halfBarrelKegDiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 409 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 409 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegDiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "409" .
+
+:halfBarrelKegDiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegDiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegDiameterIN ;
+    sosa:hasSimpleResult "16.120"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:halfBarrelKegDiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegDiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegDiameterMM ;
+    sosa:hasSimpleResult "409"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:halfBarrelKegHeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 23.300 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 23.300 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegHeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "23.300" .
+
+:halfBarrelKegHeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 592 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 592 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegHeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "592" .
+
+:halfBarrelKegHeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegHeightSosaIN> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegHeightIN ;
+    sosa:hasSimpleResult "23.300"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:halfBarrelKegHeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegHeightSosaMM> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegHeightMM ;
+    sosa:hasSimpleResult "592"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:halfBarrelKegWeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 13.6 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 13.6 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegWeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "13.6" .
+
+:halfBarrelKegWeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 30.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 30.0 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegWeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "30.0" .
+
+:halfBarrelKegWeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegWeightSosaKG> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegWeightKG ;
+    sosa:hasSimpleResult "13.6"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:halfBarrelKegWeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#halfBarrelKegWeightSosaLB> ;
+    sosa:hasFeatureOfInterest :halfBarrelKeg ;
+    sosa:hasResult :halfBarrelKegWeightLB ;
+    sosa:hasSimpleResult "30.0"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:height
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Hauteur"@fr, "Height"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#height> ;
+    skos:definition "La mesure de la base au sommet d'une chose."@fr, "The measurement from base to top of something."@en .
+
+:miniKeg
+    void:inDataset :datasetdefinition ;
+    schema:weight :miniKegWeightKG, :miniKegWeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Mini Keg"@en, "Mini-fÃ»t"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKeg> ;
+    skos:altLabel "Bubba"@en ;
+    skos:definition "Mini Keg"@en, "Mini-fÃ»t"@fr ;
+    sosa:isFeatureOfInterestOf :miniKegContentSosaGAL, :miniKegContentSosaML, :miniKegContentSosaOZ, :miniKegDiameterSosaIN, :miniKegDiameterSosaMM, :miniKegHeightSosaIN, :miniKegHeightSosaMM, :miniKegWeightSosaKG, :miniKegWeightSosaLB ;
+    gs1:inPackageDiameter :miniKegDiameterIN, :miniKegDiameterMM ;
+    gs1:inPackageHeight :miniKegHeightIN, :miniKegHeightMM ;
+    :nominalCapacity "5000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:miniKegContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1.32 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1.32 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "1.32" .
+
+:miniKegContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 5000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 5000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "5000" .
+
+:miniKegContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 169 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 169 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "169" .
+
+:miniKegContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegContentGal ;
+    sosa:hasSimpleResult "1.32"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:miniKegContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegContentSosaML> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegContentML ;
+    sosa:hasSimpleResult "5000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:miniKegContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegContentOZ ;
+    sosa:hasSimpleResult "169"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:miniKegDiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 6.750 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 6.750 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegDiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "6.750" .
+
+:miniKegDiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 171 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 171 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegDiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "171" .
+
+:miniKegDiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegDiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegDiameterIN ;
+    sosa:hasSimpleResult "6.750"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:miniKegDiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegDiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegDiameterMM ;
+    sosa:hasSimpleResult "171"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:miniKegHeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 9.875 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 9.875 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegHeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "9.875" .
+
+:miniKegHeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 251 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 251 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegHeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "251" .
+
+:miniKegHeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegHeightSosaIN> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegHeightIN ;
+    sosa:hasSimpleResult "9.875"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:miniKegHeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegHeightSosaMM> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegHeightMM ;
+    sosa:hasSimpleResult "251"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:miniKegWeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 0.6 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 0.6 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegWeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "0.6" .
+
+:miniKegWeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1.4 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1.4 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegWeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "1.4" .
+
+:miniKegWeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegWeightSosaKG> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegWeightKG ;
+    sosa:hasSimpleResult "0.6"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:miniKegWeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#miniKegWeightSosaLB> ;
+    sosa:hasFeatureOfInterest :miniKeg ;
+    sosa:hasResult :miniKegWeightLB ;
+    sosa:hasSimpleResult "1.4"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:myra
+    schema:contactPoint :myraContactPoint ;
+    schema:name "Myra Analytics" ;
+    a foaf:Organization, gs1:Organization, <https://schema.org/Organization> ;
+    rdfs:label "Myra Analytics" ;
+    owl:sameAs <http://rdf.ag/o/beer#myra> ;
+    foaf:name "Myra Analytics" ;
+    gs1:organizationName "Myra Analytics" .
+
+:myraContactPoint
+    schema:contactType "customer service" ;
+    schema:email "info@myraanalytics.ca" ;
+    a schema:ContactPoint ;
+    owl:sameAs <http://rdf.ag/o/beer#myraContactPoint> .
+
+:netContent
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Contenu Net"@fr, "Net Content"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#netContent> ;
+    skos:definition "Le montant de produit consommable dans l'emballage."@fr, "The amount of the consumable product without packaging."@en .
+
+:nominalCapacity
+    void:inDataset :datasetdefinition ;
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "CapacitÃ© nominale"@fr, "Nominal Capacity"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#nominalCapacity> ;
+    skos:definition "Le volume du rÃ©servoir lorsqu'il est rempli completement."@fr, "The volume of the tank when filled to the top."@en .
+
+:overflowCapacity
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "CapacitÃ© Ã  dÃ©bordement"@fr, "Overflow Capacity"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#overflowCapacity> ;
+    skos:definition "La quantitÃ© exacte de liquide que le rÃ©cipient peut contenir lorsqu'il est rempli Ã  ras bord."@fr, "The exact amount of liquid the container can hold when filled to the brim."@en .
+
+:packagingWeight
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Packaging Weight"@en, "Poids de l'emballage"@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#packagingWeight> ;
+    skos:definition "La masse volumique du contenant."@fr, "The weight of the packaging."@en .
+
+:quarterKeg
+    void:inDataset :datasetdefinition ;
+    schema:weight :quarterKegWeightKG, :quarterKegWeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Quart de FÃ»t"@fr, "Quarter Barrel Keg"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKeg> ;
+    skos:altLabel "Pony Keg"@en ;
+    skos:definition "Quart de FÃ»t"@fr, "Quarter Barrel Keg"@en ;
+    sosa:isFeatureOfInterestOf :quarterKegContentSosaGAL, :quarterKegContentSosaML, :quarterKegContentSosaOZ, :quarterKegDiameterSosaIN, :quarterKegDiameterSosaMM, :quarterKegHeightSosaIN, :quarterKegHeightSosaMM, :quarterKegWeightSosaKG, :quarterKegWeightSosaLB ;
+    gs1:inPackageDiameter :quarterKegDiameterIN, :quarterKegDiameterMM ;
+    gs1:inPackageHeight :quarterKegHeightIN, :quarterKegHeightMM ;
+    :nominalCapacity "30000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:quarterKegContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 7.92 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 7.92 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "7.92" .
+
+:quarterKegContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 30000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 30000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "30000" .
+
+:quarterKegContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1014 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1014 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "1014" .
+
+:quarterKegContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegContentGal ;
+    sosa:hasSimpleResult "7.92"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:quarterKegContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegContentSosaML> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegContentML ;
+    sosa:hasSimpleResult "30000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:quarterKegContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegContentOZ ;
+    sosa:hasSimpleResult "1014"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:quarterKegDiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 16.120 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 16.120 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegDiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "16.120" .
+
+:quarterKegDiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 409 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 409 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegDiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "409" .
+
+:quarterKegDiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegDiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegDiameterIN ;
+    sosa:hasSimpleResult "16.120"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:quarterKegDiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegDiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegDiameterMM ;
+    sosa:hasSimpleResult "409"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:quarterKegHeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 13.800 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 13.800 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegHeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "13.800" .
+
+:quarterKegHeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 351 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 351 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegHeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "351" .
+
+:quarterKegHeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegHeightSosaIN> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegHeightIN ;
+    sosa:hasSimpleResult "13.800"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:quarterKegHeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegHeightSosaMM> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegHeightMM ;
+    sosa:hasSimpleResult "351"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:quarterKegWeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 11.3 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 11.3 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegWeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "11.3" .
+
+:quarterKegWeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 25.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 25.0 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegWeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "25.0" .
+
+:quarterKegWeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegWeightSosaKG> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegWeightKG ;
+    sosa:hasSimpleResult "11.3"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:quarterKegWeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#quarterKegWeightSosaLB> ;
+    sosa:hasFeatureOfInterest :quarterKeg ;
+    sosa:hasResult :quarterKegWeightLB ;
+    sosa:hasSimpleResult "25.0"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:singer
+    void:inDataset :datasetdefinition ;
+    a foaf:Person, <https://schema.org/Person> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#singer> ;
+    foaf:name "Jessica Singer" .
+
+:sixthBarrelKeg
+    void:inDataset :datasetdefinition ;
+    schema:weight :sixthBarrelKegWeightKG, :sixthBarrelKegWeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "Sixth Barrel Keg"@en, "fÃ»ts de Sixtel "@fr ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKeg> ;
+    skos:altLabel "Sixtel"@en ;
+    skos:definition "Sixth Barrel Keg"@en, "fÃ»ts de Sixtel "@fr ;
+    sosa:isFeatureOfInterestOf :sixthBarrelKegContentSosaGAL, :sixthBarrelKegContentSosaML, :sixthBarrelKegContentSosaOZ, :sixthBarrelKegDiameterSosaIN, :sixthBarrelKegDiameterSosaMM, :sixthBarrelKegHeightSosaIN, :sixthBarrelKegHeightSosaMM, :sixthBarrelKegWeightSosaKG, :sixthBarrelKegWeightSosaLB ;
+    gs1:inPackageDiameter :sixthBarrelKegDiameterIN, :sixthBarrelKegDiameterMM ;
+    gs1:inPackageHeight :sixthBarrelKegHeightIN, :sixthBarrelKegHeightMM ;
+    :nominalCapacity "20000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:sixthBarrelKegContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 5.28 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 5.28 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "5.28" .
+
+:sixthBarrelKegContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 20000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 20000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "20000" .
+
+:sixthBarrelKegContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 660 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 660 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "660" .
+
+:sixthBarrelKegContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegContentGal ;
+    sosa:hasSimpleResult "5.28"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:sixthBarrelKegContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegContentSosaML> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegContentML ;
+    sosa:hasSimpleResult "20000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:sixthBarrelKegContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegContentOZ ;
+    sosa:hasSimpleResult "660"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:sixthBarrelKegDiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 9.190 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 9.190 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegDiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "9.190" .
+
+:sixthBarrelKegDiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 234 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 234 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegDiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "234" .
+
+:sixthBarrelKegDiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegDiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegDiameterIN ;
+    sosa:hasSimpleResult "9.190"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:sixthBarrelKegDiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegDiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegDiameterMM ;
+    sosa:hasSimpleResult "234"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:sixthBarrelKegHeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 23.250 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 23.250 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegHeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "23.250" .
+
+:sixthBarrelKegHeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 591 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 591 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegHeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "591" .
+
+:sixthBarrelKegHeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegHeightSosaIN> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegHeightIN ;
+    sosa:hasSimpleResult "23.250"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:sixthBarrelKegHeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegHeightSosaMM> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegHeightMM ;
+    sosa:hasSimpleResult "591"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:sixthBarrelKegWeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 7.5 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 7.5 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegWeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "7.5" .
+
+:sixthBarrelKegWeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 16.5 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 16.5 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegWeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "16.5" .
+
+:sixthBarrelKegWeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegWeightSosaKG> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegWeightKG ;
+    sosa:hasSimpleResult "7.5"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:sixthBarrelKegWeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#sixthBarrelKegWeightSosaLB> ;
+    sosa:hasFeatureOfInterest :sixthBarrelKeg ;
+    sosa:hasResult :sixthBarrelKegWeightLB ;
+    sosa:hasSimpleResult "16.5"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:slimQuarterKeg
+    void:inDataset :datasetdefinition ;
+    schema:weight :slimQuarterKegWeightKG, :slimQuarterKegWeightLB ;
+    a gs1:PackagingDetails, :Keg, :LiquidContainer ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "FÃ»t Mince"@fr, "Slim Quarter Keg"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKeg> ;
+    skos:altLabel "Slim"@en ;
+    skos:definition "FÃ»t Mince"@fr, "Slim Quarter Keg"@en ;
+    sosa:isFeatureOfInterestOf :slimQuarterKegContentSosaGAL, :slimQuarterKegContentSosaML, :slimQuarterKegContentSosaOZ, :slimQuarterKegDiameterSosaIN, :slimQuarterKegDiameterSosaMM, :slimQuarterKegHeightSosaIN, :slimQuarterKegHeightSosaMM, :slimQuarterKegWeightSosaKG, :slimQuarterKegWeightSosaLB ;
+    gs1:inPackageDiameter :slimQuarterKegDiameterIN, :slimQuarterKegDiameterMM ;
+    gs1:inPackageHeight :slimQuarterKegHeightIN, :slimQuarterKegHeightMM ;
+    :nominalCapacity "30000"^^<http://www.qudt.org/2.1/vocab/unit/MilliL> .
+
+:slimQuarterKegContentGal
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 7.92 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 7.92 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegContentGal> ;
+    gs1:unitCode "gal_us" ;
+    gs1:value "7.92" .
+
+:slimQuarterKegContentML
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 30000 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliL> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 30000 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegContentML> ;
+    gs1:unitCode "MLT" ;
+    gs1:value "30000" .
+
+:slimQuarterKegContentOZ
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 1014 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 1014 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegContentOZ> ;
+    gs1:unitCode "foz_us" ;
+    gs1:value "1014" .
+
+:slimQuarterKegContentSosaGAL
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegContentSosaGAL> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegContentGal ;
+    sosa:hasSimpleResult "7.92"^^<http://www.qudt.org/2.1/vocab/unit/GAL_US> ;
+    sosa:observedProperty :netcontent .
+
+:slimQuarterKegContentSosaML
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegContentSosaML> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegContentML ;
+    sosa:hasSimpleResult "30000"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:slimQuarterKegContentSosaOZ
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegContentSosaOZ> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegContentOZ ;
+    sosa:hasSimpleResult "1014"^^<http://www.qudt.org/2.1/vocab/unit/OZ_VOL_US> ;
+    sosa:observedProperty :sosaNominalCapacity .
+
+:slimQuarterKegDiameterIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 11.250 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 11.250 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegDiameterIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "11.250" .
+
+:slimQuarterKegDiameterMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 286 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 286 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegDiameterMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "286" .
+
+:slimQuarterKegDiameterSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegDiameterSosaIN> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegDiameterIN ;
+    sosa:hasSimpleResult "11.250"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :diameter .
+
+:slimQuarterKegDiameterSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegDiameterSosaMM> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegDiameterMM ;
+    sosa:hasSimpleResult "286"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :diameter .
+
+:slimQuarterKegHeightIN
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 23.400 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/IN> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 23.400 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegHeightIN> ;
+    gs1:unitCode "INH" ;
+    gs1:value "23.400" .
+
+:slimQuarterKegHeightMM
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 594 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 594 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegHeightMM> ;
+    gs1:unitCode "MMT" ;
+    gs1:value "594" .
+
+:slimQuarterKegHeightSosaIN
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegHeightSosaIN> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegHeightIN ;
+    sosa:hasSimpleResult "23.400"^^<http://www.qudt.org/2.1/vocab/unit/IN> ;
+    sosa:observedProperty :height .
+
+:slimQuarterKegHeightSosaMM
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegHeightSosaMM> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegHeightMM ;
+    sosa:hasSimpleResult "594"^^<http://www.qudt.org/2.1/vocab/unit/MilliM> ;
+    sosa:observedProperty :height .
+
+:slimQuarterKegWeightKG
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 11.3 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 11.3 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegWeightKG> ;
+    gs1:unitCode "KGM" ;
+    gs1:value "11.3" .
+
+:slimQuarterKegWeightLB
+    void:inDataset :datasetdefinition ;
+    qudt:numericalValue 25.0 ;
+    qudt:unit <http://www.qudt.org/2.1/vocab/unit/LB> ;
+    a <http://qudt.org/1.1/schema/qudt#QuantityValue>, gs1:QuantitativeValue ;
+    rdf:value 25.0 ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegWeightLB> ;
+    gs1:unitCode "lbm" ;
+    gs1:value "25.0" .
+
+:slimQuarterKegWeightSosaKG
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegWeightSosaKG> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegWeightKG ;
+    sosa:hasSimpleResult "11.3"^^<http://www.qudt.org/2.1/vocab/unit/KiloGM> ;
+    sosa:observedProperty :grossWeight .
+
+:slimQuarterKegWeightSosaLB
+    void:inDataset :datasetdefinition ;
+    a sosa:Observation ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#slimQuarterKegWeightSosaLB> ;
+    sosa:hasFeatureOfInterest :slimQuarterKeg ;
+    sosa:hasResult :slimQuarterKegWeightLB ;
+    sosa:hasSimpleResult "25.0"^^<http://www.qudt.org/2.1/vocab/unit/LB> ;
+    sosa:observedProperty :grossWeight .
+
+:sosaNominalCapacity
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "CapacitÃ© nominale"@fr, "Nominal Capacity"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#sosaNominalCapacity> ;
+    skos:definition "Le volume du rÃ©servoir lorsqu'il est rempli completement."@fr, "The volume of the tank when filled to the top."@en .
+
+:standardCapacity
+    void:inDataset :datasetdefinition ;
+    a sosa:ObservableProperty, <http://www.w3.org/ns/ssn/Property> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    rdfs:label "CapacitÃ© Standard"@fr, "Standard Capacity"@en ;
+    owl:sameAs <http://rdf.ag/o/beer#standardCapacity> ;
+    skos:definition "Le volume commercial d'un produit en bouteille."@fr, "The commercial volume of a product in a bottle."@en .
+
+:warren
+    void:inDataset :datasetdefinition ;
+    a foaf:Person, <https://schema.org/Person> ;
+    rdfs:isDefinedBy <http://rdf.ag/o/beer-2021-03-24> ;
+    owl:sameAs <http://rdf.ag/o/beer#warren> ;
+    foaf:name "Rob Warren" .
+
+<https://schema.org/creator>
+    a owl:Thing ;
+    owl:sameAs schema:creator .
+
+<https://schema.org/manufacturer>
+    a owl:Thing ;
+    owl:sameAs schema:manufacturer .

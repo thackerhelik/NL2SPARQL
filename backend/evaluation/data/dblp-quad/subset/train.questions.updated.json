@@ -1,0 +1,2331 @@
+[
+  {
+    "id": "Q0001",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What are the papers written by the person Wazir Muhammad?"
+    },
+    "paraphrased_question": {
+      "string": "Which papers did the author Wazir Muhammad write?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/211/3355> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/211/3355>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0002",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the Wikidata ID of Yvo Desmedt?"
+    },
+    "paraphrased_question": {
+      "string": "The author Y. Desmedt is associated with which Wikidata identifier?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/d/YvoDesmedt> <https://dblp.org/rdf/schema#wikidata> ?answer }"
+    },
+    "template_id": "TC04",
+    "entities": [
+      "<https://dblp.org/pid/d/YvoDesmedt>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#wikidata>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0003",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the primary affiliation of Leandro Krug Wives?"
+    },
+    "paraphrased_question": {
+      "string": "Leandro Krug Wives is primarily affiliated to which institution?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/w/LeandroKrugWives> <https://dblp.org/rdf/schema#primaryAffiliation> ?answer }"
+    },
+    "template_id": "TC02",
+    "entities": [
+      "<https://dblp.org/pid/w/LeandroKrugWives>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#primaryAffiliation>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0004",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the webpage of Ravi Kumar?"
+    },
+    "paraphrased_question": {
+      "string": "What is the webpage of the person Ravi Kumar?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/k/RaviKumar> <https://dblp.org/rdf/schema#webpage> ?answer }"
+    },
+    "template_id": "TC05",
+    "entities": [
+      "<https://dblp.org/pid/k/RaviKumar>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#webpage>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0005",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Which publications did Lambe, Larry A. author?"
+    },
+    "paraphrased_question": {
+      "string": "Which papers did the author Lambe, Larry A. write?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/13/378> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/13/378>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0006",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Mention the primary affiliation of Jo\\u00E3o Marcos Travassos Romano."
+    },
+    "paraphrased_question": {
+      "string": "What is the primary affiliation of Romano, Jo\\u00E3o Marcos Travassos?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/20/4410> <https://dblp.org/rdf/schema#primaryAffiliation> ?answer }"
+    },
+    "template_id": "TC02",
+    "entities": [
+      "<https://dblp.org/pid/20/4410>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#primaryAffiliation>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0007",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Show the Wikidata ID of the person Martin Zachariasen."
+    },
+    "paraphrased_question": {
+      "string": "What is the Wikidata ID of Zachariasen, M.?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/97/5868> <https://dblp.org/rdf/schema#wikidata> ?answer }"
+    },
+    "template_id": "TC04",
+    "entities": [
+      "<https://dblp.org/pid/97/5868>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#wikidata>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0008",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Which publications did Nicholas D. Lane author?"
+    },
+    "paraphrased_question": {
+      "string": "What are the papers written by the person Nicholas D. Lane?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/03/2663> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/03/2663>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0009",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Which papers did the author Nishikawa, Ken'ya write?"
+    },
+    "paraphrased_question": {
+      "string": "Which publications did Nishikawa, Ken'ya author?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/124/9189> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/124/9189>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0010",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the webpage of the person Nic V.?"
+    },
+    "paraphrased_question": {
+      "string": "What is the webpage of Nic Volanschi?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/44/3693> <https://dblp.org/rdf/schema#webpage> ?answer }"
+    },
+    "template_id": "TC05",
+    "entities": [
+      "<https://dblp.org/pid/44/3693>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#webpage>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0011",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the webpage of Jun'ichi Tsujii?"
+    },
+    "paraphrased_question": {
+      "string": "What is the webpage of the person Jun'ichi T.?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/t/JunichiTsujii> <https://dblp.org/rdf/schema#webpage> ?answer }"
+    },
+    "template_id": "TC05",
+    "entities": [
+      "<https://dblp.org/pid/t/JunichiTsujii>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#webpage>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0012",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Which papers did the author Christopher Mayershofer write?"
+    },
+    "paraphrased_question": {
+      "string": "Which publications did Mayershofer, C. author?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/286/7023> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/286/7023>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0013",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What are the papers written by the person M. Sidi?"
+    },
+    "paraphrased_question": {
+      "string": "Which publications did Moshe Sidi author?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/s/MosheSidi> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/s/MosheSidi>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0014",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the webpage of the person Masayuki Murata?"
+    },
+    "paraphrased_question": {
+      "string": "What is the webpage of Murata, Masayuki?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/99/4092> <https://dblp.org/rdf/schema#webpage> ?answer }"
+    },
+    "template_id": "TC05",
+    "entities": [
+      "<https://dblp.org/pid/99/4092>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#webpage>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0015",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Which papers did the author Jingdong Li write?"
+    },
+    "paraphrased_question": {
+      "string": "Which publications did J. Li author?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/119/1790> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/119/1790>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0016",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What are the papers written by T. Arthur Terlep?"
+    },
+    "paraphrased_question": {
+      "string": "Which papers did the author T. Arthur Terlep write?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/122/6276> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/122/6276>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0017",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the webpage of the person D. E. O'Leary?"
+    },
+    "paraphrased_question": {
+      "string": "What is the webpage of D. E. O'Leary?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/o/DanielEOLeary> <https://dblp.org/rdf/schema#webpage> ?answer }"
+    },
+    "template_id": "TC05",
+    "entities": [
+      "<https://dblp.org/pid/o/DanielEOLeary>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#webpage>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0018",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Which publications did Lixian Zhang author?"
+    },
+    "paraphrased_question": {
+      "string": "Which papers did the author L. Zhang write?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/45/2915> }"
+    },
+    "template_id": "TC01",
+    "entities": [
+      "<https://dblp.org/pid/45/2915>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0019",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "Mention the primary affiliation of Alan W. Black."
+    },
+    "paraphrased_question": {
+      "string": "What is the primary affiliation of Alan W. Black?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/b/AlanWBlack> <https://dblp.org/rdf/schema#primaryAffiliation> ?answer }"
+    },
+    "template_id": "TC02",
+    "entities": [
+      "<https://dblp.org/pid/b/AlanWBlack>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#primaryAffiliation>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0020",
+    "query_type": "SINGLE_FACT",
+    "question": {
+      "string": "What is the webpage of the person Zdonik, Stanley B.?"
+    },
+    "paraphrased_question": {
+      "string": "What is the webpage of Stanley B. Zdonik?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { <https://dblp.org/pid/z/SBZdonik> <https://dblp.org/rdf/schema#webpage> ?answer }"
+    },
+    "template_id": "TC05",
+    "entities": [
+      "<https://dblp.org/pid/z/SBZdonik>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#webpage>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0351",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Which papers did Dan O. Popa publish in the last 9 years?"
+    },
+    "paraphrased_question": {
+      "string": "List the papers published by Popa, D. O. in the last nine years."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/61/5165> . ?answer <https://dblp.org/rdf/schema#yearOfPublication> ?y FILTER(?y > YEAR(NOW())-9) }"
+    },
+    "template_id": "TC15",
+    "entities": [
+      "<https://dblp.org/pid/61/5165>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0352",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Mention the venues in which Alberto R. published."
+    },
+    "paraphrased_question": {
+      "string": "In which conferences or journals has Alberto R. published papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/274/3007> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/274/3007>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0353",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "What are the venues in which Niels O. Schiller published?"
+    },
+    "paraphrased_question": {
+      "string": "Mention the venues in which Niels O. Schiller published."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/64/1423> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/64/1423>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0354",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Which papers did Eti Ben-Simon and Andrey Z. write together?"
+    },
+    "paraphrased_question": {
+      "string": "What are the papers written by Ben-Simon, E. and Andrey Zhdanov together?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/83/11395> . ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/83/10230> }"
+    },
+    "template_id": "TC12",
+    "entities": [
+      "<https://dblp.org/pid/83/11395>",
+      "<https://dblp.org/pid/83/10230>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0355",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Mention the venues in which Agostino M. published."
+    },
+    "paraphrased_question": {
+      "string": "What are the venues in which Agostino Martinelli published?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/67/6850> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/67/6850>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0356",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Who are the co-authors of M. Guizani?"
+    },
+    "paraphrased_question": {
+      "string": "Mention the co-authors of M. Guizani."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/15/1123> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/15/1123>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/15/1123>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0357",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "In which conferences or journals has Jos\\u00E9 Manuel Colom published papers?"
+    },
+    "paraphrased_question": {
+      "string": "Mention the venues in which Jos\\u00E9 Manuel Colom published."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/12/574> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/12/574>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0358",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "With which other authors has the author S. E. Davies written papers?"
+    },
+    "paraphrased_question": {
+      "string": "Who are the co-authors of S. E. Davies?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/46/2545> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/46/2545>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/46/2545>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0359",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Mention the co-authors of Mart\\u00EDn-Rodilla, Patricia."
+    },
+    "paraphrased_question": {
+      "string": "With which other authors has the author Patricia Mart\\u00EDn-Rodilla written papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/117/0754> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/117/0754>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/117/0754>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0360",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "What are the papers written by Wu, C. and C. Jason Xue together?"
+    },
+    "paraphrased_question": {
+      "string": "Which papers did Wu, C. and Chun Jason Xue write together?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/45/3158-6> . ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/x/ChunJasonXue> }"
+    },
+    "template_id": "TC12",
+    "entities": [
+      "<https://dblp.org/pid/45/3158-6>",
+      "<https://dblp.org/pid/x/ChunJasonXue>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0361",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "With which other authors has the author Luo Jiang written papers?"
+    },
+    "paraphrased_question": {
+      "string": "Who are the co-authors of Luo J.?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/173/9427> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/173/9427>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/173/9427>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0362",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "What are the venues in which Rolf-Peter Vollertsen published?"
+    },
+    "paraphrased_question": {
+      "string": "In which conferences or journals has Rolf-Peter Vollertsen published papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/09/2513> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/09/2513>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0363",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "What are the papers written by Attila Szab\\u00F3 and Zern, A. together?"
+    },
+    "paraphrased_question": {
+      "string": "Find the papers written by Attila Szab\\u00F3 and Zern, A. together."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/27/7440> . ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/219/1025> }"
+    },
+    "template_id": "TC12",
+    "entities": [
+      "<https://dblp.org/pid/27/7440>",
+      "<https://dblp.org/pid/219/1025>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0364",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Mention the co-authors of M. Desco."
+    },
+    "paraphrased_question": {
+      "string": "With which other authors has the author Manuel Desco written papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/30/3245> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/30/3245>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/30/3245>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0365",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Which papers did Barakat, Chadi publish in the last 2 years?"
+    },
+    "paraphrased_question": {
+      "string": "List the papers published by Barakat, Chadi in the last two years."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/63/5559> . ?answer <https://dblp.org/rdf/schema#yearOfPublication> ?y FILTER(?y > YEAR(NOW())-2) }"
+    },
+    "template_id": "TC15",
+    "entities": [
+      "<https://dblp.org/pid/63/5559>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0366",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Mention the venues in which Andrea Asperti published."
+    },
+    "paraphrased_question": {
+      "string": "What are the venues in which Andrea Asperti published?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/a/AAsperti> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/a/AAsperti>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0367",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "In which conferences or journals has Hafedh Mili published papers?"
+    },
+    "paraphrased_question": {
+      "string": "Mention the venues in which Hafedh M. published."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/65/713> . ?x <https://dblp.org/rdf/schema#publishedIn> ?answer }"
+    },
+    "template_id": "TC11",
+    "entities": [
+      "<https://dblp.org/pid/65/713>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0368",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "With which other authors has the author A. E. Zhdanov written papers?"
+    },
+    "paraphrased_question": {
+      "string": "Mention the co-authors of Aleksei E. Zhdanov."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/262/4190> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/262/4190>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/262/4190>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0369",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Which papers did Nguyen-Thinh Le publish in the last eight years?"
+    },
+    "paraphrased_question": {
+      "string": "List the papers published by Nguyen-Thinh Le in the last 8 years."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?answer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/30/3705> . ?answer <https://dblp.org/rdf/schema#yearOfPublication> ?y FILTER(?y > YEAR(NOW())-8) }"
+    },
+    "template_id": "TC15",
+    "entities": [
+      "<https://dblp.org/pid/30/3705>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0370",
+    "query_type": "MULTI_FACT",
+    "question": {
+      "string": "Who are the co-authors of Antonio Ruiz-Mart\\u00EDnez?"
+    },
+    "paraphrased_question": {
+      "string": "With which other authors has the author A. Ruiz-Mart\\u00EDnez written papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?answer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/28/2375> . ?x <https://dblp.org/rdf/schema#authoredBy> ?answer FILTER(?answer != <https://dblp.org/pid/28/2375>) }"
+    },
+    "template_id": "TC14",
+    "entities": [
+      "<https://dblp.org/pid/28/2375>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0701",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Which papers did author W. Kwasowiec publish and in which year?"
+    },
+    "paraphrased_question": {
+      "string": "Which publications did W. Kwasowiec author and in which year?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?firstanswer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/59/2677> . ?firstanswer <https://dblp.org/rdf/schema#yearOfPublication> ?secondanswer }"
+    },
+    "template_id": "TC21",
+    "entities": [
+      "<https://dblp.org/pid/59/2677>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0702",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "List the titles of the papers that Hosam M. Mahmoud published and in which venues."
+    },
+    "paraphrased_question": {
+      "string": "In which venues did Hosam M. Mahmoud publish papers and what are the titles of these papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/m/HosamMMahmoud> . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC24",
+    "entities": [
+      "<https://dblp.org/pid/m/HosamMMahmoud>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0703",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "What are the titles of the papers that Andrew P. Black published in the last six years and in which venues?"
+    },
+    "paraphrased_question": {
+      "string": "In which venues did Andrew P. Black publish papers in the last 6 years and what are the titles of these papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/b/APBlack> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-6) . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC25",
+    "entities": [
+      "<https://dblp.org/pid/b/APBlack>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0704",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Name the co-authors of Dingxuan Li in the last three years and where are they affiliated?"
+    },
+    "paraphrased_question": {
+      "string": "Who are the co-authors of Li, Dingxuan in the last three years and where are they affiliated?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/300/8467> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-3) . ?x <https://dblp.org/rdf/schema#authoredBy> ?firstanswer FILTER(?firstanswer != <https://dblp.org/pid/300/8467>) . ?firstanswer <https://dblp.org/rdf/schema#primaryAffiliation> ?secondanswer }"
+    },
+    "template_id": "TC23",
+    "entities": [
+      "<https://dblp.org/pid/300/8467>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0705",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Mention the papers published by B. Anda and in which year."
+    },
+    "paraphrased_question": {
+      "string": "Which publications did B. Anda author and in which year?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?firstanswer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/91/2927> . ?firstanswer <https://dblp.org/rdf/schema#yearOfPublication> ?secondanswer }"
+    },
+    "template_id": "TC21",
+    "entities": [
+      "<https://dblp.org/pid/91/2927>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0706",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "What are the titles of the papers that Gerasimos Potamianos published in the last 9 years and in which venues?"
+    },
+    "paraphrased_question": {
+      "string": "List the venues in which Gerasimos Potamianos published papers in the last nine years and the titles of these papers."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/78/2516> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-9) . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC25",
+    "entities": [
+      "<https://dblp.org/pid/78/2516>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0707",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "In which venues did Jeffrey S. Rosenschein publish papers and what are the titles of these papers?"
+    },
+    "paraphrased_question": {
+      "string": "List the venues in which Jeffrey S. Rosenschein published papers and the titles of these papers."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/r/JeffreySRosenschein> . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC24",
+    "entities": [
+      "<https://dblp.org/pid/r/JeffreySRosenschein>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0708",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "In which venues did Abdolhossein S. publish papers and what are the titles of these papers?"
+    },
+    "paraphrased_question": {
+      "string": "List the titles of the papers that Abdolhossein S. published and in which venues."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/237/1526> . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC24",
+    "entities": [
+      "<https://dblp.org/pid/237/1526>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0709",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "List the titles of the papers that Gerardo Di Martino published in the last 9 years and in which venues."
+    },
+    "paraphrased_question": {
+      "string": "In which venues did Martino, Gerardo Di publish papers in the last 9 years and what are the titles of these papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/95/9002> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-9) . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC25",
+    "entities": [
+      "<https://dblp.org/pid/95/9002>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0710",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Mention the other authors with whom Nasr, K. M. has co-authored papers in the last six years and where are they affiliated."
+    },
+    "paraphrased_question": {
+      "string": "Who are the co-authors of Karim M. Nasr in the last 6 years and where are they affiliated?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/19/206> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-6) . ?x <https://dblp.org/rdf/schema#authoredBy> ?firstanswer FILTER(?firstanswer != <https://dblp.org/pid/19/206>) . ?firstanswer <https://dblp.org/rdf/schema#primaryAffiliation> ?secondanswer }"
+    },
+    "template_id": "TC23",
+    "entities": [
+      "<https://dblp.org/pid/19/206>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0711",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Name the co-authors of Patrik Haslum in the last six years and where are they affiliated?"
+    },
+    "paraphrased_question": {
+      "string": "Who are the co-authors of P. Haslum in the last 6 years and where are they affiliated?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/39/6592> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-6) . ?x <https://dblp.org/rdf/schema#authoredBy> ?firstanswer FILTER(?firstanswer != <https://dblp.org/pid/39/6592>) . ?firstanswer <https://dblp.org/rdf/schema#primaryAffiliation> ?secondanswer }"
+    },
+    "template_id": "TC23",
+    "entities": [
+      "<https://dblp.org/pid/39/6592>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0712",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Name the co-authors of Amir Akbari in the last four years and where are they affiliated?"
+    },
+    "paraphrased_question": {
+      "string": "Who are the co-authors of Amir A. in the last four years and where are they affiliated?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/07/8862> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-4) . ?x <https://dblp.org/rdf/schema#authoredBy> ?firstanswer FILTER(?firstanswer != <https://dblp.org/pid/07/8862>) . ?firstanswer <https://dblp.org/rdf/schema#primaryAffiliation> ?secondanswer }"
+    },
+    "template_id": "TC23",
+    "entities": [
+      "<https://dblp.org/pid/07/8862>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0713",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "In which venues did Sharma, Deepak publish papers and what are the titles of these papers?"
+    },
+    "paraphrased_question": {
+      "string": "List the venues in which Deepak Sharma published papers and the titles of these papers."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/87/4567-1> . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC24",
+    "entities": [
+      "<https://dblp.org/pid/87/4567-1>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0714",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Who are the co-authors of Hao Chao in the last nine years and where are they affiliated?"
+    },
+    "paraphrased_question": {
+      "string": "Name the co-authors of H. Chao in the last 9 years and where are they affiliated?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/25/10648> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-9) . ?x <https://dblp.org/rdf/schema#authoredBy> ?firstanswer FILTER(?firstanswer != <https://dblp.org/pid/25/10648>) . ?firstanswer <https://dblp.org/rdf/schema#primaryAffiliation> ?secondanswer }"
+    },
+    "template_id": "TC23",
+    "entities": [
+      "<https://dblp.org/pid/25/10648>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0715",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Who are the co-authors of Saha, I. in the last six years and where are they affiliated?"
+    },
+    "paraphrased_question": {
+      "string": "Name the co-authors of Saha, I. in the last 6 years and where are they affiliated?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/88/6031> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-6) . ?x <https://dblp.org/rdf/schema#authoredBy> ?firstanswer FILTER(?firstanswer != <https://dblp.org/pid/88/6031>) . ?firstanswer <https://dblp.org/rdf/schema#primaryAffiliation> ?secondanswer }"
+    },
+    "template_id": "TC23",
+    "entities": [
+      "<https://dblp.org/pid/88/6031>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": true,
+    "held_out": false
+  },
+  {
+    "id": "Q0716",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "Which papers did author Gerard J. M. Janssen publish and in which year?"
+    },
+    "paraphrased_question": {
+      "string": "Mention the papers published by Gerard J. M. Janssen and in which year."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?firstanswer <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/49/4927> . ?firstanswer <https://dblp.org/rdf/schema#yearOfPublication> ?secondanswer }"
+    },
+    "template_id": "TC21",
+    "entities": [
+      "<https://dblp.org/pid/49/4927>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0717",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "In which venues did Gang Chen publish papers and what are the titles of these papers?"
+    },
+    "paraphrased_question": {
+      "string": "List the titles of the papers that Gang Chen published and in which venues."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/67/6383-26> . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC24",
+    "entities": [
+      "<https://dblp.org/pid/67/6383-26>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0718",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "What are the titles of the papers that Lukas Fleischer published in the last 2 years and in which venues?"
+    },
+    "paraphrased_question": {
+      "string": "In which venues did Lukas Fleischer publish papers in the last two years and what are the titles of these papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/146/2156> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-2) . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC25",
+    "entities": [
+      "<https://dblp.org/pid/146/2156>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0719",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "List the venues in which Paul Parsons published papers in the last two years and the titles of these papers."
+    },
+    "paraphrased_question": {
+      "string": "List the titles of the papers that Paul Parsons published in the last two years and in which venues."
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/97/10043> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-2) . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC25",
+    "entities": [
+      "<https://dblp.org/pid/97/10043>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q0720",
+    "query_type": "DOUBLE_INTENT",
+    "question": {
+      "string": "List the venues in which Toru M. published papers and the titles of these papers."
+    },
+    "paraphrased_question": {
+      "string": "In which venues did Toru Mano publish papers and what are the titles of these papers?"
+    },
+    "query": {
+      "sparql": "SELECT DISTINCT ?firstanswer ?secondanswer WHERE { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/129/1046> . ?x <https://dblp.org/rdf/schema#publishedIn> ?firstanswer . ?x <https://dblp.org/rdf/schema#title> ?secondanswer }"
+    },
+    "template_id": "TC24",
+    "entities": [
+      "<https://dblp.org/pid/129/1046>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>",
+      "<https://dblp.org/rdf/schema#title>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1051",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Wanlei Zhou and Chowdhury, Morshed U. co-author the paper 'MVGL Analyser for Multi-classifier Based Spam Filtering System'?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'MVGL Analyser for Multi-classifier Based Spam Filtering System' co-authored by Wanlei Zhou and Morshed U. Chowdhury?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/ACISicis/IslamZC09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/92/2939> . <https://dblp.org/rec/conf/ACISicis/IslamZC09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/74/4874> }"
+    },
+    "template_id": "TC32",
+    "entities": [
+      "<https://dblp.org/pid/92/2939>",
+      "<https://dblp.org/pid/74/4874>",
+      "<https://dblp.org/rec/conf/ACISicis/IslamZC09>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1052",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Andreas Rauh publish the paper 'Observer-based predictive temperature control for distributed heating systems based on the method of integrodifferential relations' in MMAR?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Observer-based predictive temperature control for distributed heating systems based on the method of integrodifferential relations' published by Andreas Rauh in International Conference on Methods and Models in Automation and Robotics?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/mmar/RauhSDA12> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/85/1529> . <https://dblp.org/rec/conf/mmar/RauhSDA12> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/mmar/> }"
+    },
+    "template_id": "TC33",
+    "entities": [
+      "<https://dblp.org/pid/85/1529>",
+      "<https://dblp.org/rec/conf/mmar/RauhSDA12>",
+      "<https://dblp.org/db/conf/mmar/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1053",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Has J. Florens published in Computer Graphics in the last 5 years?"
+    },
+    "paraphrased_question": {
+      "string": "Did J. Florens publish in Computer Graphics in the last five years?"
+    },
+    "query": {
+      "sparql": "ASK { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/26/5845> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-5) . ?x <https://dblp.org/rdf/schema#publishedIn> 'Computer Graphics' }"
+    },
+    "template_id": "TC35",
+    "entities": [
+      "<https://dblp.org/pid/26/5845>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1054",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Ye, Xinyue publish the paper 'Assessment of drought occurrence in Bei-bu wheat districts, China between 1960 and 2012' in the last 7 years?"
+    },
+    "paraphrased_question": {
+      "string": "Did Ye, Xinyue publish the paper 'Assessment of drought occurrence in Bei-bu wheat districts, China between 1960 and 2012' in the last 7 years?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/geoinformatics/ZhaiSYYH17> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/118/4187> . <https://dblp.org/rec/conf/geoinformatics/ZhaiSYYH17> <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-7) }"
+    },
+    "template_id": "TC34",
+    "entities": [
+      "<https://dblp.org/pid/118/4187>",
+      "<https://dblp.org/rec/conf/geoinformatics/ZhaiSYYH17>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1055",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Banville, H. J. publish the paper 'Self-supervised representation learning from electroencephalography signals' in CoRR?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Self-supervised representation learning from electroencephalography signals' published by Hubert J. Banville in CoRR?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/corr/abs-1911-05419> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/160/4305> . <https://dblp.org/rec/journals/corr/abs-1911-05419> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/journals/corr/> }"
+    },
+    "template_id": "TC33",
+    "entities": [
+      "<https://dblp.org/pid/160/4305>",
+      "<https://dblp.org/rec/journals/corr/abs-1911-05419>",
+      "<https://dblp.org/db/journals/corr/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1056",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Xiaotong Z. publish the paper 'Book Rating Model Based on Self-Attention and LSTM' in ICRAI?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Book Rating Model Based on Self-Attention and LSTM' published by Xiaotong Z. in ICRAI?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/icrai/Zhao20> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/197/3519> . <https://dblp.org/rec/conf/icrai/Zhao20> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/icrai/> }"
+    },
+    "template_id": "TC33",
+    "entities": [
+      "<https://dblp.org/pid/197/3519>",
+      "<https://dblp.org/rec/conf/icrai/Zhao20>",
+      "<https://dblp.org/db/conf/icrai/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1057",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Has Martin F. published in Security and Quality in Cyber-Physical Systems Engineering in the last 3 years?"
+    },
+    "paraphrased_question": {
+      "string": "Did Martin Fruhmann publish in Security and Quality in Cyber-Physical Systems Engineering in the last three years?"
+    },
+    "query": {
+      "sparql": "ASK { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/184/6474> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-3) . ?x <https://dblp.org/rdf/schema#publishedIn> 'Security and Quality in Cyber-Physical Systems Engineering' }"
+    },
+    "template_id": "TC35",
+    "entities": [
+      "<https://dblp.org/pid/184/6474>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1058",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did R. Daimo publish the paper 'Black-box Adversarial Attacks on Monocular Depth Estimation Using Evolutionary Multi-objective Optimization' in the last four years?"
+    },
+    "paraphrased_question": {
+      "string": "Did R. Daimo publish the paper 'Black-box Adversarial Attacks on Monocular Depth Estimation Using Evolutionary Multi-objective Optimization' in the last four years?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/corr/abs-2101-10452> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/284/0621> . <https://dblp.org/rec/journals/corr/abs-2101-10452> <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-4) }"
+    },
+    "template_id": "TC34",
+    "entities": [
+      "<https://dblp.org/pid/284/0621>",
+      "<https://dblp.org/rec/journals/corr/abs-2101-10452>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1059",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Joseph P. Simonis publish the paper 'Globalization Techniques for Newton-Krylov Methods and Applications to the Fully Coupled Solution of the Navier-Stokes Equations'?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Globalization Techniques for Newton-Krylov Methods and Applications to the Fully Coupled Solution of the Navier-Stokes Equations' published by the author Joseph P. Simonis?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/siamrev/PawlowskiSSW06> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/31/9301> }"
+    },
+    "template_id": "TC31",
+    "entities": [
+      "<https://dblp.org/pid/31/9301>",
+      "<https://dblp.org/rec/journals/siamrev/PawlowskiSSW06>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1060",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Hui-sen H. publish the paper 'Design of a hiccup mode over-current protection circuit for DC-DC switching converters' in Microelectron. J.?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Design of a hiccup mode over-current protection circuit for DC-DC switching converters' published by Hui-sen H. in Microelectron. J.?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/mj/ShiMHLL12> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/86/10754> . <https://dblp.org/rec/journals/mj/ShiMHLL12> <https://dblp.org/rdf/schema#publishedIn> 'Microelectron. J.' }"
+    },
+    "template_id": "TC33",
+    "entities": [
+      "<https://dblp.org/pid/86/10754>",
+      "<https://dblp.org/rec/journals/mj/ShiMHLL12>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1061",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Was the paper 'Complexity Measures for Regular Expressions' published by the author Andrzej E.?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Complexity Measures for Regular Expressions' published by the person named Andrzej E.?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/stoc/EhrenfeuchtZ74> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/e/AEhrenfeucht> }"
+    },
+    "template_id": "TC31",
+    "entities": [
+      "<https://dblp.org/pid/e/AEhrenfeucht>",
+      "<https://dblp.org/rec/conf/stoc/EhrenfeuchtZ74>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1062",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Was the paper 'Design of a Passive RFID Tag Antenna with a Modified T-match Structure' co-authored by Melaka Senadeera and Shyama Wickramasinghe?"
+    },
+    "paraphrased_question": {
+      "string": "Have Senadeera, Melaka and Wickramasinghe, Shyama co-authored the paper 'Design of a Passive RFID Tag Antenna with a Modified T-match Structure'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/iciis/WickramasingheJ21> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/310/5755> . <https://dblp.org/rec/conf/iciis/WickramasingheJ21> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/140/7567> }"
+    },
+    "template_id": "TC32",
+    "entities": [
+      "<https://dblp.org/pid/310/5755>",
+      "<https://dblp.org/pid/140/7567>",
+      "<https://dblp.org/rec/conf/iciis/WickramasingheJ21>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1063",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Have Sangeeta Mittal and Porwal, Shardha co-authored the paper 'A Secure Key Delegation Mechanism for Fog Networking'?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'A Secure Key Delegation Mechanism for Fog Networking' co-authored by Sangeeta M. and Porwal, Shardha?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/ic3/PorwalM19> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/122/2118> . <https://dblp.org/rec/conf/ic3/PorwalM19> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/152/3619> }"
+    },
+    "template_id": "TC32",
+    "entities": [
+      "<https://dblp.org/pid/122/2118>",
+      "<https://dblp.org/pid/152/3619>",
+      "<https://dblp.org/rec/conf/ic3/PorwalM19>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1064",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Was the paper 'APP and PHY in Harmony: A framework enabling flexible physical layer processing to address application requirements' published by Matthias Hollick in NetSys?"
+    },
+    "paraphrased_question": {
+      "string": "Did Hollick, M. publish the paper 'APP and PHY in Harmony: A framework enabling flexible physical layer processing to address application requirements' in NetSys?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/kivs/SchulzSWREH15> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/95/1816> . <https://dblp.org/rec/conf/kivs/SchulzSWREH15> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/kivs/> }"
+    },
+    "template_id": "TC33",
+    "entities": [
+      "<https://dblp.org/pid/95/1816>",
+      "<https://dblp.org/rec/conf/kivs/SchulzSWREH15>",
+      "<https://dblp.org/db/conf/kivs/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1065",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did T. J. Lowi publish the paper 'Comments on \\democracy in an information society\\: Making it a real revolution' in the last two years?"
+    },
+    "paraphrased_question": {
+      "string": "Did Theodore J. Lowi publish the paper 'Comments on \\democracy in an information society\\: Making it a real revolution' in the last 2 years?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/tis/LowiL86> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/166/5718> . <https://dblp.org/rec/journals/tis/LowiL86> <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-2) }"
+    },
+    "template_id": "TC34",
+    "entities": [
+      "<https://dblp.org/pid/166/5718>",
+      "<https://dblp.org/rec/journals/tis/LowiL86>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1066",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Yao Sun publish the paper 'Conductance Emulating Control Strategy for Three-Phase Current Source Rectifier Under Unbalanced Grid Voltages' in the last 9 years?"
+    },
+    "paraphrased_question": {
+      "string": "Did Yao Sun publish the paper 'Conductance Emulating Control Strategy for Three-Phase Current Source Rectifier Under Unbalanced Grid Voltages' in the last nine years?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/tcasII/LinSXXSZ22> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/62/6846-1> . <https://dblp.org/rec/journals/tcasII/LinSXXSZ22> <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-9) }"
+    },
+    "template_id": "TC34",
+    "entities": [
+      "<https://dblp.org/pid/62/6846-1>",
+      "<https://dblp.org/rec/journals/tcasII/LinSXXSZ22>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1067",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Klawitter, Jonathan publish in Discret. Math. Theor. Comput. Sci. in the last six years?"
+    },
+    "paraphrased_question": {
+      "string": "Has Klawitter, Jonathan published in Discret. Math. Theor. Comput. Sci. in the last 6 years?"
+    },
+    "query": {
+      "sparql": "ASK { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/168/8735> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-6) . ?x <https://dblp.org/rdf/schema#publishedIn> 'Discret. Math. Theor. Comput. Sci.' }"
+    },
+    "template_id": "TC35",
+    "entities": [
+      "<https://dblp.org/pid/168/8735>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1068",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Penglin Dai publish in CoRR in the last four years?"
+    },
+    "paraphrased_question": {
+      "string": "Has Penglin Dai published in CoRR in the last 4 years?"
+    },
+    "query": {
+      "sparql": "ASK { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/159/6594> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-4) . ?x <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/journals/corr/> }"
+    },
+    "template_id": "TC35",
+    "entities": [
+      "<https://dblp.org/pid/159/6594>",
+      "<https://dblp.org/db/journals/corr/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1069",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Was the paper 'Q-learning based dynamic task scheduling for energy-efficient cloud computing' published by the person named Qian Yin?"
+    },
+    "paraphrased_question": {
+      "string": "Did Q. Yin publish the paper 'Q-learning based dynamic task scheduling for energy-efficient cloud computing'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/fgcs/DingFZKYZ20> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/46/758> }"
+    },
+    "template_id": "TC31",
+    "entities": [
+      "<https://dblp.org/pid/46/758>",
+      "<https://dblp.org/rec/journals/fgcs/DingFZKYZ20>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1070",
+    "query_type": "BOOLEAN",
+    "question": {
+      "string": "Did Blatter, Christian publish in Am. Math. Mon. in the last 6 years?"
+    },
+    "paraphrased_question": {
+      "string": "Has Blatter, Christian published in Am. Math. Mon. in the last six years?"
+    },
+    "query": {
+      "sparql": "ASK { ?x <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/41/4960> . ?x <https://dblp.org/rdf/schema#yearOfPublication> ?y . FILTER(?y > YEAR(NOW())-6) . ?x <https://dblp.org/rdf/schema#publishedIn> 'Am. Math. Mon.' }"
+    },
+    "template_id": "TC35",
+    "entities": [
+      "<https://dblp.org/pid/41/4960>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#yearOfPublication>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1401",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Wasn't the paper 'Compressed-Domain Classification of Texture Images' published by the author Bayoumi, M. A. in CAMP?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Compressed-Domain Classification of Texture Images' not published by Bayoumi, M. A. in CAMP?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/camp/WilsonB00> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/b/MagdyABayoumi> . <https://dblp.org/rec/conf/camp/WilsonB00> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/infrkm/> FILTER NOT EXISTS { <https://dblp.org/rec/conf/camp/WilsonB00> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/b/MagdyABayoumi> . <https://dblp.org/rec/conf/camp/WilsonB00> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/infrkm/> } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/b/MagdyABayoumi>",
+      "<https://dblp.org/rec/conf/camp/WilsonB00>",
+      "<https://dblp.org/db/conf/infrkm/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1402",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Wasn't the paper 'Combinatorial operators and their quasi-inverses' published by the author Vladeta Vuckovic in Notre Dame J. Formal Log.?"
+    },
+    "paraphrased_question": {
+      "string": "Has the paper 'Combinatorial operators and their quasi-inverses' not been published by Vladeta Vuckovic in Notre Dame J. Formal Log.?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/ndjfl/Vuckovic71> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/149/6694> . <https://dblp.org/rec/journals/ndjfl/Vuckovic71> <https://dblp.org/rdf/schema#publishedIn> 'Notre Dame J. Formal Log.' FILTER NOT EXISTS { <https://dblp.org/rec/journals/ndjfl/Vuckovic71> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/149/6694> . <https://dblp.org/rec/journals/ndjfl/Vuckovic71> <https://dblp.org/rdf/schema#publishedIn> 'Notre Dame J. Formal Log.' } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/149/6694>",
+      "<https://dblp.org/rec/journals/ndjfl/Vuckovic71>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1403",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'A Priority Queue Transform' not published by the person Michael L. Fredman?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'A Priority Queue Transform' not published by Michael L. Fredman?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/wae/Fredman99> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/15/454> FILTER NOT EXISTS { <https://dblp.org/rec/conf/wae/Fredman99> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/15/454> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/15/454>",
+      "<https://dblp.org/rec/conf/wae/Fredman99>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1404",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'Decompositions and Factorizations of Complete Graphs' not published by Kov\\u00E1r, P. in Structural Analysis of Complex Networks?"
+    },
+    "paraphrased_question": {
+      "string": "Has the paper 'Decompositions and Factorizations of Complete Graphs' not been published by Kov\\u00E1r, P. in Structural Analysis of Complex Networks?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/books/sp/11/Kovar11> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/42/4324> . <https://dblp.org/rec/books/sp/11/Kovar11> <https://dblp.org/rdf/schema#publishedIn> 'Structural Analysis of Complex Networks' FILTER NOT EXISTS { <https://dblp.org/rec/books/sp/11/Kovar11> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/42/4324> . <https://dblp.org/rec/books/sp/11/Kovar11> <https://dblp.org/rdf/schema#publishedIn> 'Structural Analysis of Complex Networks' } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/42/4324>",
+      "<https://dblp.org/rec/books/sp/11/Kovar11>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1405",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Did K. Michael not publish the paper 'Emerging Forms of Covert Surveillance Using GPS-Enabled Devices' in J. Cases Inf. Technol.?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Emerging Forms of Covert Surveillance Using GPS-Enabled Devices' not published by K. Michael in J. Cases Inf. Technol.?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/jcit-igi/AbbasMMA11> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/75/1359> . <https://dblp.org/rec/journals/jcit-igi/AbbasMMA11> <https://dblp.org/rdf/schema#publishedIn> 'J. Cases Inf. Technol.' FILTER NOT EXISTS { <https://dblp.org/rec/journals/jcit-igi/AbbasMMA11> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/75/1359> . <https://dblp.org/rec/journals/jcit-igi/AbbasMMA11> <https://dblp.org/rdf/schema#publishedIn> 'J. Cases Inf. Technol.' } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/75/1359>",
+      "<https://dblp.org/rec/journals/jcit-igi/AbbasMMA11>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1406",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'A decision support framework for a zoonosis prediction system: case study of Salmonellosis' not published by Adhistya Erna Permanasari?"
+    },
+    "paraphrased_question": {
+      "string": "Wasn't the paper 'A decision support framework for a zoonosis prediction system: case study of Salmonellosis' not published by the person named Adhistya Erna Permanasari?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/ijmei/PermanasariRD11> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/29/7481> FILTER NOT EXISTS { <https://dblp.org/rec/journals/ijmei/PermanasariRD11> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/29/7481> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/29/7481>",
+      "<https://dblp.org/rec/journals/ijmei/PermanasariRD11>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1407",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'SoundFactory: a framework for generating datasets for deep learning SELD algorithms' not published by Alberto Scionti in CF?"
+    },
+    "paraphrased_question": {
+      "string": "Wasn't the paper 'SoundFactory: a framework for generating datasets for deep learning SELD algorithms' published by the author Scionti, A. in CF?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/cf/SciontiCT20> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/45/7691> . <https://dblp.org/rec/conf/cf/SciontiCT20> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/cf/> FILTER NOT EXISTS { <https://dblp.org/rec/conf/cf/SciontiCT20> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/45/7691> . <https://dblp.org/rec/conf/cf/SciontiCT20> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/cf/> } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/45/7691>",
+      "<https://dblp.org/rec/conf/cf/SciontiCT20>",
+      "<https://dblp.org/db/conf/cf/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1408",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'A mechanism for replicated data consistency in mobile computing environments' not co-authored by Lifschitz, S\\u00E9rgio and A. Brayner?"
+    },
+    "paraphrased_question": {
+      "string": "Have S\\u00E9rgio Lifschitz and Angelo Brayner not co-authored the paper 'A mechanism for replicated data consistency in mobile computing environments'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/sac/MonteiroBL07> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/l/SLifschitz> . <https://dblp.org/rec/conf/sac/MonteiroBL07> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/b/AngeloBrayner> FILTER NOT EXISTS { <https://dblp.org/rec/conf/sac/MonteiroBL07> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/l/SLifschitz> . <https://dblp.org/rec/conf/sac/MonteiroBL07> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/b/AngeloBrayner> } }"
+    },
+    "template_id": "TC43",
+    "entities": [
+      "<https://dblp.org/pid/l/SLifschitz>",
+      "<https://dblp.org/pid/b/AngeloBrayner>",
+      "<https://dblp.org/rec/conf/sac/MonteiroBL07>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1409",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Wasn't the paper 'Bayesian user modeling: evaluation metrics of an adaptive user interface' published by the author Abid, Mohamed in International Conference on Machine Vision?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Bayesian user modeling: evaluation metrics of an adaptive user interface' not published by Mohamed Abid in ICMV?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/icmv/RimAMA16> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/71/1639> . <https://dblp.org/rec/conf/icmv/RimAMA16> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/icmv/> FILTER NOT EXISTS { <https://dblp.org/rec/conf/icmv/RimAMA16> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/71/1639> . <https://dblp.org/rec/conf/icmv/RimAMA16> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/icmv/> } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/71/1639>",
+      "<https://dblp.org/rec/conf/icmv/RimAMA16>",
+      "<https://dblp.org/db/conf/icmv/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1410",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Did Bashir, Murwan not publish the paper 'Convex Combination of LMF and ZA-LMF for Variable Sparse System Identification' in ACSSC?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Convex Combination of LMF and ZA-LMF for Variable Sparse System Identification' not published by Bashir, Murwan in Asilomar Conference on Signals, Systems and Computing?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/acssc/IqbalBZA19> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/176/8132> . <https://dblp.org/rec/conf/acssc/IqbalBZA19> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/acssc/> FILTER NOT EXISTS { <https://dblp.org/rec/conf/acssc/IqbalBZA19> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/176/8132> . <https://dblp.org/rec/conf/acssc/IqbalBZA19> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/acssc/> } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/176/8132>",
+      "<https://dblp.org/rec/conf/acssc/IqbalBZA19>",
+      "<https://dblp.org/db/conf/acssc/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1411",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Did Wenke W. and Lintao Zheng not co-author the paper 'Feature-Based Streamline Selection Method for 2D Flow Fields'?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Feature-Based Streamline Selection Method for 2D Flow Fields' not co-authored by Wenke W. and Lintao Zheng?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/cadgraphics/ZhengWL15> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/11/11007> . <https://dblp.org/rec/conf/cadgraphics/ZhengWL15> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/178/5013> FILTER NOT EXISTS { <https://dblp.org/rec/conf/cadgraphics/ZhengWL15> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/11/11007> . <https://dblp.org/rec/conf/cadgraphics/ZhengWL15> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/178/5013> } }"
+    },
+    "template_id": "TC43",
+    "entities": [
+      "<https://dblp.org/pid/11/11007>",
+      "<https://dblp.org/pid/178/5013>",
+      "<https://dblp.org/rec/conf/cadgraphics/ZhengWL15>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1412",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'On Coxeter Spectral Study of Edge-bipartite Graphs in Relation with Dynkin Diagrams' not published by the person M. Felisiak?"
+    },
+    "paraphrased_question": {
+      "string": "Has M. Felisiak not published the paper 'On Coxeter Spectral Study of Edge-bipartite Graphs in Relation with Dynkin Diagrams'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/colognetwente/FelisiakS12> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/05/11104> FILTER NOT EXISTS { <https://dblp.org/rec/conf/colognetwente/FelisiakS12> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/05/11104> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/05/11104>",
+      "<https://dblp.org/rec/conf/colognetwente/FelisiakS12>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1413",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Did Dale N. Richardson not publish the paper 'Properties of Sequence Conservation in Upstream Regulatory and Protein Coding Sequences among Paralogs in Arabidopsis thaliana'?"
+    },
+    "paraphrased_question": {
+      "string": "Wasn't the paper 'Properties of Sequence Conservation in Upstream Regulatory and Protein Coding Sequences among Paralogs in Arabidopsis thaliana' not published by the author Dale N. Richardson?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/recomb/RichardsonW09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/16/7420> FILTER NOT EXISTS { <https://dblp.org/rec/conf/recomb/RichardsonW09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/16/7420> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/16/7420>",
+      "<https://dblp.org/rec/conf/recomb/RichardsonW09>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1414",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'Multi-Agent Systems in Quantum Security for Modern Wireless Networks' not co-authored by Dharmendra Sharma and Xu Huang?"
+    },
+    "paraphrased_question": {
+      "string": "Did Dharmendra Sharma and Xu Huang not co-author the paper 'Multi-Agent Systems in Quantum Security for Modern Wireless Networks'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/kes/HuangS09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/18/3371-1> . <https://dblp.org/rec/conf/kes/HuangS09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/00/2922-1> FILTER NOT EXISTS { <https://dblp.org/rec/conf/kes/HuangS09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/18/3371-1> . <https://dblp.org/rec/conf/kes/HuangS09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/00/2922-1> } }"
+    },
+    "template_id": "TC43",
+    "entities": [
+      "<https://dblp.org/pid/18/3371-1>",
+      "<https://dblp.org/pid/00/2922-1>",
+      "<https://dblp.org/rec/conf/kes/HuangS09>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1415",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Did S. Raskhodnikova not publish the paper 'Approximating the Distance to Monotonicity of Boolean Functions'?"
+    },
+    "paraphrased_question": {
+      "string": "Didn't Sofya Raskhodnikova publish the paper 'Approximating the Distance to Monotonicity of Boolean Functions'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/eccc/PallavoorRW19> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/14/3654> FILTER NOT EXISTS { <https://dblp.org/rec/journals/eccc/PallavoorRW19> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/14/3654> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/14/3654>",
+      "<https://dblp.org/rec/journals/eccc/PallavoorRW19>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1416",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Did Samuel J. M. Cartaxo and F. Andre Narciso Fernandes not co-author the paper 'Educational software for heat exchanger equipment'?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Educational software for heat exchanger equipment' not co-authored by Samuel J. M. Cartaxo and Fabiano Andre Narciso Fernandes?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/caee/CartaxoF10> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/201/0558> . <https://dblp.org/rec/journals/caee/CartaxoF10> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/201/0584> FILTER NOT EXISTS { <https://dblp.org/rec/journals/caee/CartaxoF10> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/201/0558> . <https://dblp.org/rec/journals/caee/CartaxoF10> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/201/0584> } }"
+    },
+    "template_id": "TC43",
+    "entities": [
+      "<https://dblp.org/pid/201/0558>",
+      "<https://dblp.org/pid/201/0584>",
+      "<https://dblp.org/rec/journals/caee/CartaxoF10>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1417",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Has the paper 'Stochastic functions using sequential logic' not been published by Naman Saraf in ICCD?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Stochastic functions using sequential logic' not published by Naman Saraf in ICCD?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/iccd/SarafBLR13> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/139/2474> . <https://dblp.org/rec/conf/iccd/SarafBLR13> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/iccd/> FILTER NOT EXISTS { <https://dblp.org/rec/conf/iccd/SarafBLR13> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/139/2474> . <https://dblp.org/rec/conf/iccd/SarafBLR13> <https://dblp.org/rdf/schema#publishedIn> <https://dblp.org/db/conf/iccd/> } }"
+    },
+    "template_id": "TC44",
+    "entities": [
+      "<https://dblp.org/pid/139/2474>",
+      "<https://dblp.org/rec/conf/iccd/SarafBLR13>",
+      "<https://dblp.org/db/conf/iccd/>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>",
+      "<https://dblp.org/rdf/schema#publishedIn>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1418",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'Approximating the Void: Learning Stochastic Channel Models from Observation with Variational Generative Adversarial Networks' not published by T. J. O'Shea?"
+    },
+    "paraphrased_question": {
+      "string": "Did Timothy J. O'Shea not publish the paper 'Approximating the Void: Learning Stochastic Channel Models from Observation with Variational Generative Adversarial Networks'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/journals/corr/abs-1805-06350> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/176/5279> FILTER NOT EXISTS { <https://dblp.org/rec/journals/corr/abs-1805-06350> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/176/5279> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/176/5279>",
+      "<https://dblp.org/rec/journals/corr/abs-1805-06350>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1419",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Was the paper 'Modelling of Pseudonymity under Probabilistic Linkability Attacks' not co-authored by Neubauer, Martin and Jun Zhong?"
+    },
+    "paraphrased_question": {
+      "string": "Did Neubauer, Martin and Jun Zhong not co-author the paper 'Modelling of Pseudonymity under Probabilistic Linkability Attacks'?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/cse/Neubauer09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/75/2857> . <https://dblp.org/rec/conf/cse/Neubauer09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/79/9455> FILTER NOT EXISTS { <https://dblp.org/rec/conf/cse/Neubauer09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/75/2857> . <https://dblp.org/rec/conf/cse/Neubauer09> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/79/9455> } }"
+    },
+    "template_id": "TC43",
+    "entities": [
+      "<https://dblp.org/pid/75/2857>",
+      "<https://dblp.org/pid/79/9455>",
+      "<https://dblp.org/rec/conf/cse/Neubauer09>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  },
+  {
+    "id": "Q1420",
+    "query_type": "NEGATION",
+    "question": {
+      "string": "Wasn't the paper 'Deep Learning for Bibliographic Catalogue Assisting System' not published by the person named Apilak Suntornacane?"
+    },
+    "paraphrased_question": {
+      "string": "Was the paper 'Deep Learning for Bibliographic Catalogue Assisting System' not published by A. Suntornacane?"
+    },
+    "query": {
+      "sparql": "ASK { <https://dblp.org/rec/conf/iait/Maneewongvatana21> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/297/9723> FILTER NOT EXISTS { <https://dblp.org/rec/conf/iait/Maneewongvatana21> <https://dblp.org/rdf/schema#authoredBy> <https://dblp.org/pid/297/9723> } }"
+    },
+    "template_id": "TC41",
+    "entities": [
+      "<https://dblp.org/pid/297/9723>",
+      "<https://dblp.org/rec/conf/iait/Maneewongvatana21>"
+    ],
+    "relations": [
+      "<https://dblp.org/rdf/schema#authoredBy>"
+    ],
+    "temporal": false,
+    "held_out": false
+  }
+]

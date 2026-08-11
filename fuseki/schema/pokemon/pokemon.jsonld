@@ -1,0 +1,2132 @@
+[ {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Ability"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Move"
+    } ]
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#attributionName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://creativecommons.org/ns#attributionURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Colour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#attributionName" : [ {
+    "@value" : "PokémonKG.org Community"
+  } ],
+  "http://creativecommons.org/ns#attributionURL" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-07-27"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Kevin Haller"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Eine Ontologie, die versucht die Pokémon Welt, wie sie in der Anime TV Serie und in den Spielen präsentiert wird, zu beschreiben."
+  }, {
+    "@language" : "en",
+    "@value" : "Ontology covering the Pokémon world as it is presented in games and anime television series."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-07-27"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://pokemonkg.org/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "de",
+    "@value" : "Pokémon Ontologie"
+  }, {
+    "@language" : "en",
+    "@value" : "Pokémon Ontology"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@id" : "http://purl.org/ontology/bibo/status/draft"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "poke"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://pokemonkg.org/ontology#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://pokemonkg.org/ontology/version/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v1.0.0"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Ability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abilities were introduced in Generation III as an all new game mechanic. Each and every Pokémon has an ability, and can only have one at a time. Some abilities are exclusive to certain Pokémon and Evolution lines, while others are known by many Pokémon."
+  }, {
+    "@language" : "de",
+    "@value" : "Fähigkeiten wurden in Generation III als völlig neue Spielmechanik eingeführt. Jeder einzelne Pokémon hat eine Fähigkeit und kann nur eine auf einmal haben. Einige Fähigkeiten sind exklusiv für bestimmte Pokémon- und Evolutionslinien, während andere von vielen Pokémon bekannt sind."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ability"
+  }, {
+    "@language" : "de",
+    "@value" : "Fähigkeit"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Flavor"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Generation"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Item"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#BattleItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Berry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beeren sind kleine, saftige, fleischige Früchte. Wie in der realen Welt gibt es auch in der Pokémon-Welt eine große Vielfalt mit einer großen Auswahl an Geschmacksrichtungen, Namen und Effekten. Erstmals in den Spielen der Generation II gefunden, sind viele Beeren inzwischen zu kritischen Gegenständen im Kampf geworden, wo ihre verschiedenen Effekte die Wiederherstellung von HP und Statuszustand, Statikverbesserung und sogar Schadensverneinung beinhalten."
+  }, {
+    "@language" : "en",
+    "@value" : "Berries are small, juicy, fleshy fruit. As in the real world, a large variety exists in the Pokémon world, with a large range of flavors, names, and effects. First found in the Generation II games, many Berries have since become critical held items in battle, where their various effects include HP and status condition restoration, stat enhancement, and even damage negation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Beere"
+  }, {
+    "@language" : "en",
+    "@value" : "Berry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Food"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Egg group is a category that determines which Pokémon are able to interbreed. The concept was introduced in Generation II, along with breeding. Similar to types, a Pokémon may belong to either one or two egg groups."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Egg Group"
+  }, {
+    "@language" : "de",
+    "@value" : "Ei-Gruppe"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Amorphous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Amorph"
+  }, {
+    "@language" : "en",
+    "@value" : "Amorphous"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Bug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bug"
+  }, {
+    "@language" : "de",
+    "@value" : "Käfer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Ditto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ditto"
+  }, {
+    "@language" : "en",
+    "@value" : "Ditto"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Dragon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Drache"
+  }, {
+    "@language" : "en",
+    "@value" : "Dragon"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Fairy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fairy"
+  }, {
+    "@language" : "de",
+    "@value" : "Fee"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Field",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Feld"
+  }, {
+    "@language" : "en",
+    "@value" : "Field"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Flying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Flug"
+  }, {
+    "@language" : "en",
+    "@value" : "Flying"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Grass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grass"
+  }, {
+    "@language" : "de",
+    "@value" : "Pflanze"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Human-Like",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Human-like"
+  }, {
+    "@language" : "de",
+    "@value" : "Humanotyp"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Mineral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Mineral"
+  }, {
+    "@language" : "en",
+    "@value" : "Mineral"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Monster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Monster"
+  }, {
+    "@language" : "en",
+    "@value" : "Monster"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Undiscovered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "No Eggs Discovered"
+  }, {
+    "@language" : "de",
+    "@value" : "Unbekannt"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Water1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wasser 1"
+  }, {
+    "@language" : "en",
+    "@value" : "Water 1"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Water2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wasser 2"
+  }, {
+    "@language" : "en",
+    "@value" : "Water 2"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#EggGroup_Water3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wasser 3"
+  }, {
+    "@language" : "en",
+    "@value" : "Water 3"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Flavor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Flavor is a special set of attributes that certain foods in the Pokémon world have. Most of the foods can have more than one flavor attributed to them."
+  }, {
+    "@language" : "de",
+    "@value" : "Geschmacksrichtung ist ein spezielles Attribut für Nahrung in der Pokémon-Welt. Den meisten Nahrungen können mehr als eine Geschmacksrichtung haben."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flavor"
+  }, {
+    "@language" : "de",
+    "@value" : "Geschmacksrichtung"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Flavor_Bitter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Flavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "bitter"
+  }, {
+    "@language" : "en",
+    "@value" : "bitter"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Flavor_Dry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Flavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dry"
+  }, {
+    "@language" : "de",
+    "@value" : "trocken"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Flavor_Sour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Flavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "sauer"
+  }, {
+    "@language" : "en",
+    "@value" : "sour"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Flavor_Spicy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Flavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "scharf"
+  }, {
+    "@language" : "en",
+    "@value" : "spicy"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Flavor_Sweet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Flavor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sweet"
+  }, {
+    "@language" : "de",
+    "@value" : "süß"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Food"
+  }, {
+    "@language" : "de",
+    "@value" : "Nahrung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Game",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Game"
+  }, {
+    "@language" : "de",
+    "@value" : "Spiel"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Generation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Generation bezieht sich auf die Pokémon-Spieleserie. Es ist eine Gruppe von Spielen, die zur gleichen Zeit oder etwa zur gleichen Zeit veröffentlicht wurden. Es bedeutet auch, dass Spiele in der gleichen Generation mit den anderen kompatibel sind, die den gleichen Pokémon enthalten und die Anzahl der Züge, die dort gelernt werden müssen."
+  }, {
+    "@language" : "en",
+    "@value" : "Generation refers to the Pokémon game series. It is a group of games that were released at or around the same time. It also means that games in the same generation are compatible with the others, containing the same Pokémon and the number of moves there are to be learned."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Generation"
+  }, {
+    "@language" : "en",
+    "@value" : "Generation"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Gym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Arena"
+  }, {
+    "@language" : "en",
+    "@value" : "Gym"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#GymLeader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A gym leader is the highest-ranking member and owner of an official Pokémon Gym. Gym leaders use their gyms and their Pokémon to test the skills of trainers that challenge them, and if said trainers win a battle, the gym leader will gift them with a badge that's unique to that specific gym."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Arenaleiter"
+  }, {
+    "@language" : "en",
+    "@value" : "Gym Leader"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Trainer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#HM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hidden Machine"
+  }, {
+    "@language" : "de",
+    "@value" : "Versteckte Maschine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  }, {
+    "@id" : "https://pokemonkg.org/ontology#MoveLearning"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Habitat"
+  }, {
+    "@language" : "de",
+    "@value" : "Lebensraum"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Cave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cave"
+  }, {
+    "@language" : "de",
+    "@value" : "Höhle"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Forest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Forest"
+  }, {
+    "@language" : "de",
+    "@value" : "Wald"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Grassland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Gras"
+  }, {
+    "@language" : "en",
+    "@value" : "Grassland"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Mountain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Berg"
+  }, {
+    "@language" : "en",
+    "@value" : "Mountain"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Rare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rare"
+  }, {
+    "@language" : "de",
+    "@value" : "Selten"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_RoughTerrain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rough terrain"
+  }, {
+    "@language" : "de",
+    "@value" : "Wildnis"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Sea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sea"
+  }, {
+    "@language" : "de",
+    "@value" : "Wasser"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_Urban",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Stadt"
+  }, {
+    "@language" : "en",
+    "@value" : "Urban"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Habitat_WatersEdge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Küste"
+  }, {
+    "@language" : "en",
+    "@value" : "Water's edge"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#HoldItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An item is an object in the Pokémon games which the player can pick up, keep in their Bag, and use in some manner. They have various uses, including healing, powering up, helping one to catch Pokémon, or to access a new area."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Gegenstand ist ein Objekt in den Pokémon-Spielen, welches der Spieler aufheben, in seiner Tasche aufbewahren und in irgendeiner Weise verwenden kann. Sie haben verschiedene Verwendungsmöglichkeiten, einschließlich Heilung, Auftanken, Hilfe beim Fangen von Pokémon oder beim Betreten eines neuen Gebietes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Item"
+  }, {
+    "@language" : "en",
+    "@value" : "Item"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "de",
+    "@value" : "Gegenstand"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#LearningByLevelingUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Erlernen durch Aufleveln"
+  }, {
+    "@language" : "en",
+    "@value" : "Learning by leveling up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#MoveLearning"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#LearningThroughBreeding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Erlernen durch Züchtung"
+  }, {
+    "@language" : "en",
+    "@value" : "Learning through breeding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#MoveLearning"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Medicine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Medicine items can heal various afflictions of a Pokémon."
+  }, {
+    "@language" : "de",
+    "@value" : "Medizin kann verschiedene Leiden eines Pokémon heilen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medicine"
+  }, {
+    "@language" : "de",
+    "@value" : "Medizin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Move",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Move is a technique that a Pokémon uses during Battles. Moves are mainly used to inflict damage on the opponent. Moves usually come from a natural ability that the specific Pokémon has. Some moves can be used both inside and outside of battle. When outside of battle, moves are usually used for transportation or for removing a certain obstacle that the player runs into in the game."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Aktion ist eine Technik, die ein Pokémon während eines Kampfes anwendet. Züge werden hauptsächlich verwendet, um dem Gegner Schaden zuzufügen. Züge kommen normalerweise von einer natürlichen Fähigkeit, die der bestimmte Pokémon hat. Einige Züge können sowohl innerhalb als auch außerhalb des Kampfes verwendet werden. Außerhalb des Kampfes werden Züge normalerweise für den Transport oder zum Entfernen eines bestimmten Hindernisses verwendet, auf das der Spieler im Spiel stößt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Aktion"
+  }, {
+    "@language" : "en",
+    "@value" : "Move"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Flavor"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Game"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Generation"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Item"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Place"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokédex"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokémon"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Region"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Type"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#MoveLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Aktionserlernen"
+  }, {
+    "@language" : "en",
+    "@value" : "Move learning"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PhysicalMove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Physical Move"
+  }, {
+    "@language" : "de",
+    "@value" : "Physische Aktion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Entities that have a somewhat fixed, physical extension."
+  }, {
+    "@language" : "de",
+    "@value" : "Entitäten, die eine einigermaßen feste, physische Ausdehnung haben."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ort"
+  }, {
+    "@language" : "en",
+    "@value" : "Place"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Bug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bug"
+  }, {
+    "@language" : "de",
+    "@value" : "Käfer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Dark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dark"
+  }, {
+    "@language" : "de",
+    "@value" : "Finsternis/Unlicht"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Dragon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Drachen"
+  }, {
+    "@language" : "en",
+    "@value" : "Dragon"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Electric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Es gibt relativ wenige Electric Pokémon; tatsächlich wurden in der dritten Generation nur vier hinzugefügt. Die meisten basieren auf Nagetieren oder unbelebten Objekten."
+  }, {
+    "@language" : "en",
+    "@value" : "There are relatively few Electric Pokémon; in fact only four were added in the third generation. Most are based on rodents or inanimate objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric"
+  }, {
+    "@language" : "de",
+    "@value" : "Elektro"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Fairy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fairy"
+  }, {
+    "@language" : "de",
+    "@value" : "Fee"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Fighting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fighting"
+  }, {
+    "@language" : "de",
+    "@value" : "Kampf"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Fire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Feuer ist eine der drei elementaren Grundtypen zusammen mit Wasser und Gras, die die drei Starter-Pokémon bilden. Dadurch entsteht ein einfaches Dreieck, um neuen Spielern das Typkonzept leicht zu erklären. Feuerarten sind in den frühen Phasen der Spiele notorisch selten, so dass die Wahl der Feuervariation am Start oft von Vorteil ist."
+  }, {
+    "@language" : "en",
+    "@value" : "Fire is one of the three basic elemental types along with Water and Grass, which constitute the three starter Pokémon. This creates a simple triangle to explain the type concept easily to new players. Fire types are notoriously rare in the early stages of the games so choosing the Fire variation starter is often a plus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Feuer"
+  }, {
+    "@language" : "en",
+    "@value" : "Fire"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Flying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Flug"
+  }, {
+    "@language" : "en",
+    "@value" : "Flying"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Ghost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Geist"
+  }, {
+    "@language" : "en",
+    "@value" : "Ghost"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Grass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gras ist einer der drei elementaren Grundtypen zusammen mit Feuer und Wasser, die die drei Starter-Pokémon bilden. Dadurch entsteht ein einfaches Dreieck, um neuen Spielern das Typkonzept leicht zu erklären."
+  }, {
+    "@language" : "en",
+    "@value" : "Grass is one of the three basic elemental types along with Fire and Water, which constitute the three starter Pokémon. This creates a simple triangle to explain the type concept easily to new players."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grass"
+  }, {
+    "@language" : "de",
+    "@value" : "Pflanze"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Ground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Boden"
+  }, {
+    "@language" : "en",
+    "@value" : "Ground"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Ice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Eis"
+  }, {
+    "@language" : "en",
+    "@value" : "Ice"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Normal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Normaltyp ist der grundlegendste Typ von Pokémon. Sie sind sehr häufig und erscheinen ab der ersten Route, die Sie besuchen. Die meisten normalen Pokémon sind Einzeltypen."
+  }, {
+    "@language" : "en",
+    "@value" : "The Normal type is the most basic type of Pokémon. They are very common and appear from the very first route you visit. Most Normal Pokémon are single type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Normal"
+  }, {
+    "@language" : "en",
+    "@value" : "Normal"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Poison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Gift"
+  }, {
+    "@language" : "en",
+    "@value" : "Poison"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Psychic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Psychic"
+  }, {
+    "@language" : "de",
+    "@value" : "Psycho"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Rock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Gestein"
+  }, {
+    "@language" : "en",
+    "@value" : "Rock"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Shadow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Crypto"
+  }, {
+    "@language" : "en",
+    "@value" : "Shadow"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Steel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Stahl"
+  }, {
+    "@language" : "en",
+    "@value" : "Steel"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokéType_Water",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Wasser ist einer der drei elementaren Grundtypen zusammen mit Feuer und Gras, die die drei Starter-Pokémon bilden. Dadurch entsteht ein einfaches Dreieck, um neuen Spielern das Typkonzept leicht zu erklären. Wasser ist die häufigste Art mit über 100 Pokémon, die auf einer Vielzahl von Fischen und anderen Meeresbewohnern basieren."
+  }, {
+    "@language" : "en",
+    "@value" : "Water is one of the three basic elemental types along with Fire and Grass, which constitute the three starter Pokémon. This creates a simple triangle to explain the type concept easily to new players. Water is the most common type with over 100 Pokémon, which are based on a wide variety of fish and other sea-dwelling creatures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wasser"
+  }, {
+    "@language" : "en",
+    "@value" : "Water"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Pokéball",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Poké Ball is a type of item that is critical to a Trainer's quest, used for catching and storing Pokémon."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Poké-Ball ist eine Art von Gegenstand, der für die Aufgabe eines Trainers entscheidend ist und zum Fangen und Aufbewahren von Pokémon verwendet wird."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Poké Ball"
+  }, {
+    "@language" : "en",
+    "@value" : "Poké Ball"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Pokédex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Pokédex ist ein elektronisches Gerät, das entwickelt wurde, um die verschiedenen Arten von Pokémon zu katalogisieren und Informationen über sie zu liefern, die in den Videospiel-, Anime und Manga-Serien von Pokémon enthalten sind."
+  }, {
+    "@language" : "en",
+    "@value" : "The Pokédex is an electronic device designed to catalogue and provide information regarding the various species of Pokémon featured in the Pokémon video game, anime and manga series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Pokédex"
+  }, {
+    "@language" : "en",
+    "@value" : "Pokédex"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Pokémon"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Type"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#PokédexEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Pokédex Eintrag"
+  }, {
+    "@language" : "en",
+    "@value" : "Pokédex Entry"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Move"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokédex"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokémon"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Type"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Pokémon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Pokémon"
+  }, {
+    "@language" : "en",
+    "@value" : "Pokémon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Pok%C3%A9mon"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Pokédex"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Type"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Regionen sind Gebiete im Pokémon-Universum, die kleinere Teile einer Nation darstellen."
+  }, {
+    "@language" : "en",
+    "@value" : "Regions are areas in the Pokémon universe that are smaller parts of a nation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Region"
+  }, {
+    "@language" : "en",
+    "@value" : "Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Shape"
+  }, {
+    "@language" : "de",
+    "@value" : "Silhouette"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Ability"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#EggGroup"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Flavor"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Game"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Generation"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Item"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Move"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Place"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokédex"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokémon"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Species"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Type"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Armor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Arms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Ball",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Blob",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_BugWings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Fish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Heads",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Humanoid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Legs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Quadruped",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Squiggle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Tentacles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Upright",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Shape_Wings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#SpecialMove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Special Move"
+  }, {
+    "@language" : "de",
+    "@value" : "Spezialaktion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Species",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Species"
+  }, {
+    "@language" : "de",
+    "@value" : "Spezie"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Ability"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#EggGroup"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Flavor"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Game"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Generation"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Item"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Move"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokédex"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokémon"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Region"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Type"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#StatusMove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Status Move"
+  }, {
+    "@language" : "de",
+    "@value" : "Statusaktion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#TM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  }, {
+    "@language" : "en",
+    "@value" : "A Technical Machine, or TM for short is an item that can be used to teach a Pokémon a move."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Technische Maschine (TM) verhilft einem Pokémon dazu, eine bestimmte Attacke zu erlernen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Technical Machine"
+  }, {
+    "@language" : "de",
+    "@value" : "Technische Maschine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Item"
+  }, {
+    "@id" : "https://pokemonkg.org/ontology#MoveLearning"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Town",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Stadt"
+  }, {
+    "@language" : "en",
+    "@value" : "Town"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Trainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pokémon Trainer is a person who catches, occasionally names, and trains different kinds of Pokémon."
+  }, {
+    "@language" : "de",
+    "@value" : "Pokémon Trainer ist eine Person, die verschiedene Arten von Pokémon fängt, gelegentlich benennt und trainiert."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Trainer"
+  }, {
+    "@language" : "en",
+    "@value" : "Trainer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "All Pokémon creatures and their moves are assigned certain types. Each type has several strengths and weaknesses in both attack and defense."
+  }, {
+    "@language" : "de",
+    "@value" : "Allen Pokémon-Kreaturen und ihren Attacken werden bestimmte Typen zugeordnet. Jeder Typ hat mehrere Stärken und Schwächen sowohl in Angriff als auch in Verteidigung."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Typ"
+  }, {
+    "@language" : "en",
+    "@value" : "Type"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#Pokédex"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#Pokémon"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#accuracy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has accuracy"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Genauigkeit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#basePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has base power"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Basisstärke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#basePowerPoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has base power points"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Basis-Angriffspunkte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#containsPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A place is contained to some extent in this place."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Ort ist in gewissem Maße in diesem Ort enthalten."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beinhaltet Ort"
+  }, {
+    "@language" : "en",
+    "@value" : "contains place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#locatedIn"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#describedInPokédex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "described in Pokédex entry"
+  }, {
+    "@language" : "de",
+    "@value" : "in Pokédex Eintrag beschrieben"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#describesPokémon"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#describesPokémon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Pokémon that is described by this Pokédex entry."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Pokémon, das von diesem Pokédex Eintrag beschrieben wird."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beschreibt Pokémon"
+  }, {
+    "@language" : "en",
+    "@value" : "describes Pokémon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#effectDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "effect description"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#entryNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Pokédex Eintrag hat folgende Nummer, die eindeutig sein muss."
+  }, {
+    "@language" : "en",
+    "@value" : "This Pokédex entry has the given number, which has to be unique."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has entry number"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Eintragsnummer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#evolvesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Diese Spezie entwickelt sich von einer anderen Spezies."
+  }, {
+    "@language" : "en",
+    "@value" : "This species evolves from the other species."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "entwickelt sich von"
+  }, {
+    "@language" : "en",
+    "@value" : "evolves from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#evolvesTo"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#evolvesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Diese Spezie kann sich in eine andere Spezie entwickeln."
+  }, {
+    "@language" : "en",
+    "@value" : "This species can evolve in another species."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "entwickelt sich in"
+  }, {
+    "@language" : "en",
+    "@value" : "evolves to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#featuresSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "features Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://pokemonkg.org/ontology#hasPokédexEntry"
+    }, {
+      "@id" : "https://pokemonkg.org/ontology#describesPokémon"
+    } ]
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#firmness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has firmness"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Güte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#foundIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "found in"
+  }, {
+    "@language" : "de",
+    "@value" : "kommt vor in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Habitat"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasColour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has colour"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Farbe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Colour"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasFlavor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has flavor"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Geschmacksrichtung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Flavor"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasGenus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has genus"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Gattung"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasPokédexEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Pokédex entry in which this Pokémon is described."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Pokédex Eintrag in welchen über dieses Pokémon informiert wird."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Pokédex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Pokédex entry"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Pokédex Eintrag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#PokédexEntry"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has shape"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Silhouette"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Shape"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has size"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Größe"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Type"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Typ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#inEggGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "in Ei-Gruppe"
+  }, {
+    "@language" : "en",
+    "@value" : "in egg group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#EggGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#learnsMove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#MoveLearning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "learns move"
+  }, {
+    "@language" : "de",
+    "@value" : "lernt Aktion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Dieser Ort befindet sich in einem gewissen Maße in einem anderen Ort."
+  }, {
+    "@language" : "en",
+    "@value" : "This place is located to some extent in another place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "enthalten in"
+  }, {
+    "@language" : "en",
+    "@value" : "located in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Place"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#maxPowerPoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  }, {
+    "@language" : "en",
+    "@value" : "has maximum power points"
+  }, {
+    "@language" : "de",
+    "@value" : "hat maximale Agriffspunkte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#mayHaveAbility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "könnte Fähigkeit besitzen"
+  }, {
+    "@language" : "en",
+    "@value" : "may have ability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Ability"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#mayHaveHiddenAbility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  }, {
+    "@language" : "de",
+    "@value" : "könnte versteckte Fähigkeit haben"
+  }, {
+    "@language" : "en",
+    "@value" : "may have hidden ability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Ability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://pokemonkg.org/ontology#mayHaveAbility"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#minLevelToLearn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://pokemonkg.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "braucht mininum Level zum Erlernen"
+  }, {
+    "@language" : "en",
+    "@value" : "needs minimum level to learn"
+  } ]
+}, {
+  "@id" : "https://pokemonkg.org/ontology#smoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://pokemonkg.org/ontology#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has smoothness"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Glätte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+} ]

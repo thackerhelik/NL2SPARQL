@@ -1,0 +1,140 @@
+[
+  {
+    "query": "Morpurgo D. Brutus is the father of Hector",
+    "expected_mentions": [
+      {
+        "text": "Morpurgo D. Brutus",
+        "type": "http://schema.org/Person",
+        "label_pred": "http://www.w3.org/2000/01/rdf-schema#label",
+        "uri": [
+          "http://mydb.org/id/5"
+        ]
+      },
+      {
+        "text": "Hector",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/13",
+          "http://mydb.org/id/17"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Who is the son of Marie?",
+    "expected_mentions": [
+      {
+        "text": "Marie",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/1"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Was Angelino M. born in 1942?",
+    "expected_mentions": [
+      {
+        "text": "Angelino M.",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/11"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Is Angelino M. son of D. Brutus?",
+    "expected_mentions": [
+      {
+        "text": "Angelino M.",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/11"
+        ]
+      },
+      {
+        "text": "D. Brutus",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/5"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Show me family names of Marie and John.",
+    "expected_mentions": [
+      {
+        "text": "Marie",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/1"
+        ]
+      },
+      {
+        "text": "John",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": [
+          "http://mydb.org/id/4"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Is Bobby Firmino a businessman?",
+    "expected_mentions": [
+      {
+        "text": "Bobby Firmino",
+        "type": "http://schema.org/Person",
+        "label_pred": [
+          "http://schema.org/givenName",
+          "http://www.w3.org/2000/01/rdf-schema#label"
+        ],
+        "uri": []
+      }
+    ]
+  },
+  {
+    "query": "Is McFarlane a doctor by profession?",
+    "expected_mentions": [
+      {
+        "text": "McFarlane",
+        "type": "http://schema.org/Person",
+        "label_pred": "http://schema.org/familyName",
+        "uri": [
+          "http://mydb.org/id/18"
+        ]
+      }
+    ]
+  }
+]

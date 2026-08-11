@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Return all papers published by Ian Goodfellow",
+        "mentions": [
+            {
+                "text": "Ian Goodfellow",
+                "type": "Person",
+                "label_pred": "Person",
+                "attrs": {},
+                "iri": "https://dblp.org/pid/43/7940"
+            }
+        ]
+    }
+]

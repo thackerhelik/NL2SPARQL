@@ -1,0 +1,45 @@
+@prefix ex: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:A a owl:Class .
+ex:B a owl:Class .
+ex:C a owl:Class .
+
+# ex:D ≡ (ex:B ⊓ ex:C)
+ex:D a owl:Class ;
+  owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf ( ex:B ex:C )
+  ] .
+
+# ex:E ⊑ (ex:B ⊔ ex:C)
+ex:E a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Class ;
+    owl:unionOf ( ex:B ex:C )
+  ] .
+
+# ex:F ⊑ ¬ex:C
+ex:F a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Class ;
+    owl:complementOf ex:C
+  ] .
+
+# ex:G is a disjoint union of ex:B and ex:C
+ex:G a owl:Class ;
+  owl:disjointUnionOf ( ex:B ex:C ) .
+
+# ex:H is a direct union
+ex:H a owl:Class ;
+  owl:unionOf ( ex:A ex:B ) .
+
+# ex:I is a direct intersection
+ex:I a owl:Class ;
+  owl:intersectionOf ( ex:A ex:B ) .
+
+# ex:J is oneOf some individuals
+ex:J a owl:Class ;
+  owl:oneOf ( ex:indiv1 ex:indiv2 ) .

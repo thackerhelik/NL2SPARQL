@@ -1,0 +1,3241 @@
+[
+  {
+    "id": "PKG_Q0001",
+    "query_type": "ASK",
+    "question": {
+      "string": "Is Pikachu a water pokemon?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "water"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#PokéType:Water",
+          "label": "Water",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0002",
+    "query_type": "ASK",
+    "question": {
+      "string": "Is Pikachu an electric pokemon?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Electric> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "electric"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "electric",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Electric"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0003",
+    "query_type": "ASK",
+    "question": {
+      "string": "Is Psyduck a water pokemon?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/psyduck> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Psyduck",
+        "water"
+      ],
+      "entities": [
+        {
+          "text": "Psyduck",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/psyduck"
+        },
+        {
+          "text": "water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0004",
+    "query_type": "ASK",
+    "question": {
+      "string": "Does Vespiquen have the move Gust?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/vespiquen> a poke:Species ; poke:isAbleToApply <https://pokemonkg.org/instance/move/gust> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Vespiquen",
+        "Gust"
+      ],
+      "entities": [
+        {
+          "text": "Vespiquen",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/vespiquen"
+        },
+        {
+          "text": "Gust",
+          "type": "https://pokemonkg.org/ontology#Move",
+          "label": "Move",
+          "iri": "https://pokemonkg.org/instance/move/gust"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0005",
+    "query_type": "ASK",
+    "question": {
+      "string": "Does Articuno have the move Inferno?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/articuno> a poke:Species ; poke:isAbleToApply <https://pokemonkg.org/instance/move/inferno> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Articuno",
+        "Inferno"
+      ],
+      "entities": [
+        {
+          "text": "Articuno",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/articuno"
+        },
+        {
+          "text": "Inferno",
+          "type": "https://pokemonkg.org/ontology#Move",
+          "label": "Move",
+          "iri": "https://pokemonkg.org/instance/move/inferno"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0006",
+    "query_type": "ASK",
+    "question": {
+      "string": "Can Clefable have the hidden ability Unaware?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/clefable> a poke:Species ; poke:mayHaveHiddenAbility <https://pokemonkg.org/instance/ability/unaware> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Clefable",
+        "Unaware"
+      ],
+      "entities": [
+        {
+          "text": "Clefable",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/clefable"
+        },
+        {
+          "text": "Unaware",
+          "type": "https://pokemonkg.org/ontology#Ability",
+          "label": "Ability",
+          "iri": "https://pokemonkg.org/instance/ability/unaware"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveHiddenAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0007",
+    "query_type": "ASK",
+    "question": {
+      "string": "Can Skitty have the hidden ability Sheer Force?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/skitty> a poke:Species ; poke:mayHaveHiddenAbility <https://pokemonkg.org/instance/ability/sheer-force> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Skitty",
+        "Sheer Force"
+      ],
+      "entities": [
+        {
+          "text": "Skitty",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/skitty"
+        },
+        {
+          "text": "Sheer Force",
+          "type": "https://pokemonkg.org/ontology#Ability",
+          "label": "Ability",
+          "iri": "https://pokemonkg.org/instance/ability/sheer-force"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveHiddenAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0008",
+    "query_type": "ASK",
+    "question": {
+      "string": "Is Pidgeotto found in the Forest habitat?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/pidgeotto> a poke:Species ; poke:foundIn <https://pokemonkg.org/ontology#Habitat:Forest> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Pidgeotto",
+        "Forest"
+      ],
+      "entities": [
+        {
+          "text": "Pidgeotto",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pidgeotto"
+        },
+        {
+          "text": "Forest",
+          "type": "https://pokemonkg.org/ontology#Habitat",
+          "label": "Habitat",
+          "iri": "https://pokemonkg.org/ontology#Habitat:Forest"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0009",
+    "query_type": "ASK",
+    "question": {
+      "string": "Is Venonat found in the Mountain habitat?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/venonat> a poke:Species ; poke:foundIn <https://pokemonkg.org/ontology#Habitat:Mountain> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Venonat",
+        "Mountain"
+      ],
+      "entities": [
+        {
+          "text": "Venonat",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/venonat"
+        },
+        {
+          "text": "Mountain",
+          "type": "https://pokemonkg.org/ontology#Habitat",
+          "label": "Habitat",
+          "iri": "https://pokemonkg.org/ontology#Habitat:Mountain"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0010",
+    "query_type": "ASK",
+    "question": {
+      "string": "Does Ho-Oh belong to the Undiscovered egg group?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/ho-oh> a poke:Species ; poke:inEggGroup <https://pokemonkg.org/ontology#EggGroup:Undiscovered> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Ho-Oh",
+        "Undiscovered"
+      ],
+      "entities": [
+        {
+          "text": "Ho Oh",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/ho-oh"
+        },
+        {
+          "text": "Undiscovered",
+          "type": "https://pokemonkg.org/ontology#EggGroup",
+          "label": "Egg Group",
+          "iri": "https://pokemonkg.org/ontology#EggGroup:Undiscovered"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#inEggGroup"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0011",
+    "query_type": "ASK",
+    "question": {
+      "string": "Does Mantine have the shape Humanoid?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { <https://pokemonkg.org/instance/pokemon/mantine> a poke:Species ; poke:hasShape <https://pokemonkg.org/ontology#Shape:Humanoid> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Mantine",
+        "Humanoid"
+      ],
+      "entities": [
+        {
+          "text": "Mantine",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/mantine"
+        },
+        {
+          "text": "Humanoid",
+          "type": "https://pokemonkg.org/ontology#Shape",
+          "label": "Shape",
+          "iri": "https://pokemonkg.org/ontology#Shape:Humanoid"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasShape"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0012",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Bulbasaur have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/bulbasaur> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Bulbasaur"
+      ],
+      "entities": [
+        {
+          "text": "Bulbasaur",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/bulbasaur"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Grass"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Poison"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0013",
+    "query_type": "SELECT",
+    "question": {
+      "string": "Which ability can Pikachu have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?ability WHERE { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:mayHaveAbility ?ability . } ORDER BY STR(?ability)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "ability"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/static"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0014",
+    "query_type": "SELECT",
+    "question": {
+      "string": "Which habitat is Pikachu found in?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?habitat WHERE { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:foundIn ?habitat . } ORDER BY STR(?habitat)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "habitat"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "habitat": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Habitat:Forest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0015",
+    "query_type": "SELECT",
+    "question": {
+      "string": "List some moves Swampert can use."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?move WHERE { <https://pokemonkg.org/instance/pokemon/swampert> a poke:Species ; poke:isAbleToApply ?move . } ORDER BY STR(?move) LIMIT 5"
+    },
+    "gold": {
+      "mentions": [
+        "Swampert"
+      ],
+      "entities": [
+        {
+          "text": "Swampert",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/swampert"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "move"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/bide"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/earthquake"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/endeavor"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/foresight"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/growl"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0016",
+    "query_type": "SELECT",
+    "question": {
+      "string": "How many Water-type pokemon are there?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Water-type"
+      ],
+      "entities": [
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "count"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "count": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "144"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0017",
+    "query_type": "UNION",
+    "question": {
+      "string": "List the types that Pikachu and Bulbasaur have."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType ?type . } UNION { <https://pokemonkg.org/instance/pokemon/bulbasaur> a poke:Species ; poke:hasType ?type . } } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Bulbasaur"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Bulbasaur",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/bulbasaur"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Electric"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Grass"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Poison"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0018",
+    "query_type": "UNION",
+    "question": {
+      "string": "Is Pikachu a Water or Electric pokemon?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . } UNION { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Electric> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Water",
+        "Electric"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        },
+        {
+          "text": "Electric",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Electric"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0019",
+    "query_type": "UNION",
+    "question": {
+      "string": "List some moves that Swampert or Articuno can use."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?move WHERE { { <https://pokemonkg.org/instance/pokemon/swampert> a poke:Species ; poke:isAbleToApply ?move . } UNION { <https://pokemonkg.org/instance/pokemon/articuno> a poke:Species ; poke:isAbleToApply ?move . } } ORDER BY STR(?move) LIMIT 10"
+    },
+    "gold": {
+      "mentions": [
+        "Swampert",
+        "Articuno"
+      ],
+      "entities": [
+        {
+          "text": "Swampert",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/swampert"
+        },
+        {
+          "text": "Articuno",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/articuno"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "move"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/agility"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/bide"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/blizzard"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/earthquake"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/endeavor"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/foresight"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/growl"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/ice-beam"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/mist"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/mud-shot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0020",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which abilities can Pikachu or Ferroseed have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?ability WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:mayHaveAbility ?ability . } UNION { <https://pokemonkg.org/instance/pokemon/ferroseed> a poke:Species ; poke:mayHaveAbility ?ability . } } ORDER BY STR(?ability)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Ferroseed"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Ferroseed",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/ferroseed"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "ability"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/iron-barbs"
+              }
+            },
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/static"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0021",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which habitats are Pikachu or Venonat found in?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?habitat WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:foundIn ?habitat . } UNION { <https://pokemonkg.org/instance/pokemon/venonat> a poke:Species ; poke:foundIn ?habitat . } } ORDER BY STR(?habitat)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Venonat"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Venonat",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/venonat"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "habitat"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "habitat": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Habitat:Forest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0022",
+    "query_type": "UNION",
+    "question": {
+      "string": "List the types that Pikachu and Bulbasaur have."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType ?type . } UNION { <https://pokemonkg.org/instance/pokemon/bulbasaur> a poke:Species ; poke:hasType ?type . } } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Bulbasaur"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Bulbasaur",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/bulbasaur"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Electric"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Grass"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Poison"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0023",
+    "query_type": "UNION",
+    "question": {
+      "string": "Is Pikachu a Water or Electric pokemon?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . } UNION { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Electric> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Water",
+        "Electric"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        },
+        {
+          "text": "Electric",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Electric"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0024",
+    "query_type": "UNION",
+    "question": {
+      "string": "Is Pikachu a Water-type pokemon or can it use Earthquake?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . } UNION { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:isAbleToApply <https://pokemonkg.org/instance/move/earthquake> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Water-type",
+        "Earthquake"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        },
+        {
+          "text": "Earthquake",
+          "type": "https://pokemonkg.org/ontology#Move",
+          "label": "Move",
+          "iri": "https://pokemonkg.org/instance/move/earthquake"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType",
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0025",
+    "query_type": "UNION",
+    "question": {
+      "string": "List some moves that Swampert or Articuno can use."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?move WHERE { { <https://pokemonkg.org/instance/pokemon/swampert> a poke:Species ; poke:isAbleToApply ?move . } UNION { <https://pokemonkg.org/instance/pokemon/articuno> a poke:Species ; poke:isAbleToApply ?move . } } ORDER BY STR(?move) LIMIT 10"
+    },
+    "gold": {
+      "mentions": [
+        "Swampert",
+        "Articuno"
+      ],
+      "entities": [
+        {
+          "text": "Swampert",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/swampert"
+        },
+        {
+          "text": "Articuno",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/articuno"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "move"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/agility"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/bide"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/blizzard"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/earthquake"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/endeavor"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/foresight"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/growl"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/ice-beam"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/mist"
+              }
+            },
+            {
+              "move": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/move/mud-shot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0026",
+    "query_type": "UNION",
+    "question": {
+      "string": "Can Swampert use Earthquake or Bide?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/swampert> a poke:Species ; poke:isAbleToApply <https://pokemonkg.org/instance/move/earthquake> . } UNION { <https://pokemonkg.org/instance/pokemon/swampert> a poke:Species ; poke:isAbleToApply <https://pokemonkg.org/instance/move/bide> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Swampert",
+        "Earthquake",
+        "Bide"
+      ],
+      "entities": [
+        {
+          "text": "Swampert",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/swampert"
+        },
+        {
+          "text": "Earthquake",
+          "type": "https://pokemonkg.org/ontology#Move",
+          "label": "Move",
+          "iri": "https://pokemonkg.org/instance/move/earthquake"
+        },
+        {
+          "text": "Bide",
+          "type": "https://pokemonkg.org/ontology#Move",
+          "label": "Move",
+          "iri": "https://pokemonkg.org/instance/move/bide"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#isAbleToApply"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0027",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which abilities can Pikachu or Ferroseed have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?ability WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:mayHaveAbility ?ability . } UNION { <https://pokemonkg.org/instance/pokemon/ferroseed> a poke:Species ; poke:mayHaveAbility ?ability . } } ORDER BY STR(?ability)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Ferroseed"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Ferroseed",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/ferroseed"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "ability"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/iron-barbs"
+              }
+            },
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/static"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0028",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which abilities can Pikachu have, or which hidden abilities can Clefable have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?ability WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:mayHaveAbility ?ability . } UNION { <https://pokemonkg.org/instance/pokemon/clefable> a poke:Species ; poke:mayHaveHiddenAbility ?ability . } } ORDER BY STR(?ability)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Clefable"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Clefable",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/clefable"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveAbility",
+        "https://pokemonkg.org/ontology#mayHaveHiddenAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "ability"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/static"
+              }
+            },
+            {
+              "ability": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/ability/unaware"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0029",
+    "query_type": "UNION",
+    "question": {
+      "string": "Can Skitty have the hidden ability Sheer Force or Unaware?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/skitty> a poke:Species ; poke:mayHaveHiddenAbility <https://pokemonkg.org/instance/ability/sheer-force> . } UNION { <https://pokemonkg.org/instance/pokemon/skitty> a poke:Species ; poke:mayHaveHiddenAbility <https://pokemonkg.org/instance/ability/unaware> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Skitty",
+        "Sheer Force",
+        "Unaware"
+      ],
+      "entities": [
+        {
+          "text": "Skitty",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/skitty"
+        },
+        {
+          "text": "Sheer Force",
+          "type": "https://pokemonkg.org/ontology#Ability",
+          "label": "Ability",
+          "iri": "https://pokemonkg.org/instance/ability/sheer-force"
+        },
+        {
+          "text": "Unaware",
+          "type": "https://pokemonkg.org/ontology#Ability",
+          "label": "Ability",
+          "iri": "https://pokemonkg.org/instance/ability/unaware"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#mayHaveHiddenAbility"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0030",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which habitats are Pikachu or Venonat found in?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?habitat WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:foundIn ?habitat . } UNION { <https://pokemonkg.org/instance/pokemon/venonat> a poke:Species ; poke:foundIn ?habitat . } } ORDER BY STR(?habitat)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Venonat"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Venonat",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/venonat"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "habitat"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "habitat": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Habitat:Forest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0031",
+    "query_type": "UNION",
+    "question": {
+      "string": "Is Venonat found in the Forest or Mountain habitat?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/venonat> a poke:Species ; poke:foundIn <https://pokemonkg.org/ontology#Habitat:Forest> . } UNION { <https://pokemonkg.org/instance/pokemon/venonat> a poke:Species ; poke:foundIn <https://pokemonkg.org/ontology#Habitat:Mountain> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Venonat",
+        "Forest",
+        "Mountain"
+      ],
+      "entities": [
+        {
+          "text": "Venonat",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/venonat"
+        },
+        {
+          "text": "Forest",
+          "type": "https://pokemonkg.org/ontology#Habitat",
+          "label": "Habitat",
+          "iri": "https://pokemonkg.org/ontology#Habitat:Forest"
+        },
+        {
+          "text": "Mountain",
+          "type": "https://pokemonkg.org/ontology#Habitat",
+          "label": "Habitat",
+          "iri": "https://pokemonkg.org/ontology#Habitat:Mountain"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0032",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which egg groups do Ho-Oh or Bulbasaur belong to?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?egggroup WHERE { { <https://pokemonkg.org/instance/pokemon/ho-oh> a poke:Species ; poke:inEggGroup ?egggroup . } UNION { <https://pokemonkg.org/instance/pokemon/bulbasaur> a poke:Species ; poke:inEggGroup ?egggroup . } } ORDER BY STR(?egggroup)"
+    },
+    "gold": {
+      "mentions": [
+        "Ho-Oh",
+        "Bulbasaur"
+      ],
+      "entities": [
+        {
+          "text": "Ho Oh",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/ho-oh"
+        },
+        {
+          "text": "Bulbasaur",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/bulbasaur"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#inEggGroup"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "egggroup"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "egggroup": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#EggGroup:Grass"
+              }
+            },
+            {
+              "egggroup": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#EggGroup:Monster"
+              }
+            },
+            {
+              "egggroup": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#EggGroup:Undiscovered"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0033",
+    "query_type": "UNION",
+    "question": {
+      "string": "Does Ho-Oh belong to the Undiscovered or Dragon egg group?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/ho-oh> a poke:Species ; poke:inEggGroup <https://pokemonkg.org/ontology#EggGroup:Undiscovered> . } UNION { <https://pokemonkg.org/instance/pokemon/ho-oh> a poke:Species ; poke:inEggGroup <https://pokemonkg.org/ontology#EggGroup:Dragon> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Ho-Oh",
+        "Undiscovered",
+        "Dragon"
+      ],
+      "entities": [
+        {
+          "text": "Ho Oh",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/ho-oh"
+        },
+        {
+          "text": "Undiscovered",
+          "type": "https://pokemonkg.org/ontology#EggGroup",
+          "label": "Egg Group",
+          "iri": "https://pokemonkg.org/ontology#EggGroup:Undiscovered"
+        },
+        {
+          "text": "Dragon",
+          "type": "https://pokemonkg.org/ontology#EggGroup",
+          "label": "Egg Group",
+          "iri": "https://pokemonkg.org/ontology#EggGroup:Dragon"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#inEggGroup"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0034",
+    "query_type": "UNION",
+    "question": {
+      "string": "Which shapes do Mantine or Pikachu have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?shape WHERE { { <https://pokemonkg.org/instance/pokemon/mantine> a poke:Species ; poke:hasShape ?shape . } UNION { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasShape ?shape . } } ORDER BY STR(?shape)"
+    },
+    "gold": {
+      "mentions": [
+        "Mantine",
+        "Pikachu"
+      ],
+      "entities": [
+        {
+          "text": "Mantine",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/mantine"
+        },
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasShape"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "shape"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "shape": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Shape:Quadruped"
+              }
+            },
+            {
+              "shape": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Shape:Wings"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0035",
+    "query_type": "UNION",
+    "question": {
+      "string": "Does Mantine have the shape Humanoid or Armor?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/mantine> a poke:Species ; poke:hasShape <https://pokemonkg.org/ontology#Shape:Humanoid> . } UNION { <https://pokemonkg.org/instance/pokemon/mantine> a poke:Species ; poke:hasShape <https://pokemonkg.org/ontology#Shape:Armor> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Mantine",
+        "Humanoid",
+        "Armor"
+      ],
+      "entities": [
+        {
+          "text": "Mantine",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/mantine"
+        },
+        {
+          "text": "Humanoid",
+          "type": "https://pokemonkg.org/ontology#Shape",
+          "label": "Shape",
+          "iri": "https://pokemonkg.org/ontology#Shape:Humanoid"
+        },
+        {
+          "text": "Armor",
+          "type": "https://pokemonkg.org/ontology#Shape",
+          "label": "Shape",
+          "iri": "https://pokemonkg.org/ontology#Shape:Armor"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasShape"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": false
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0036",
+    "query_type": "UNION",
+    "question": {
+      "string": "List some Water-type or Fire-type pokemon."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?p WHERE { { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . } UNION { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Fire> . } } ORDER BY STR(?p) LIMIT 10"
+    },
+    "gold": {
+      "mentions": [
+        "Water-type",
+        "Fire-type"
+      ],
+      "entities": [
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        },
+        {
+          "text": "Fire",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Fire"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "p"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/alomomola"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/araquanid"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arcanine"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arctovish"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arrokuda"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/azumarill"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/barbaracle"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/barboach"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/barraskewda"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/basculin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0037",
+    "query_type": "UNION",
+    "question": {
+      "string": "How many Water-type or Fire-type pokemon are there?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE { { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . } UNION { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Fire> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Water-type",
+        "Fire-type"
+      ],
+      "entities": [
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        },
+        {
+          "text": "Fire",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Fire"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "count"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "count": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "215"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0038",
+    "query_type": "UNION",
+    "question": {
+      "string": "List some Water-type or Electric-type pokemon."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?p WHERE { { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Water> . } UNION { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Electric> . } } ORDER BY STR(?p) LIMIT 10"
+    },
+    "gold": {
+      "mentions": [
+        "Water-type",
+        "Electric-type"
+      ],
+      "entities": [
+        {
+          "text": "Water",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Water"
+        },
+        {
+          "text": "Electric",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Electric"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "p"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/alomomola"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/ampharos"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/araquanid"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arctovish"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arctozolt"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arrokuda"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/azumarill"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/barbaracle"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/barboach"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/barraskewda"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0039",
+    "query_type": "UNION",
+    "question": {
+      "string": "Is Bulbasaur a Poison-type or Electric-type pokemon?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> ASK WHERE { { <https://pokemonkg.org/instance/pokemon/bulbasaur> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Poison> . } UNION { <https://pokemonkg.org/instance/pokemon/bulbasaur> a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Electric> . } }"
+    },
+    "gold": {
+      "mentions": [
+        "Bulbasaur",
+        "Poison-type",
+        "Electric-type"
+      ],
+      "entities": [
+        {
+          "text": "Bulbasaur",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/bulbasaur"
+        },
+        {
+          "text": "Poison",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Poison"
+        },
+        {
+          "text": "Electric",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Electric"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {},
+        "boolean": true
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0040",
+    "query_type": "UNION",
+    "question": {
+      "string": "List the types that Pikachu or Psyduck have."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { { <https://pokemonkg.org/instance/pokemon/pikachu> a poke:Species ; poke:hasType ?type . } UNION { <https://pokemonkg.org/instance/pokemon/psyduck> a poke:Species ; poke:hasType ?type . } } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Pikachu",
+        "Psyduck"
+      ],
+      "entities": [
+        {
+          "text": "Pikachu",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/pikachu"
+        },
+        {
+          "text": "Psyduck",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/psyduck"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Electric"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Water"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0041",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Charizard have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/charizard> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Charizard"
+      ],
+      "entities": [
+        {
+          "text": "Charizard",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/charizard"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Fire"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Flying"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0042",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Gengar have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/gengar> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Gengar"
+      ],
+      "entities": [
+        {
+          "text": "Gengar",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/gengar"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Ghost"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Poison"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0043",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Eevee have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/eevee> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Eevee"
+      ],
+      "entities": [
+        {
+          "text": "Eevee",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/eevee"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Normal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0044",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Snorlax have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/snorlax> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Snorlax"
+      ],
+      "entities": [
+        {
+          "text": "Snorlax",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/snorlax"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Normal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0045",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Mewtwo have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/mewtwo> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Mewtwo"
+      ],
+      "entities": [
+        {
+          "text": "Mewtwo",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/mewtwo"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Psychic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0046",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Lucario have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/lucario> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Lucario"
+      ],
+      "entities": [
+        {
+          "text": "Lucario",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/lucario"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Fighting"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Steel"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0047",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Garchomp have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/garchomp> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Garchomp"
+      ],
+      "entities": [
+        {
+          "text": "Garchomp",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/garchomp"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Dragon"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Ground"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0048",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Gardevoir have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/gardevoir> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Gardevoir"
+      ],
+      "entities": [
+        {
+          "text": "Gardevoir",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/gardevoir"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Fairy"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Psychic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0049",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Rayquaza have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/rayquaza> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Rayquaza"
+      ],
+      "entities": [
+        {
+          "text": "Rayquaza",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/rayquaza"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Dragon"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Flying"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0050",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What types does Tyranitar have?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?type WHERE { <https://pokemonkg.org/instance/pokemon/tyranitar> a poke:Species ; poke:hasType ?type . } ORDER BY STR(?type)"
+    },
+    "gold": {
+      "mentions": [
+        "Tyranitar"
+      ],
+      "entities": [
+        {
+          "text": "Tyranitar",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/tyranitar"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "type"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Dark"
+              }
+            },
+            {
+              "type": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#PokéType:Rock"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0051",
+    "query_type": "SELECT",
+    "question": {
+      "string": "Which habitat is Charizard found in?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?habitat WHERE { <https://pokemonkg.org/instance/pokemon/charizard> a poke:Species ; poke:foundIn ?habitat . } ORDER BY STR(?habitat)"
+    },
+    "gold": {
+      "mentions": [
+        "Charizard"
+      ],
+      "entities": [
+        {
+          "text": "Charizard",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/charizard"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "habitat"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "habitat": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Habitat:Mountain"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0052",
+    "query_type": "SELECT",
+    "question": {
+      "string": "Which habitat is Gengar found in?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?habitat WHERE { <https://pokemonkg.org/instance/pokemon/gengar> a poke:Species ; poke:foundIn ?habitat . } ORDER BY STR(?habitat)"
+    },
+    "gold": {
+      "mentions": [
+        "Gengar"
+      ],
+      "entities": [
+        {
+          "text": "Gengar",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/gengar"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "habitat"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "habitat": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Habitat:Cave"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0053",
+    "query_type": "SELECT",
+    "question": {
+      "string": "Which habitat is Eevee found in?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?habitat WHERE { <https://pokemonkg.org/instance/pokemon/eevee> a poke:Species ; poke:foundIn ?habitat . } ORDER BY STR(?habitat)"
+    },
+    "gold": {
+      "mentions": [
+        "Eevee"
+      ],
+      "entities": [
+        {
+          "text": "Eevee",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/eevee"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#foundIn"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "habitat"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "habitat": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Habitat:Urban"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0054",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What is the shape of Charizard?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?shape WHERE { <https://pokemonkg.org/instance/pokemon/charizard> a poke:Species ; poke:hasShape ?shape . } ORDER BY STR(?shape)"
+    },
+    "gold": {
+      "mentions": [
+        "Charizard"
+      ],
+      "entities": [
+        {
+          "text": "Charizard",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/charizard"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasShape"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "shape"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "shape": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Shape:Upright"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0055",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What is the shape of Gengar?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?shape WHERE { <https://pokemonkg.org/instance/pokemon/gengar> a poke:Species ; poke:hasShape ?shape . } ORDER BY STR(?shape)"
+    },
+    "gold": {
+      "mentions": [
+        "Gengar"
+      ],
+      "entities": [
+        {
+          "text": "Gengar",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/gengar"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasShape"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "shape"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "shape": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Shape:Upright"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0056",
+    "query_type": "SELECT",
+    "question": {
+      "string": "What is the shape of Eevee?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?shape WHERE { <https://pokemonkg.org/instance/pokemon/eevee> a poke:Species ; poke:hasShape ?shape . } ORDER BY STR(?shape)"
+    },
+    "gold": {
+      "mentions": [
+        "Eevee"
+      ],
+      "entities": [
+        {
+          "text": "Eevee",
+          "type": "https://pokemonkg.org/ontology#Species",
+          "label": "Species",
+          "iri": "https://pokemonkg.org/instance/pokemon/eevee"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasShape"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "shape"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "shape": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/ontology#Shape:Quadruped"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0057",
+    "query_type": "SELECT",
+    "question": {
+      "string": "How many Fire-type pokemon are there?"
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Fire> . }"
+    },
+    "gold": {
+      "mentions": [
+        "Fire-type"
+      ],
+      "entities": [
+        {
+          "text": "Fire",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Fire"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "count"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "count": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "74"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0058",
+    "query_type": "SELECT",
+    "question": {
+      "string": "List some Fire-type pokemon."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?p WHERE { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Fire> . } ORDER BY STR(?p) LIMIT 5"
+    },
+    "gold": {
+      "mentions": [
+        "Fire-type"
+      ],
+      "entities": [
+        {
+          "text": "Fire",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Fire"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "p"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/arcanine"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/blacephalon"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/blaziken"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/braixen"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/camerupt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0059",
+    "query_type": "SELECT",
+    "question": {
+      "string": "List some Dragon-type pokemon."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?p WHERE { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Dragon> . } ORDER BY STR(?p) LIMIT 5"
+    },
+    "gold": {
+      "mentions": [
+        "Dragon-type"
+      ],
+      "entities": [
+        {
+          "text": "Dragon",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Dragon"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "p"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/altaria"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/appletun"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/applin"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/axew"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/bagon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "PKG_Q0060",
+    "query_type": "SELECT",
+    "question": {
+      "string": "List some Ghost-type pokemon."
+    },
+    "query": {
+      "sparql": "PREFIX poke: <https://pokemonkg.org/ontology#> SELECT DISTINCT ?p WHERE { ?p a poke:Species ; poke:hasType <https://pokemonkg.org/ontology#PokéType:Ghost> . } ORDER BY STR(?p) LIMIT 5"
+    },
+    "gold": {
+      "mentions": [
+        "Ghost-type"
+      ],
+      "entities": [
+        {
+          "text": "Ghost",
+          "type": "https://pokemonkg.org/ontology#Type",
+          "label": "Type",
+          "iri": "https://pokemonkg.org/ontology#PokéType:Ghost"
+        }
+      ],
+      "relations": [
+        "https://pokemonkg.org/ontology#hasType"
+      ],
+      "classes": [
+        "https://pokemonkg.org/ontology#Species"
+      ],
+      "answer": {
+        "head": {
+          "vars": [
+            "p"
+          ]
+        },
+        "results": {
+          "bindings": [
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/aegislash"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/banette"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/blacephalon"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/calyrex"
+              }
+            },
+            {
+              "p": {
+                "type": "uri",
+                "value": "https://pokemonkg.org/instance/pokemon/chandelure"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

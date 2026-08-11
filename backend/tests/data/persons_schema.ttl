@@ -1,0 +1,51 @@
+@prefix mydb: <http://mydb.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:Person a rdfs:Class .
+
+schema:givenName a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:string .
+
+schema:familyName a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:string .
+
+rdfs:label a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:string .
+
+mydb:note a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:string .
+
+mydb:daughterOf a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range schema:Person .
+
+mydb:sonOf a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range schema:Person .
+
+mydb:associatedDate a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:date .
+
+schema:deathDate a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:date .
+
+schema:deathPlace a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:string .
+
+mydb:deathCause a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:string .
+
+mydb:deathAge a rdf:Property ;
+  rdfs:domain schema:Person ;
+  rdfs:range xsd:integer .

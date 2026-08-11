@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "label": "Illia Polosukhin",
+      "uri": "https://dblp.org/pid/p/IlliaPolosukhin",
+      "type": "https://dblp.org/rdf/schema#Person"
+    },
+    {
+      "label": "Noam Shazeer",
+      "uri": "https://dblp.org/pid/s/NoamShazeer",
+      "type": "https://dblp.org/rdf/schema#Person"
+    },
+    {
+      "label": "Parmar Niki",
+      "uri": "https://dblp.org/pid/p/ParmerNiki",
+      "type": "https://dblp.org/rdf/schema#Person"
+    },
+    {
+      "label": "Jakob Uszkoreit",
+      "uri": "https://dblp.org/pid/u/JakobUszkoreit",
+      "type": "https://dblp.org/rdf/schema#Person"
+    },
+    {
+      "label": "Llion Jones",
+      "uri": "https://dblp.org/pid/j/LlionJones",
+      "type": "https://dblp.org/rdf/schema#Person"
+    },
+    {
+      "label": "Aidan N. Gomez",
+      "uri": "https://dblp.org/pid/g/AidanGomez",
+      "type": "https://dblp.org/rdf/schema#Person"
+    },
+    {
+      "label": "Lukasz Kaiser",
+      "uri": "https://dblp.org/pid/k/LukaszKaiser",
+      "type": "https://dblp.org/rdf/schema#Person"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "mention": "Attention is All You Need",
+      "mention_type": "publication",
+      "items": [
+        {
+          "entity_url": "https://dblp.org/rec/journals/corr/abs-2104-04692",
+          "entity_label": "Hongliu Wu et al.: Not All Attention Is All You Need. (2021)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 85
+        },
+        {
+          "entity_url": "https://dblp.org/rec/conf/nips/VaswaniSPUJGKP17",
+          "entity_label": "Ashish Vaswani et al.: Attention is All you Need. (2017)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 98
+        },
+        {
+          "entity_url": "https://dblp.org/rec/journals/corr/VaswaniSPUJGKP17",
+          "entity_label": "Ashish Vaswani et al.: Attention Is All You Need. (2017)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 96
+        },
+        {
+          "entity_url": "https://dblp.org/rec/journals/corr/abs-2501-05730",
+          "entity_label": "Guoxin Feng: Element-wise Attention Is All You Need. (2025)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 72
+        },
+        {
+          "entity_url": "https://dblp.org/rec/journals/corr/abs-2308-07661",
+          "entity_label": "Zhe Chen: Attention Is Not All You Need Anymore. (2023)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 68
+        },
+        {
+          "entity_url": "https://dblp.org/rec/conf/clic-it/SaioniG24",
+          "entity_label": "Marco Saioni and Cristina Giannone: Multimodal Attention Is All You Need. (2024)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 81
+        },
+        {
+          "entity_url": "https://dblp.org/rec/journals/corr/abs-2501-06425",
+          "entity_label": "Yifan Zhang et al.: Tensor Product Attention Is All You Need. (2025)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 75
+        },
+        {
+          "entity_url": "https://dblp.org/rec/conf/icassp/SubakanRCBZ21",
+          "entity_label": "Cem Subakan et al.: Attention Is All You Need In Speech Separation. (2021)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 79
+        },
+        {
+          "entity_url": "https://dblp.org/rec/journals/corr/abs-2010-13154",
+          "entity_label": "Cem Subakan et al.: Attention Is All You Need In Speech Separation. (2020)",
+          "entity_type": "https://dblp.org/rdf/schema#Publication",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "mention": "NEURIPS",
+      "mention_type": "venue",
+      "items": [
+        {
+          "entity_url": "https://dblp.org/streams/conf/gazeml",
+          "entity_label": "NeurIPS Gaze Meets ML Workshop",
+          "entity_type": "https://dblp.org/rdf/schema#Stream",
+          "score": 65
+        },
+        {
+          "entity_url": "https://dblp.org/streams/conf/nips",
+          "entity_label": "Conference on Neural Information Processing Systems (NeurIPS)",
+          "entity_type": "https://dblp.org/rdf/schema#Stream",
+          "score": 92
+        },
+        {
+          "entity_url": "https://dblp.org/streams/conf/neurips",
+          "entity_label": "NeurIPS Workshop on Symmetry and Geometry in Neural Representations",
+          "entity_type": "https://dblp.org/rdf/schema#Stream",
+          "score": 70
+        }
+      ]
+    }
+  ]
+}
