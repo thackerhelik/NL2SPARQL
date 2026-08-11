@@ -1,6 +1,6 @@
 # Context-Aware NL2SPARQL with Interactive Linking
 
-> **🎓 Academic Project Archive**
+> ** Academic Project Archive**
 > This repository is a mirror of a collaborative university project developed for the **Knowledge Graph Lab** at RWTH Aachen University. 
 >
 > **Authors & Team Members:**
